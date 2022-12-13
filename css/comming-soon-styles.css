@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@800&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -5,31 +9,52 @@
 }
 
 .header {
-    background-color: bisque;
+    /*background-image: url("/images/develop.jpg");*/
+    background: rgb(0, 212, 255);
+    background: radial-gradient(circle, rgba(0, 212, 255, 1) 9%, rgba(6, 77, 166, 1) 56%, rgba(9, 9, 121, 1) 91%, rgba(0, 0, 0, 1) 100%);
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
+
 }
 
 
 .tittle {
-
-    text-decoration: underline;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 50px;
-    color: brown;
-    border: 2px solid black;
+    display: block;
+    font-family: 'Chivo Mono','Playfair Display','Roboto Slab', sans-serif;
+    font-size: 150px;
+    transform: translateY(-200px);
+    color: rgb(11, 205, 226);
+    text-align: center;
+    /* border: 2px solid black;
     padding: 20px;
-    border-radius: 20px;
+    border-radius: 20px;*/
     transition: all 1s;
+    text-transform: uppercase;
+    text-shadow: 10px 10px 10px rgb(70, 70, 70);
+    te
+    
 }
 
 .tittle:hover {
     transform: scale(1.5);
+    text-decoration: underline;
+    /*color: rgb(94, 99, 104);*/
+    animation: changecolors 1s infinite;
 }
 
+@keyframes changecolors {
+    from{
+        color: rgba(212, 37, 37, 0.74);
+    }
+    to{
+        color: rgba(157, 17, 185, 0.856);
+    }
+}
+
+/*
 .tittle::after:hover {
-    transform: translate(50px,50px);
+    transform: translate(50px, 50px);
 
-}
+}*/
