@@ -10,9 +10,10 @@
 
 .header {
     /*background-image: url("/images/develop.jpg");*/
-    background: rgb(0, 212, 255);
-    background: radial-gradient(circle, rgba(0, 212, 255, 1) 9%, rgba(6, 77, 166, 1) 56%, rgba(9, 9, 121, 1) 91%, rgba(0, 0, 0, 1) 100%);
+    background: rgb(0, 74, 167);
+    background: radial-gradient(circle, rgba(0, 74, 167, 1) 26%, rgba(6, 77, 166, 1) 56%, rgba(9, 9, 121, 1) 91%, rgba(0, 0, 0, 1) 100%);
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
@@ -21,11 +22,10 @@
 
 
 .tittle {
-    display: block;
-    font-family: 'Chivo Mono','Playfair Display','Roboto Slab', sans-serif;
-    font-size: 150px;
-    transform: translateY(-200px);
-    color: rgb(11, 205, 226);
+    font-family: 'Chivo Mono', 'Playfair Display', 'Roboto Slab', sans-serif;
+    font-size: 125px;
+    /* transform: translateY(-200px);*/
+    color: rgb(255, 255, 255);
     text-align: center;
     /* border: 2px solid black;
     padding: 20px;
@@ -33,28 +33,132 @@
     transition: all 1s;
     text-transform: uppercase;
     text-shadow: 10px 10px 10px rgb(70, 70, 70);
-    te
-    
 }
 
-.tittle:hover {
-    transform: scale(1.5);
-    text-decoration: underline;
-    /*color: rgb(94, 99, 104);*/
-    animation: changecolors 1s infinite;
+.tittle::after {
+    content: "";
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 5px;
+    background: rgb(255, 255, 255);
+    transition: transform 0.2s ease-in-out;
+    transform: scale(0);
+
+}
+
+.tittle:hover::after {
+    transform: scale(1);
+
 }
 
 @keyframes changecolors {
-    from{
+    from {
         color: rgba(212, 37, 37, 0.74);
     }
-    to{
+
+    to {
         color: rgba(157, 17, 185, 0.856);
     }
 }
 
-/*
-.tittle::after:hover {
-    transform: translate(50px, 50px);
+.description {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 50px;
+    margin-top: 50px;
+    color: white;
+    text-shadow: 5px 5px 5px rgb(70, 70, 70);
+}
 
-}*/
+.container {
+    /* border: 5px solid black;*/
+    display: flex;
+    margin-top: 75px;
+}
+
+.container .sphere {
+
+    margin-left: 50px;
+    margin-right: 50px;
+    /* width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    border: 2px solid white;*/
+
+}
+
+.container .sphere a {
+    font-size: 50px;
+    display: block;
+    width: 75px;
+    height: 75px;
+    text-align: center;
+    line-height: 75px;
+    transition: 0.5s all ease-out;
+}
+
+
+
+.container .sphere a:hover {
+    transform: scale(1.5);
+}
+
+.fa-facebook::after {
+    content: "Facebook";
+    display: block;
+    font-size: 25px;
+    /*background: rgb(255, 255, 255);*/
+    transition: transform 0.5s ease-in-out;
+    transform: scale(0);
+}
+
+.fa-linkedin::after {
+    content: "Linkedin";
+    display: block;
+    font-size: 25px;
+    /*background: rgb(255, 255, 255);*/
+    transition: transform 0.5s ease-in-out;
+    transform: scale(0);
+}
+
+.fa-github::after {
+    content: "GitHub";
+    display: block;
+    font-size: 25px;
+    /*background: rgb(255, 255, 255);*/
+    transition: transform 0.5s ease-in-out;
+    transform: scale(0);
+}
+.fa-facebook:hover::after {
+    transform: scale(1) translateX(-15px);
+}
+
+.fa-linkedin:hover::after {
+    transform: scale(1) translateX(-15px);
+}
+
+.fa-github:hover::after {
+    transform: scale(1) translateX(-5px);
+}
+.fa {
+
+    margin: 5px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 150px;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-github {
+    background: #000000;
+    color: white;
+}
