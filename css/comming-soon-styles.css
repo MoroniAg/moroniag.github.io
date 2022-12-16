@@ -103,8 +103,8 @@
     transform: scale(1.5);
 }
 
-.fa-facebook::after {
-    content: "Facebook";
+.fa-twitter::after {
+    content: "Twitter";
     display: block;
     font-size: 25px;
     /*background: rgb(255, 255, 255);*/
@@ -129,12 +129,12 @@
     transition: transform 0.5s ease-in-out;
     transform: scale(0);
 }
-.fa-facebook:hover::after {
-    transform: scale(1) translateX(-15px);
+.fa-twitter:hover::after {
+    transform: scale(1) translateX(-5px);
 }
 
 .fa-linkedin:hover::after {
-    transform: scale(1) translateX(-15px);
+    transform: scale(1) translateX(-10px);
 }
 
 .fa-github:hover::after {
@@ -148,8 +148,8 @@
     border-radius: 150px;
 }
 
-.fa-facebook {
-    background: #3B5998;
+.fa-twitter {
+    background: #55ACEE;
     color: white;
 }
 
