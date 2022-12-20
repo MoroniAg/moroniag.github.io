@@ -1,1 +1,14 @@
-<p>page works!</p>
+<!---->
+<div class="content">
+
+    <p>{{content.name}}</p>
+    <div *ngIf="content.name==='home'">
+        <input type="button" value="Value">
+
+    </div>
+
+    <div *ngIf="content.name==='experience'">
+        <input type="checkbox" name="radio" id="">
+    </div>
+
+</div>

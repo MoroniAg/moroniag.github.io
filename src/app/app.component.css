@@ -4,9 +4,6 @@
     box-sizing: border-box;
 }
 
-html {
-    scroll-behavior: smooth;
-} 
 body {
     margin: 0;
     display: flex;
@@ -22,6 +19,7 @@ nav {
 }
 
 nav a {
+    position: relative;
     border: 0px solid rgba(0, 0, 0, 0.582);
     border-radius: 50px;
     display: block;
@@ -34,14 +32,8 @@ nav a {
     box-sizing: border-box;
     background-color: white;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.582);
+    z-index: 4;
 }
-
-nav a i{
-    line-height: 50px;
-    font-size: 50px;
-    transition: all 1s ease-out;
-}
-
 
 nav a:hover {
     width: 200px;
@@ -66,26 +58,26 @@ app-page {
 }
 
 #page-one {
-    background-color: rgb(110, 121, 121);
+    background-color: #00ABB3;
 }
 
 
 /*.header nav a:nth-child(2),*/
 #page-two {
-    background-color: azure;
+    background-color: #540375;
 }
 
 /*.header nav a:nth-child(3),*/
 #page-three {
-    background-color: rgb(221, 105, 27);
+    background-color: #FF7000;
 }
 
 /*.header nav a:nth-child(4),*/
 #page-four {
-    background-color: rgb(28, 13, 236);
+    background-color: #FFBF00;
 }
 
 /*.header nav a:nth-child(5),*/
 #page-five {
-    background-color: rgb(203, 223, 26);
+    background-color: #B2B2B2;
 }

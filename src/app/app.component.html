@@ -1,11 +1,7 @@
-<article *ngFor="let page of pageList">
-  <app-page id={{page.page}}></app-page>
+<article >
+  <app-page *ngFor="let page of pageList" id={{page.page}} [content]="page.content"></app-page>
 </article>
 
 <nav>
-  <a href="#page-one">Home</a>
-  <a href="#page-two">Experience</a>
-  <a href="#page-three">Technologies</a>
-  <a href="#page-four">Projects</a>
-  <a href="#page-five">Contant me</a>
+  <a *ngFor="let page of pageList" href="#{{page.page}}"></a>
 </nav>
