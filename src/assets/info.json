@@ -3,11 +3,11 @@
         "page": "page-one",
         "content": {
             "name": "home",
-            "list": [
+            "list_content": [
                 {
                     "name": "description",
                     "url_img": "",
-                    "content": [
+                    "tittle": [
                         {
                             "name": "header",
                             "value": "Hi"
@@ -37,10 +37,65 @@
             "list": [
                 {
                     "name": "professional_work",
-                    "content": []
+                    "url_img": "",
+                    "content": [
+                        {
+                            "name": "installgas",
+                            "value": "InstallGas/Cumorah Center"
+                        }
+                    ]
                 },
                 {
                     "name": "personal_work",
+                    "url_img": "",
+                    "content": []
+                }
+            ]
+        }
+    },
+    {
+        "page": "page-three",
+        "content": {
+            "name": "technologies",
+            "list": [
+                {
+                    "name": "backend",
+                    "content": []
+                },
+                {
+                    "name": "frontend",
+                    "content": []
+                },
+                {
+                    "name": "devops",
+                    "content": []
+                },
+                {
+                    "name": "other",
+                    "content": []
+                }
+            ]
+        }
+    },
+    {
+        "page": "page-four",
+        "content": {
+            "name": "projects",
+            "list": [
+                {
+                    "name": "project_one",
+                    "content": []
+                }
+            ]
+        }
+    },
+    {
+        "page": "page-five",
+        "content": {
+            "name": "contact",
+            "list": [
+                {
+                    "name": "contant",
                     "content": []
                 }
             ]
