@@ -7,25 +7,30 @@
                 {
                     "name": "description",
                     "url_img": "",
-                    "tittle": [
+                    "tittles": [
                         {
-                            "name": "header",
-                            "value": "Hi"
-                        },
-                        {
-                            "name": "body",
-                            "value": "My name is Moroni"
-                        },
-                        {
-                            "name": "footer",
-                            "value": "jasdksah"
+                            "name": "personal_information",
+                            "values": [
+                                {
+                                    "name": "first_line",
+                                    "value": "Hi"
+                                },
+                                {
+                                    "name": "second_line",
+                                    "value": "My name is Moroni"
+                                },
+                                {
+                                    "name": "third_line",
+                                    "value": "I'm a Full Stack Developer with 5 years of experience"
+                                }
+                            ]
                         }
                     ]
                 },
                 {
                     "name": "photo_profile",
-                    "url_img": "/imagens/img.jmg",
-                    "content": []
+                    "url_img": "url",
+                    "tittles": []
                 }
             ]
         }
@@ -34,21 +39,96 @@
         "page": "page-two",
         "content": {
             "name": "experience",
-            "list": [
+            "list_content": [
                 {
                     "name": "professional_work",
                     "url_img": "",
-                    "content": [
+                    "tittles": [
                         {
                             "name": "installgas",
-                            "value": "InstallGas/Cumorah Center"
+                            "values": [
+                                {
+                                    "name": "job_name",
+                                    "value": "InstallGas/Cumorah Center"
+                                },
+                                {
+                                    "name": "role_description",
+                                    "value": "This "
+                                },
+                                {
+                                    "name": "years",
+                                    "value": "sep. 2017 - ago 2020 (3 years)"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "emunay",
+                            "values": [
+                                {
+                                    "name": "job_name",
+                                    "value": "Emunay Cia. Ltda."
+                                },
+                                {
+                                    "name": "role_description",
+                                    "value": "This "
+                                },
+                                {
+                                    "name": "years",
+                                    "value": "sep. 2019 - ene 2021 (1 year 5 months)"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "phcodes",
+                            "values": [
+                                {
+                                    "name": "job_name",
+                                    "value": "La Katuna/PhCodes"
+                                },
+                                {
+                                    "name": "role_description",
+                                    "value": "This "
+                                },
+                                {
+                                    "name": "years",
+                                    "value": "abr. 2021 - actual (1 year 9 months)"
+                                }
+                            ]
                         }
                     ]
                 },
                 {
                     "name": "personal_work",
                     "url_img": "",
-                    "content": []
+                    "tittles": [
+                        {
+                            "name": "personal_projects",
+                            "values": [
+                                {
+                                    "name": "Livestock Management System",
+                                    "value": "Technologies used: Java, PrimeFaces"
+                                },
+                                {
+                                    "name": "Permit and Fine Control System",
+                                    "value": "Technologies used: Java, PrimeFaces "
+                                },
+                                {
+                                    "name": "Control System of a Filling Pump ",
+                                    "value": "Technologies used: Arduino, C++"
+                                },
+                                {
+                                    "name": "Number to letter converter",
+                                    "value": "Technologies used: Rust, Git",
+                                    "link": ""
+                                },
+                                {
+                                    "name": "My personal portfolio",
+                                    "value": "Technologies used: Rust, Git",
+                                    "link": ""
+                                }
+                            ]
+                        }
+                    ]
                 }
             ]
         }
