@@ -12,12 +12,13 @@ body {
 
 
 nav {
-    position: fixed;
+    position: absolute;
     top: 50%;
     right: 83%;
     transform: translateY(-50%);
     width: 200px;
 }
+
 
 nav a {
     position: relative;

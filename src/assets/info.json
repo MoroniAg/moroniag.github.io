@@ -39,6 +39,8 @@
     },
     {
         "page": "page-two",
+        "icon": "icon2",
+        "name": "Experience",
         "content": {
             "name": "experience",
             "list_content": [
@@ -137,6 +139,8 @@
     },
     {
         "page": "page-three",
+        "icon": "icon3",
+        "name": "Technologies",
         "content": {
             "name": "technologies",
             "list_content": [
@@ -341,6 +345,8 @@
     },
     {
         "page": "page-four",
+        "icon": "icon4",
+        "name": "Projects",
         "content": {
             "name": "projects",
             "list_content": [
@@ -354,6 +360,8 @@
     },
     {
         "page": "page-five",
+        "icon": "icon1",
+        "name": "Contanct",
         "content": {
             "name": "contact",
             "list_content": [
