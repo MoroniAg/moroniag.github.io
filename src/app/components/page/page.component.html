@@ -1,0 +1,18 @@
+<div class="content">
+
+    <p>{{content.name}}</p>
+    <div *ngIf="content.name==='home'">
+        <input type="button" value="Value">
+        <span class="" *ngFor="let cont of content.list_content">{{cont.name}}</span>
+        <app-content  class="nav-" [content]="content.list_content" ></app-content>
+
+    </div>
+
+    <div *ngIf="content.name==='experience'">
+        <input type="checkbox" name="radio" id="">
+        <span *ngFor="let cont of content.list_content">{{cont.name}}</span>
+    </div>
+
+
+
+</div>
