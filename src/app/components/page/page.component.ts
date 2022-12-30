@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Content } from 'src/app/models/Content';
 
 @Component({
   selector: 'app-page',
@@ -7,10 +8,10 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class PageComponent implements OnInit {
 
-  @Input() content: any;
+  @Input() content: Content;
 
   constructor() { 
-    this.content = Object
+    this.content = new Content;
   }
 
   ngOnInit(): void {

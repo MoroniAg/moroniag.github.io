@@ -3,5 +3,5 @@
 </article>
 
 <nav>
-  <a *ngFor="let page of pageList" href="#{{page.page}}"></a>
+  <a class="" *ngFor="let page of pageList" href="#{{page.page}}"> {{page.content.name | uppercase}} </a>
 </nav>
