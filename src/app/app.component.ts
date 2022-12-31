@@ -1,3 +1,4 @@
+import { style } from '@angular/animations';
 import { Component } from '@angular/core';
 import { Page } from './models/Page';
 
@@ -8,7 +9,9 @@ import { Page } from './models/Page';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'my-app';
+  status = false
+  link = ""
+  title = 'my-app'
 
   pageList: Page[] = require('../assets/info.json')
 
@@ -18,7 +21,18 @@ export class AppComponent {
   }
 
   ngOnInit(): void {
-    this.test01();
+    this.test01()
+    
+  }
+
+  showText(link: string) {
+    this.status = true
+    this.link = link
+  }
+
+  hideText() {
+    this.status = false
+    this.link = ""
   }
 
 }

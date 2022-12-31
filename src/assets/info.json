@@ -1,7 +1,7 @@
 [
     {
         "page": "page-one",
-        "icon": "icon1",
+        "icon": "bi bi-house-fill",
         "name": "Home",
         "content": {
             "name": "home",
@@ -39,7 +39,7 @@
     },
     {
         "page": "page-two",
-        "icon": "icon2",
+        "icon": "bi bi-briefcase-fill",
         "name": "Experience",
         "content": {
             "name": "experience",
@@ -139,7 +139,7 @@
     },
     {
         "page": "page-three",
-        "icon": "icon3",
+        "icon": "bi bi-pc-display-horizontal",
         "name": "Technologies",
         "content": {
             "name": "technologies",
@@ -345,7 +345,7 @@
     },
     {
         "page": "page-four",
-        "icon": "icon4",
+        "icon": "bi bi-person-workspace",
         "name": "Projects",
         "content": {
             "name": "projects",
@@ -360,8 +360,8 @@
     },
     {
         "page": "page-five",
-        "icon": "icon1",
-        "name": "Contanct",
+        "icon": "bi bi-envelope-at-fill",
+        "name": "Contact",
         "content": {
             "name": "contact",
             "list_content": [

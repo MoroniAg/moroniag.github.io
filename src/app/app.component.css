@@ -2,23 +2,23 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Libre Baskerville', serif;
 }
 
 body {
     margin: 0;
     display: flex;
-    overflow-x:hidden
+    overflow-x: hidden;
 }
 
 
 nav {
-    position: absolute;
+    position: fixed;
     top: 50%;
     right: 83%;
     transform: translateY(-50%);
     width: 200px;
 }
-
 
 nav a {
     position: relative;
@@ -28,13 +28,40 @@ nav a {
     margin: 10px;
     height: 50px;
     width: 50px;
-    transition: all 1s ease-out;
+    transition: all 0.5s ease-out;
     text-align: left;
     line-height: 50px;
     box-sizing: border-box;
     background-color: white;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.582);
     z-index: 4;
+    font-size: 30px;
+    text-decoration: none;
+    color: #3C4048;
+}
+
+nav a::before {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.icono::after {
+    position: absolute;
+    transition-property: visibility;
+    transition-delay: 2s;
+    transition-duration: 1s;
+    visibility: hidden;
+
+}
+
+.icono:hover::after {
+    content: attr(id);
+    visibility: visible;
+    font-size: 20px;
+    color: rgb(56, 56, 56);
+    transform: translateX(10px);
+    text-decoration: none;
+    text-align: center;
 }
 
 nav a:hover {
@@ -42,15 +69,11 @@ nav a:hover {
     background-color: white;
 }
 
-nav a:hover #icon{
-    transform: rotate(360deg);
+nav a i{
+    display: inline;
+    margin-left: 10px;
+    margin-right: 10px;
 }
-
-
-/*.article section img {
-    width: 300px;
-    height: auto;
-}*/
 
 app-page {
     display: flex;

@@ -3,5 +3,6 @@
 </article>
 
 <nav class="d-none d-sm-block">
-  <a class="" *ngFor="let page of pageList" href="#{{page.page}}"> {{page.content.name | uppercase}} </a>
+  <a class="icono" *ngFor="let page of pageList" href="#{{page.page}}" id="{{page.name}}"> <i
+      class="{{page.icon}}"></i> </a>
 </nav>
