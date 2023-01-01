@@ -1,0 +1,8 @@
+<article class="container-fluid">
+  <app-page *ngFor="let page of pageList" id={{page.page}} [content]="page.content"></app-page>
+</article>
+
+<nav class="d-none d-sm-block">
+  <a class="icono" *ngFor="let page of pageList" href="#{{page.page}}" id="{{page.name}}"> <i
+      class="{{page.icon}}"></i> </a>
+</nav>

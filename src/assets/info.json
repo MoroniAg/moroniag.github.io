@@ -1,0 +1,376 @@
+[
+    {
+        "page": "page-one",
+        "icon": "bi bi-house-fill",
+        "name": "Home",
+        "content": {
+            "name": "home",
+            "list_content": [
+                {
+                    "name": "description",
+                    "url_img": "",
+                    "tittles": [
+                        {
+                            "name": "personal_information",
+                            "values": [
+                                {
+                                    "name": "first_line",
+                                    "value": "Hi"
+                                },
+                                {
+                                    "name": "second_line",
+                                    "value": "My name is Moroni"
+                                },
+                                {
+                                    "name": "third_line",
+                                    "value": "I'm a Full Stack Developer"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "photo_profile",
+                    "url_img": "url",
+                    "tittles": []
+                }
+            ]
+        }
+    },
+    {
+        "page": "page-two",
+        "icon": "bi bi-briefcase-fill",
+        "name": "Experience",
+        "content": {
+            "name": "experience",
+            "list_content": [
+                {
+                    "name": "professional_work",
+                    "url_img": "",
+                    "tittles": [
+                        {
+                            "name": "installgas",
+                            "values": [
+                                {
+                                    "name": "job_name",
+                                    "value": "InstallGas/Cumorah Center"
+                                },
+                                {
+                                    "name": "role_description",
+                                    "value": "This "
+                                },
+                                {
+                                    "name": "years",
+                                    "value": "sep. 2017 - ago 2020 (3 years)"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "emunay",
+                            "values": [
+                                {
+                                    "name": "job_name",
+                                    "value": "Emunay Cia. Ltda."
+                                },
+                                {
+                                    "name": "role_description",
+                                    "value": "This "
+                                },
+                                {
+                                    "name": "years",
+                                    "value": "sep. 2019 - ene 2021 (1 year 5 months)"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "phcodes",
+                            "values": [
+                                {
+                                    "name": "job_name",
+                                    "value": "La Katuna/PhCodes"
+                                },
+                                {
+                                    "name": "role_description",
+                                    "value": "This "
+                                },
+                                {
+                                    "name": "years",
+                                    "value": "abr. 2021 - 2022 (1 year 9 months)"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "personal_work",
+                    "url_img": "",
+                    "tittles": [
+                        {
+                            "name": "personal_projects",
+                            "values": [
+                                {
+                                    "name": "Livestock Management System",
+                                    "value": "Technologies used: Java, PrimeFaces"
+                                },
+                                {
+                                    "name": "Permit and Fine Control System",
+                                    "value": "Technologies used: Java, PrimeFaces "
+                                },
+                                {
+                                    "name": "Control System of a Filling Pump",
+                                    "value": "Technologies used: Arduino, C++"
+                                },
+                                {
+                                    "name": "Number to letter converter",
+                                    "value": "Technologies used: Rust, Git",
+                                    "link": ""
+                                },
+                                {
+                                    "name": "My personal portfolio",
+                                    "value": "Technologies used: Angular, Git",
+                                    "link": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "page": "page-three",
+        "icon": "bi bi-pc-display-horizontal",
+        "name": "Technologies",
+        "content": {
+            "name": "technologies",
+            "list_content": [
+                {
+                    "name": "backend",
+                    "url_img": "",
+                    "tittles": [
+                        {
+                            "name": "Java",
+                            "values": [
+                                {
+                                    "name": "description",
+                                    "value": "I have developed in Java 8, Java 11, Java 17"
+                                },
+                                {
+                                    "name": "frameworks",
+                                    "value": "Quarkus,Vert.x,Spring",
+                                    "link": ""
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Python",
+                            "values": []
+                        },
+                        {
+                            "name": "Go",
+                            "values": []
+                        },
+                        {
+                            "name": "C, C++, C#",
+                            "values": []
+                        },
+                        {
+                            "name": "Rust",
+                            "values": []
+                        }
+                    ]
+                },
+                {
+                    "name": "frontend",
+                    "url_img": "",
+                    "tittles": [
+                        {
+                            "name": "Angular",
+                            "values": []
+                        },
+                        {
+                            "name": "React",
+                            "values": []
+                        },
+                        {
+                            "name": "Html/Css",
+                            "values": []
+                        }
+                    ]
+                },
+                {
+                    "name": "devops",
+                    "url_img": "",
+                    "tittles": [
+                        {
+                            "name": "Plan",
+                            "values": [
+                                {
+                                    "name": "Office"
+                                },
+                                {
+                                    "name": "Google Drive"
+                                },
+                                {
+                                    "name": "Google Docs"
+                                },
+                                {
+                                    "name": "LaTeX"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Code",
+                            "values": [
+                                {
+                                    "name": "Git"
+                                },
+                                {
+                                    "name": "GitFlow"
+                                },
+                                {
+                                    "name": "Jira"
+                                },
+                                {
+                                    "name": "Eclipse"
+                                },
+                                {
+                                    "name": "IntelliJ Idea"
+                                },
+                                {
+                                    "name": "NetBeans"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Build",
+                            "values": [
+                                {
+                                    "name": "Maven"
+                                },
+                                {
+                                    "name": "Gradle"
+                                },
+                                {
+                                    "name": "Docker"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Test",
+                            "values": [
+                                {
+                                    "name": "JUnit5"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Release",
+                            "values": [
+                                {
+                                    "name": "GitHub Actions"
+                                },
+                                {
+                                    "name": "Jenkins"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Deploy",
+                            "values": [
+                                {
+                                    "name": "Docker"
+                                },
+                                {
+                                    "name": "Wildfly"
+                                },
+                                {
+                                    "name": "Apache"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Operate",
+                            "values": [
+                                {
+                                    "name": "Jira"
+                                },
+                                {
+                                    "name": "Confluense"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Monitor",
+                            "values": []
+                        }
+                    ]
+                },
+                {
+                    "name": "other",
+                    "url_img": "",
+                    "tittles": [
+                        {
+                            "name": "MySQL",
+                            "values": []
+                        },
+                        {
+                            "name": "PostgreSQL",
+                            "values": []
+                        },
+                        {
+                            "name": "Oracle Database",
+                            "values": []
+                        },
+                        {
+                            "name": "MongoDB",
+                            "values": []
+                        },
+                        {
+                            "name": "Traefik",
+                            "values": []
+                        },
+                        {
+                            "name": "Keycloak",
+                            "values": []
+                        },
+                        {
+                            "name": "Sonarqube",
+                            "values": []
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "page": "page-four",
+        "icon": "bi bi-person-workspace",
+        "name": "Projects",
+        "content": {
+            "name": "projects",
+            "list_content": [
+                {
+                    "name": "project_one",
+                    "url_img": "",
+                    "tittles": []
+                }
+            ]
+        }
+    },
+    {
+        "page": "page-five",
+        "icon": "bi bi-envelope-at-fill",
+        "name": "Contact",
+        "content": {
+            "name": "contact",
+            "list_content": [
+                {
+                    "name": "contant",
+                    "url_img": "",
+                    "tittles": []
+                }
+            ]
+        }
+    }
+]
