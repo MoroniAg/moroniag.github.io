@@ -1,6 +1,7 @@
 import { style } from '@angular/animations';
 import { Component } from '@angular/core';
 import { Page } from './models/Page';
+import { ContentService } from './service/content.service';
 
 
 @Component({
@@ -9,30 +10,14 @@ import { Page } from './models/Page';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  status = false
-  link = ""
-  title = 'my-app'
+  constructor(private contentService: ContentService) {}
 
-  pageList: Page[] = require('../assets/info.json')
-
-
-  test01() {
-    console.log(this.pageList)
-  }
+  public pageList: Page[] = [];
 
   ngOnInit(): void {
-    this.test01()
-    
+    this.pageList = this.contentService.getinfo()
   }
 
-  showText(link: string) {
-    this.status = true
-    this.link = link
-  }
 
-  hideText() {
-    this.status = false
-    this.link = ""
-  }
 
 }
