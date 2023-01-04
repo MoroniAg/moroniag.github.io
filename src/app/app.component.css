@@ -15,7 +15,7 @@ body {
 nav {
     position: fixed;
     top: 50%;
-    right: 83%;
+    left: 10px;
     transform: translateY(-50%);
     width: 200px;
 }

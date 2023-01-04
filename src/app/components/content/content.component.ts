@@ -9,7 +9,7 @@ import { ListContent } from 'src/app/models/ListContent';
 export class ContentComponent implements OnInit {
 
   @Input()
-  content: ListContent[] = [];
+  content: ListContent = new ListContent;
 
   constructor() { }
 
