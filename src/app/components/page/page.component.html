@@ -1,18 +1,19 @@
-<div class="content">
+<div class="content container-fluid ">
+    <div class="row align-items-start">
 
-    <p>{{content.name}}</p>
-    <div *ngIf="content.name==='home'">
-        <input type="button" value="Value">
-        <span class="" *ngFor="let cont of content.list_content">{{cont.name}}</span>
-        <app-content  class="nav-" [content]="content.list_content" ></app-content>
-
+        <div class="container-fluid" *ngIf="content.name==='home'">
+            <!-- <input type="button" value="Value"> -->
+            <!-- <span class="d-block" *ngFor="let cont of content.list_content">{{cont.name}}</span> -->
+            <div class="row">
+                <app-content class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12"
+                    [content]="findContent(content,'description') "></app-content>
+                <app-content class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12"
+                    [content]="findContent(content, 'photo_profile')"></app-content>
+            </div>
+        </div>
+        <div class="col" *ngIf="content.name==='experience'">
+            <input type="checkbox" name="radio" id="">
+            <span *ngFor="let cont of content.list_content">{{cont.name}}</span>
+        </div>
     </div>
-
-    <div *ngIf="content.name==='experience'">
-        <input type="checkbox" name="radio" id="">
-        <span *ngFor="let cont of content.list_content">{{cont.name}}</span>
-    </div>
-
-
-
 </div>
