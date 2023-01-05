@@ -1,6 +1,6 @@
-export class Values {
+export class Value {
 
-    private name!: string;
-    private value!: string;
-    private link!: string;
+    public name!: string;
+    public value!: string;
+    public link!: string;
 }

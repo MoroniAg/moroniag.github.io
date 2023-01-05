@@ -1,0 +1,11 @@
+.photo_profile {
+    width: 512px;
+}
+
+@media (max-width: 600px) {
+
+    .photo_profile {
+        width: 70%;
+    }
+
+}

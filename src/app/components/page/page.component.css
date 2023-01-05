@@ -1,9 +1,87 @@
-.content {
-    margin-left: 10%;
-  /*  width: 100%;*/
-    height: 100vh;
-   /*display: block;*/
+.photo_profile {
+  position: relative;
+  top: 30px;
+  z-index: 10;
+  /* height: auto; */
+}
+
+.description {
+  position: relative;
+  top: 10px;
+  left: 10px;
+  z-index: 10;
+  height: auto;
 }
 
 
 
+.second_background::before {
+  content: '';
+  background-color: #00ABB3;
+  height: 250px;
+  width: 120%;
+  display: block;
+  transform: rotate(-10deg) translate(-30px, -140px);
+  z-index: 0;
+
+}
+@media (max-width: 1400px) {
+  .second_background {
+    background-color: #3C4048;
+    position: relative;
+    height: 80.5vh;
+    bottom: 73%;
+    z-index: 0;
+  }
+}
+@media (max-width: 1200px) {
+  .second_background {
+    background-color: #3C4048;
+    position: relative;
+    height: 70.5vh;
+    bottom: 24%;
+    z-index: 0;
+  }
+}
+
+@media (max-width: 992px) {
+
+  .second_background {
+    background-color: #3C4048;
+    position: relative;
+    height: 70.5vh;
+    bottom: 24%;
+    z-index: 0;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .second_background {
+    background-color: #3C4048;
+    position: relative;
+    height: 70.5vh;
+    bottom: 20%;
+    z-index: 0;
+  }
+
+  .photo_profile {
+    position: relative;
+    top: 200px;
+    z-index: 10;
+    /* height: auto; */
+  }
+}
+
+@media (max-width: 576px) {
+
+  .second_background {
+    background-color: #3C4048;
+    position: relative;
+    height: 70.5vh;
+    bottom: 8%;
+    z-index: 0;
+  }
+
+}

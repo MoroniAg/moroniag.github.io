@@ -31,7 +31,7 @@
                 },
                 {
                     "name": "photo_profile",
-                    "url_img": "url",
+                    "url_img": "assets/images/user.png",
                     "tittles": []
                 }
             ]

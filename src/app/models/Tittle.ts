@@ -1,8 +1,8 @@
-import { Values } from "./Values";
+import { Value } from "./Values";
 
 export class Tittle{
 
 public name!: string;
-public values!: Values[];
+public values!: Value[];
 
 }
