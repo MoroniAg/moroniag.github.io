@@ -1,10 +1,7 @@
-<div *ngIf="content.name == 'description'" class="h-100">
-
-    <div class="i" *ngFor="let tittle of content.tittles">
-        <span class="d-block" *ngFor="let value of tittle.values"> {{value.value}} </span>
-    </div>
-
+<!-- home page -->
+<div *ngIf="content.name == 'description'" class="h-100 ">
+    <span class="first_line"> {{findValue(content.tittles, "personal_information","first_line").value}}</span>
+    <span class="second_line"> {{findValue(content.tittles, "personal_information","second_line").value}}</span>
 </div>
-
-
-<img class="photo_profile" *ngIf="content.name == 'photo_profile'" src="{{content.url_img}}" alt="photo_profile" >
+<img class="photo_profile" *ngIf="content.name == 'photo_profile'" src="{{content.url_img}}" alt="photo_profile">
+<!-- end home page -->

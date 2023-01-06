@@ -1,8 +1,11 @@
+.second_background {
+  --height_second_backgorund: 70vh;
+}
+
 .photo_profile {
-  position: relative;
-  top: 30px;
+  position: absolute;
+  top: 20%;
   z-index: 10;
-  /* height: auto; */
 }
 
 .description {
@@ -21,25 +24,33 @@
   height: 250px;
   width: 120%;
   display: block;
-  transform: rotate(-10deg) translate(-30px, -140px);
+  transform: rotate(-10deg) translate(-30px, -150px);
   z-index: 0;
-
+}
+@media (min-width: 1400px) {
+  .second_background {
+    background-color: #3C4048;
+    position: absolute;
+    height: var(--height_second_backgorund);
+    bottom: 0%;
+    z-index: 0;
+  }
 }
 @media (max-width: 1400px) {
   .second_background {
     background-color: #3C4048;
-    position: relative;
-    height: 80.5vh;
-    bottom: 73%;
+    position: absolute;
+    height: var(--height_second_backgorund);
+    bottom: 0%;
     z-index: 0;
   }
 }
 @media (max-width: 1200px) {
   .second_background {
     background-color: #3C4048;
-    position: relative;
-    height: 70.5vh;
-    bottom: 24%;
+    position: sticky;
+    height: var(--height_second_backgorund);
+    bottom: 0%;
     z-index: 0;
   }
 }
@@ -48,9 +59,9 @@
 
   .second_background {
     background-color: #3C4048;
-    position: relative;
-    height: 70.5vh;
-    bottom: 24%;
+    position: sticky;
+    height: var(--height_second_backgorund);
+    bottom: 0%;
     z-index: 0;
   }
 
@@ -60,15 +71,15 @@
 
   .second_background {
     background-color: #3C4048;
-    position: relative;
-    height: 70.5vh;
-    bottom: 20%;
+    position: sticky;
+    height: var(--height_second_backgorund);
+    bottom: 0%;
     z-index: 0;
   }
 
   .photo_profile {
-    position: relative;
-    top: 200px;
+    position: absolute;
+    top: 25%;
     z-index: 10;
     /* height: auto; */
   }
@@ -78,9 +89,9 @@
 
   .second_background {
     background-color: #3C4048;
-    position: relative;
-    height: 70.5vh;
-    bottom: 8%;
+    position: sticky;
+    height: var(--height_second_backgorund);
+    bottom: 0%;
     z-index: 0;
   }
 

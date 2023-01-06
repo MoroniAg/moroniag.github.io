@@ -18,7 +18,7 @@ export class PageComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  findContent(content: Content, name: string) {
+  findContent(content: Content, name: string): ListContent {
 
     let listContent = content.list_content.find((value) => value.name == name)
     if (listContent == null) {
