@@ -7,19 +7,23 @@
             "name": "home",
             "list_content": [
                 {
-                    "name": "description",
+                    "name": "name",
                     "url_img": "",
                     "tittles": [
                         {
                             "name": "personal_information",
                             "values": [
                                 {
-                                    "name": "first_line",
-                                    "value": "I'm Moroni Aguilera"
+                                    "name": "0",
+                                    "value": "I'm "
                                 },
                                 {
-                                    "name": "second_line",
-                                    "value": "Full Stack Developer"
+                                    "name": "1",
+                                    "value": "Moroni"
+                                },
+                                {
+                                    "name": "2",
+                                    "value": "Aguilera"
                                 }
                             ]
                         }
@@ -27,8 +31,23 @@
                 },
                 {
                     "name": "photo_profile",
-                    "url_img": "assets/images/user.png",
+                    "url_img": "assets/images/photo1-512.png",
                     "tittles": []
+                },
+                {
+                    "name": "description",
+                    "url_img": "",
+                    "tittles": [
+                        {
+                            "name": "description",
+                            "values": [
+                                {
+                                    "name": "second_line",
+                                    "value": "Full Stack Developer"
+                                }
+                            ]
+                        }
+                    ]
                 }
             ]
         }

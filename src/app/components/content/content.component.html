@@ -1,7 +1,15 @@
 <!-- home page -->
-<div *ngIf="content.name == 'description'" class="h-100 ">
-    <span class="first_line"> {{findValue(content.tittles, "personal_information","first_line").value}}</span>
-    <span class="second_line"> {{findValue(content.tittles, "personal_information","second_line").value}}</span>
+<div *ngIf="content.name == 'name'" class="w-100 h-100">
+    
+        <span class="name"> {{findValue(content.tittles, "personal_information","0").value}}</span>
+        <span class="glitch" id=" {{findValue(content.tittles, 'personal_information','1').value}} ">
+            {{findValue(content.tittles, "personal_information","1").value}}
+        </span>
+        <span class="name"> {{findValue(content.tittles, "personal_information","2").value}}</span>
+
 </div>
 <img class="photo_profile" *ngIf="content.name == 'photo_profile'" src="{{content.url_img}}" alt="photo_profile">
+<div *ngIf="content.name=='description'">
+    <span class="second_line">{{findValue(content.tittles, "description", "second_line").value}}</span>
+</div>
 <!-- end home page -->

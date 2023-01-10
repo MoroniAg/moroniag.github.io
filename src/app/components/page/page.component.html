@@ -1,7 +1,9 @@
 <div class="row h-100 w-100" *ngIf="content.name==='home'">
     
-    <app-content class="w-100 description align-self-start" [content]="findContent(content, 'description')"></app-content>
+    <app-content class="w-100 name align-self-start" [content]="findContent(content, 'name')"></app-content>
     <app-content class="w-100 photo_profile align-self-center" [content]="findContent(content, 'photo_profile')"></app-content>
+    <app-content class="w-100 description align-self-end" [content]="findContent(content, 'description')"></app-content>
+   
     <div class="second_background align-self-end"></div>
 </div>
 
