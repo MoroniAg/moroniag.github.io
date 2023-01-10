@@ -16,6 +16,7 @@ export class AppComponent {
 
   ngOnInit(): void {
     this.pageList = this.contentService.getinfo()
+    console.log(this.pageList)
   }
 
 
