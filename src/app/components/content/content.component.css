@@ -19,9 +19,23 @@
     color: #10A19D;
     font-family: 'Share Tech Mono', monospace;
     font-weight: 900;
-    text-shadow: 0 0 80px rgba(234,234,234,1);
+    text-shadow: 0 0 80px rgba(234, 234, 234, 1);
 }
 
+.translate {
+
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+#select {
+    background-color: #00ABB3;
+}
+
+#select option {
+    background-color: #00ABB3;
+}
 
 .glitch {
     display: inline;

@@ -2,6 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { ListContent } from 'src/app/models/ListContent';
 import { Tittle } from 'src/app/models/Tittle';
 import { Value } from 'src/app/models/Values';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-content',
@@ -13,8 +14,11 @@ export class ContentComponent implements OnInit {
   @Input()
   content: ListContent = new ListContent;
 
-  constructor() { }
-
+  constructor(public translateService: TranslateService) {
+    translateService.addLangs(['en', 'es']);
+    translateService.setDefaultLang('es');
+    translateService.use('es');
+  }
   ngOnInit(): void {
   }
 
@@ -32,6 +36,10 @@ export class ContentComponent implements OnInit {
     }
 
     return value
+  }
+
+  translateSite(language: string) {
+    this.translateService.use(language);
   }
 
 }

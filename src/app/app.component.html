@@ -3,6 +3,6 @@
 </article>
 
 <nav class="container-fluid d-none d-md-block">
-  <a class="icono" *ngFor="let page of pageList" href="#{{page.page}}" id="{{page.name}}"> <i
+  <a class="icono" *ngFor="let page of pageList" href="#{{page.page}}" id="{{page.name | translate}}"> <i
       class="{{page.icon}}"></i> </a>
 </nav>
