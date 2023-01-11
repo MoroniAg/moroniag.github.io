@@ -1,0 +1,14 @@
+{
+    "select":"Seleccione uno",
+    "tittle" : "Me llamo",
+    "nav":{
+        "page-one":"Inicio",
+        "page-two":"Experiencia",
+        "page-three":"Tecnologías",
+        "page-four":"Proyectos",
+        "page-five":"Contáctame"
+    },
+    "content":{
+        "description":"Desarrollador Full Stack"
+    }
+}

@@ -2,7 +2,7 @@
     {
         "page": "page-one",
         "icon": "bi bi-house-fill",
-        "name": "Home",
+        "name": "nav.page-one",
         "content": {
             "name": "home",
             "list_content": [
@@ -15,7 +15,7 @@
                             "values": [
                                 {
                                     "name": "0",
-                                    "value": "I'm "
+                                    "value": "tittle"
                                 },
                                 {
                                     "name": "1",
@@ -43,7 +43,7 @@
                             "values": [
                                 {
                                     "name": "second_line",
-                                    "value": "Full Stack Developer"
+                                    "value": "content.description"
                                 }
                             ]
                         }
@@ -55,7 +55,7 @@
     {
         "page": "page-two",
         "icon": "bi bi-briefcase-fill",
-        "name": "Experience",
+        "name": "nav.page-two",
         "content": {
             "name": "experience",
             "list_content": [
@@ -155,7 +155,7 @@
     {
         "page": "page-three",
         "icon": "bi bi-pc-display-horizontal",
-        "name": "Technologies",
+        "name": "nav.page-three",
         "content": {
             "name": "technologies",
             "list_content": [
@@ -361,7 +361,7 @@
     {
         "page": "page-four",
         "icon": "bi bi-person-workspace",
-        "name": "Projects",
+        "name": "nav.page-four",
         "content": {
             "name": "projects",
             "list_content": [
@@ -376,7 +376,7 @@
     {
         "page": "page-five",
         "icon": "bi bi-envelope-at-fill",
-        "name": "Contact",
+        "name": "nav.page-five",
         "content": {
             "name": "contact",
             "list_content": [
