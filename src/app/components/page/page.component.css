@@ -38,10 +38,10 @@
   width: 40px;
   height: 40px;
   z-index: 10;
-  bottom: 10px;
+  bottom: -100px;
   left: 50%;
   border: 2px solid #3C4048;
-  position: absolute;
+  position: relative;
   display: block;
   padding: 0;
   animation: increase ease-in 0.8s infinite;
