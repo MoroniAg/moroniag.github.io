@@ -10,6 +10,7 @@ import { ListContent } from 'src/app/models/ListContent';
 export class PageComponent implements OnInit {
 
   @Input() content: Content;
+  @Input() next!: string;
 
   constructor() {
     this.content = new Content;

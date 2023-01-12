@@ -10,7 +10,7 @@
 
 .name {
   position: absolute;
-  top: 10px;
+  top: 30px;
   /* left: 10px; */
   z-index: 10;
   /* height: auto; */
@@ -22,8 +22,6 @@
   z-index: 10;
 }
 
-
-
 .second_background::before {
   content: '';
   background-color: #00ABB3;
@@ -33,6 +31,60 @@
   transform: rotate(-10deg) translate(-30px, -150px);
   z-index: 0;
 }
+
+.next {
+  background-color: #EAEAEA;
+  border-radius: 40px;
+  width: 40px;
+  height: 40px;
+  z-index: 10;
+  bottom: 10px;
+  left: 50%;
+  border: 2px solid #3C4048;
+  position: absolute;
+  display: block;
+  padding: 0;
+  animation: increase ease-in 0.8s infinite;
+}
+
+
+
+@keyframes increase {
+  0% {
+    transform: scale(1.03);
+  }
+  10% {
+    transform: scale(1.06);
+  }
+  20% {
+    transform: scale(1.09);
+  }
+  30% {
+    transform: scale(1.12);
+  }
+  40% {
+    transform: scale(1.15);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+a.next i {
+  position: relative;
+  top: 0%;
+}
+
+.bi {
+  color: #3C4048;
+  font-size: x-large;
+}
+
+
 
 @media (min-width: 1400px) {
   .second_background {
@@ -65,7 +117,6 @@
 }
 
 @media (max-width: 992px) {
-
   .second_background {
     background-color: #3C4048;
     position: absolute;
@@ -77,6 +128,9 @@
 }
 
 @media (max-width: 768px) {
+  .photo_profile {
+    top: 25%;
+  }
 
   .second_background {
     background-color: #3C4048;
@@ -88,6 +142,36 @@
 }
 
 @media (max-width: 576px) {
+  .description {
+    bottom: 15%;
+  }
+
+  .photo_profile {
+    top: 35%;
+  }
+
+  .second_background {
+    background-color: #3C4048;
+    position: absolute;
+    height: var(--height_second_backgorund);
+    bottom: 0%;
+    z-index: 0;
+  }
+
+}
+
+@media (max-width: 411px) {
+  .description {
+    bottom: 5%;
+  }
+
+  .photo_profile {
+    top: 35%;
+  }
+
+  .name {
+    top: 10%;
+  }
 
   .second_background {
     background-color: #3C4048;
