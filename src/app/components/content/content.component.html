@@ -22,3 +22,14 @@
     <span class="second_line">{{findValue(content.tittles, "description", "second_line").value | translate}}</span>
 </div>
 <!-- end home page -->
+
+<!-- experience -->
+
+<div *ngIf="content.name=='professional_work'">
+
+    <span class="name"> {{findValue(content.tittles, 'installgas','job_name').value | translate}} </span>
+   
+
+</div>
+
+<!-- end experience -->

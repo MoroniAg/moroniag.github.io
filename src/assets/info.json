@@ -1,6 +1,7 @@
 [
     {
         "page": "page-one",
+        "next": "page-two",
         "icon": "bi bi-house-fill",
         "name": "nav.page-one",
         "content": {
@@ -54,6 +55,7 @@
     },
     {
         "page": "page-two",
+        "next": "page-three",
         "icon": "bi bi-briefcase-fill",
         "name": "nav.page-two",
         "content": {
@@ -154,6 +156,7 @@
     },
     {
         "page": "page-three",
+        "next": "page-four",
         "icon": "bi bi-pc-display-horizontal",
         "name": "nav.page-three",
         "content": {
@@ -360,6 +363,7 @@
     },
     {
         "page": "page-four",
+        "next": "page-five",
         "icon": "bi bi-person-workspace",
         "name": "nav.page-four",
         "content": {
@@ -375,6 +379,7 @@
     },
     {
         "page": "page-five",
+        "next": "page-one",
         "icon": "bi bi-envelope-at-fill",
         "name": "nav.page-five",
         "content": {

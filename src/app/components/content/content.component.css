@@ -5,7 +5,7 @@
 }
 
 .name {
-    font-size: 75px;
+    font-size: var(--fs-name);
     text-shadow: 2px 2px white;
     font-family: 'Varela', sans-serif;
     color: #3C4048;
@@ -14,19 +14,19 @@
 
 .second_line {
     /* position: absolute; */
-    font-size: 90px;
+    font-size: var(--fs-second-line);
     -webkit-text-stroke: 2px #EAEAEA;
     color: #10A19D;
     font-family: 'Share Tech Mono', monospace;
     font-weight: 900;
     text-shadow: 0 0 80px rgba(234, 234, 234, 1);
+    line-height: 75px;
 }
 
 .translate {
-
     position: absolute;
-    right: 20px;
-    top: 20px;
+    right: 15px;
+    top: -15px;
 }
 
 #select {
@@ -255,10 +255,121 @@
     }
 }
 
-@media (max-width: 600px) {
 
+
+@media (min-width: 1400px) {
+    .name{
+      --fs-name: 75px;
+    }
+    .second_line {
+        --fs-second-line: 80px;
+      }
+   
+  }
+  
+  @media (max-width: 1400px) {
+    .name{
+      --fs-name: 75px;
+    }
+    .second_line {
+        --fs-second-line: 80px;
+      }
+    
+  }
+  
+  @media (max-width: 1200px) {
+    .name{
+      --fs-name: 50px;
+    }
+    .second_line {
+        --fs-second-line: 90px;
+      }
+    
+    
+  }
+  
+  @media (max-width: 992px) {
+    .name{
+      --fs-name: 50px;
+    }
+    .second_line {
+        --fs-second-line: 80px;
+      }
+     
+  
+  }
+  
+  @media (max-width: 768px) {
+    .glitch:after{
+        /* transform: translateX(-179%) translateY(100%); */
+        content: "";
+    }
+    .glitch:before{
+        /* transform: translateX(-175%) translateY(103%); */
+        content: "";
+    }
+    .photo_profile{
+        width:  70%;
+    }
+    .name{
+        --fs-name: 50px;
+      }
+    .second_line {
+      --fs-second-line: 80px;
+    }
+   
+  }
+  
+
+
+  @media (max-width: 576px) {
+    .glitch:after{
+        /* transform: translateX(-179%) translateY(100%); */
+        content: "";
+    }
+    .glitch:before{
+        /* transform: translateX(-175%) translateY(103%); */
+        content: "";
+    }
+    .name{
+        --fs-name: 40px;
+      }
+    .second_line {
+      --fs-second-line: 50px;
+    }
+   
+    .photo_profile {
+        width: 70%;
+    }
+  
+  }
+
+  @media (max-width: 411px) {
+    .glitch{
+        bottom: 18%;
+        font-size: 40px;
+
+    }
+    .glitch:after{
+        /* transform: translateX(-179%) translateY(100%); */
+        content: "";
+    }
+    .glitch:before{
+        /* transform: translateX(-175%) translateY(103%); */
+        content: "";
+    }
+    .name{
+        --fs-name: 40px;
+      }
+    .second_line {
+      --fs-second-line: 40px;
+    }
+   
     .photo_profile {
         width: 70%;
     }
 
-}
+    .translate{
+        top: -40px;
+    }
+  }

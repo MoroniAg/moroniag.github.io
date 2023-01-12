@@ -31,7 +31,7 @@ export class ContentComponent implements OnInit {
     }
 
     let value = listContent.values.find(value => value.name == nameValue)
-    if (value == null){
+    if (value == null) {
       return new Value
     }
 
