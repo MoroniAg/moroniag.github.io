@@ -77,6 +77,10 @@
     animation: noise-anim 3s infinite linear alternate-reverse;
 }
 
+.tittle{
+    background-color: rgba(178,178,178,0.6);
+    /* height: 100px; */
+}
 
 @keyframes noise-anim {
     0% {

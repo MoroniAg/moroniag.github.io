@@ -1,16 +1,19 @@
 {
-    "select":"Select one",
-    "tittle" : "I'm" ,
-    "nav":{
-        "page-one":"Home",
-        "page-two":"Experience",
-        "page-three":"Technologies",
-        "page-four":"Projects",
-        "page-five":"Contact"
+    "select": "Select one",
+    "tittle": "I'm",
+    "nav": {
+        "page-one": "Home",
+        "page-two": "Experience",
+        "page-three": "Technologies",
+        "page-four": "Projects",
+        "page-five": "Contact"
     },
-    "content":{
-        "description":"Full Stack Developer"
+    "content": {
+        "description": "Full Stack Developer"
+    },
+    "experience": {
+        "description": {
+            "description": ""
+        }
     }
-    
-
 }

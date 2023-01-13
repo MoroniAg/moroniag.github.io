@@ -1,14 +1,24 @@
 {
-    "select":"Seleccione uno",
-    "tittle" : "Me llamo",
-    "nav":{
-        "page-one":"Inicio",
-        "page-two":"Experiencia",
-        "page-three":"Tecnologías",
-        "page-four":"Proyectos",
-        "page-five":"Contáctame"
+    "select": "Seleccione uno",
+    "tittle": "Me llamo",
+    "nav": {
+        "page-one": "Inicio",
+        "page-two": "Experiencia",
+        "page-three": "Tecnologías",
+        "page-four": "Proyectos",
+        "page-five": "Contáctame"
     },
-    "content":{
-        "description":"Desarrollador Full Stack"
+    "content": {
+        "description": "Desarrollador Full Stack"
+    },
+    "experience": {
+        "description": {
+            "description": "Llevo 5 años de experiencia en el mundo del desarrollo de software; he realizado varios proyectos, algunos de estos para empresas extranjeras, también cuento con experiencia como lider de equipo. Estoy a la vanguardia de las tecnologías, actualizando mis conocimientos y desarrollando nuevas habilidades. ",
+            "more":"Si desea conocer más sobre las tecnologías que manejo, da click ",
+            "link" :"aqui."
+
+
+        
+        }
     }
 }

@@ -13,6 +13,8 @@ export class ContentComponent implements OnInit {
 
   @Input()
   content: ListContent = new ListContent;
+  @Input()
+  next!: string;
 
   constructor(public translateService: TranslateService) {
     translateService.addLangs(['en', 'es']);

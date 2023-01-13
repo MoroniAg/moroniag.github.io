@@ -25,10 +25,19 @@
 
 <!-- experience -->
 
+<div *ngIf="content.name=='tittle'" class="row">
+
+    <div class="tittle mt-3 mb-3 col-11 p-4 rounded d-flex flex-column">
+        <span class="text-start"> {{findValue(content.tittles, 'description','description').value | translate}} </span>
+        <span class="text-start"> {{findValue(content.tittles, 'description','more').value | translate}} <a href="#{{next}}">{{findValue(content.tittles, 'description','link').value | translate}}</a> </span>
+        
+    </div>
+</div>
+
 <div *ngIf="content.name=='professional_work'">
 
-    <span class="name"> {{findValue(content.tittles, 'installgas','job_name').value | translate}} </span>
-   
+    <span class=""> {{findValue(content.tittles, 'installgas','job_name').value | translate}} </span>
+
 
 </div>
 
