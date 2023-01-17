@@ -13,7 +13,9 @@
     },
     "experience": {
         "description": {
-            "description": ""
+            "description": "I have 5 years of experience in the world of software development; I have done several projects, some of these for foreign companies, I also have experience as a team leader. I am at the forefront of technologies, updating my knowledge and developing new skills. ",
+            "more":"If you want to know more about the technologies I manage, click ",
+            "link" :"here."
         }
     }
 }

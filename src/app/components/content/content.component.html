@@ -10,35 +10,45 @@
         </select>
     </div>
 
-    <span class="name"> {{findValue(content.tittles, 'personal_information','0').value | translate}} </span>
-    <span class="glitch" id=" {{findValue(content.tittles, 'personal_information','1').value}} ">
-        {{findValue(content.tittles, "personal_information","1").value}}
+    <span class="name"> {{findValue(findTittle(content.tittles, 'personal_information'),'0').value | translate}} </span>
+    <span class="glitch" id=" {{findValue(findTittle(content.tittles, 'personal_information'),'1').value}} ">
+        {{findValue(findTittle(content.tittles, "personal_information"),"1").value}}
     </span>
-    <span class="name"> {{findValue(content.tittles, "personal_information","2").value}}</span>
+    <span class="name"> {{findValue(findTittle(content.tittles, "personal_information"),"2").value}}</span>
 
 </div>
 <img class="photo_profile" *ngIf="content.name == 'photo_profile'" src="{{content.url_img}}" alt="photo_profile">
 <div *ngIf="content.name=='description'">
-    <span class="second_line">{{findValue(content.tittles, "description", "second_line").value | translate}}</span>
+    <span class="second_line">{{findValue(findTittle(content.tittles, "description"), "second_line").value |
+        translate}}</span>
 </div>
 <!-- end home page -->
 
 <!-- experience -->
 
-<div *ngIf="content.name=='tittle'" class="row">
-
-    <div class="tittle mt-3 mb-3 col-11 p-4 rounded d-flex flex-column">
-        <span class="text-start"> {{findValue(content.tittles, 'description','description').value | translate}} </span>
-        <span class="text-start"> {{findValue(content.tittles, 'description','more').value | translate}} <a href="#{{next}}">{{findValue(content.tittles, 'description','link').value | translate}}</a> </span>
-        
+<div *ngIf="content.name=='tittle'" class="row text-start w-100">
+    <div class="tittle mt-3 mb-3 col-11 p-3 rounded scroll-content ">
+        <p class="description mt-0 mb-0"> {{ findValue( findTittle(content.tittles, 'description'),'description').value
+            | translate}}
+            <br><br>{{findValue( findTittle(content.tittles, 'description'),'more').value | translate}} <a
+                href="#{{next}}">{{findValue(findTittle( content.tittles, 'description'),'link').value | translate}}</a>
+        </p>
     </div>
 </div>
 
-<div *ngIf="content.name=='professional_work'">
+<div *ngIf="content.name=='professional_work' " class="d-flex m-0 p-0">
+    <div class="timeline"> </div>
 
-    <span class=""> {{findValue(content.tittles, 'installgas','job_name').value | translate}} </span>
+    <app-chat-bubble class="gradient-border " [tittle]="findTittle(content.tittles, 'installgas')"></app-chat-bubble>
+    <app-chat-bubble class="second" [tittle]="findTittle(content.tittles, 'emunay')"></app-chat-bubble>
+    <app-chat-bubble class="third" [tittle]="findTittle(content.tittles, 'phcodes')"></app-chat-bubble>
 
 
+</div>
+
+<div *ngIf="content.name=='personal_work'">
+    <!-- <span class=""> {{findValue(content.tittles, 'personal_projects','Livestock Management System').value | translate}}
+    </span> -->
 </div>
 
 <!-- end experience -->

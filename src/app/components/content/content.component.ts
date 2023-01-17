@@ -1,8 +1,8 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ListContent } from 'src/app/models/ListContent';
 import { Tittle } from 'src/app/models/Tittle';
-import { Value } from 'src/app/models/Values';
 import { TranslateService } from '@ngx-translate/core';
+import { Value } from 'src/app/models/Values';
 
 @Component({
   selector: 'app-content',
@@ -25,23 +25,27 @@ export class ContentComponent implements OnInit {
   }
 
 
-  findValue(tittles: Tittle[], nameTittle: string, nameValue: string): Value {
+  findTittle(tittles: Tittle[], nameTittle: string): Tittle {
 
-    let listContent = tittles.find(value => value.name == nameTittle)
-    if (listContent == null) {
+    let tittle = tittles.find(value => value.name == nameTittle)
+    if (tittle == null) {
+      return new Tittle
+    }
+    return tittle
+  }
+
+  findValue(tittle: Tittle, valueName: string): Value{
+    let values = tittle.values.find(value => value.name == valueName)
+    if(values == null){
       return new Value
     }
-
-    let value = listContent.values.find(value => value.name == nameValue)
-    if (value == null) {
-      return new Value
-    }
-
-    return value
+    return values
   }
 
   translateSite(language: string) {
     this.translateService.use(language);
   }
+
+
 
 }
