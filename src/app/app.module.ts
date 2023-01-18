@@ -9,6 +9,7 @@ import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient,HttpClientModule } from '@angular/common/http';
 import { ChatBubbleComponent } from "./components/chat-bubble/chat-bubble.component";
+import { ChangeStyleDirective } from './directives/change-style.directive';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -19,7 +20,8 @@ export function HttpLoaderFactory(http: HttpClient) {
         AppComponent,
         PageComponent,
         ContentComponent,
-        ChatBubbleComponent
+        ChatBubbleComponent,
+        ChangeStyleDirective
     ],
     providers: [],
     bootstrap: [AppComponent],

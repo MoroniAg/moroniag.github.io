@@ -1,8 +1,8 @@
 <!-- <span *ngFor="let value of tittle.values">{{value.value}}<br></span> -->
 
-<div class="bubble">
-
-    <div class="head d-flex justify-content-center align-items-center"> <span> {{findValue(tittle, 'job_name').value }} </span> </div>
-
-    <div class="content"> <span>{{ findValue(tittle, 'role_description').value| translate}} </span> <br>  <span> {{ findValue(tittle, 'years').value| translate}}  </span> </div>
+<div appChangeStyle [backgroundColor]="color" class="bubble ">
+    <div class="head d-flex justify-content-center align-items-center"> <span> {{findValue(tittle, 'job_name').value }}
+        </span> </div>
+    <div class="content"> <span>{{ findValue(tittle, 'role_description').value| translate}} </span> <br> <span> {{
+            findValue(tittle, 'years').value| translate}} </span> </div>
 </div>
