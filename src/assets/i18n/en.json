@@ -16,6 +16,18 @@
             "description": "I have 5 years of experience in the world of software development; I have done several projects, some of these for foreign companies, I also have experience as a team leader. I am at the forefront of technologies, updating my knowledge and developing new skills. ",
             "more":"If you want to know more about the technologies I manage, click ",
             "link" :"here."
+        },
+        "professional_work":"Professional Experience",
+        "personal_experience":"Personal Experience",
+        "role":{
+            "installGas":"Developer - CEO",
+            "emunay":"Developer",
+            "lakatuna":"Developer - Team Leader"
+        },
+        "years":{
+            "installgas":"sep. 2017 - aug 2020 (3 years)",
+            "emunay":"sep. 2019 - jan 2021 (1 year 5 month)",
+            "lakatuna":"apr. 2021 - dec. 2022 (1 year 9 month)"
         }
     }
 }

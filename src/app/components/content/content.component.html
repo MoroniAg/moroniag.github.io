@@ -36,19 +36,19 @@
     </div>
 </div>
 
-<div *ngIf="content.name=='professional_work' " class="d-flex m-0 p-0">
-    <div class="timeline"> </div>
+<div *ngIf="content.name=='experience'" class="m-0 p-0 h-100 position-relative">
+    <div class="position-absolute" id="legend">
+        <span class="d-block legend">{{'experience.professional_work'|translate}}</span>
+        <span class="d-block legend">{{'experience.personal_experience'|translate}}</span>
+  
+    </div>
+    <div class="h-100 position-relative">
+        <div class="timeline"> </div>
+        <app-chat-bubble class="first position-absolute" [tittle]="findTittle(content.tittles, 'installgas')" [color]="'FF7000'"></app-chat-bubble>
+        <app-chat-bubble class="second position-absolute" [tittle]="findTittle(content.tittles, 'emunay')"></app-chat-bubble>
+        <app-chat-bubble class="third position-absolute" [tittle]="findTittle(content.tittles, 'la_katuna')"></app-chat-bubble>
+    </div>
 
-    <app-chat-bubble class="gradient-border " [tittle]="findTittle(content.tittles, 'installgas')"></app-chat-bubble>
-    <app-chat-bubble class="second" [tittle]="findTittle(content.tittles, 'emunay')"></app-chat-bubble>
-    <app-chat-bubble class="third" [tittle]="findTittle(content.tittles, 'phcodes')"></app-chat-bubble>
-
-
-</div>
-
-<div *ngIf="content.name=='personal_work'">
-    <!-- <span class=""> {{findValue(content.tittles, 'personal_projects','Livestock Management System').value | translate}}
-    </span> -->
 </div>
 
 <!-- end experience -->

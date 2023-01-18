@@ -1,0 +1,26 @@
+.head {
+
+background-color: #B2B2B2;
+border-radius: 25px 25px 0 0;
+height: 40px;
+overflow-wrap: break-word;
+}
+
+.head > span{
+
+   
+    }
+
+.bubble {
+    width: 250px;
+    height: 100px;
+    border-radius: 25px;
+    position: relative;
+    background-color: #3C4048;
+    font-size: small;
+    box-shadow: 0px 5px 10px #EAEAEA;
+}
+
+.content{
+    color: #EAEAEA;
+}

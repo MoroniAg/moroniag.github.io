@@ -16,9 +16,20 @@
             "description": "Llevo 5 años de experiencia en el mundo del desarrollo de software; he realizado varios proyectos, algunos de estos para empresas extranjeras, también cuento con experiencia como lider de equipo. Estoy a la vanguardia de las tecnologías, actualizando mis conocimientos y desarrollando nuevas habilidades. ",
             "more":"Si desea conocer más sobre las tecnologías que manejo, da click ",
             "link" :"aqui."
-
-
-        
+        },
+        "professional_work":"Experiencia Profesional",
+        "personal_experience":"Experiencia Personal",
+        "role":{
+            "installgas":"Desarrollador - CEO",
+            "emunay":"Desarrollador",
+            "lakatuna":"Desarrollador - Lider de Equipo"
+        },
+        "years":{
+            "installgas":"sep. 2017 - ago 2020 (3 años)",
+            "emunay":"sep. 2019 - ene 2021 (1 año 5 meses)",
+            "lakatuna":"abr. 2021 - dic 2022 (1 año 9 meses)"
         }
     }
+    
+
 }

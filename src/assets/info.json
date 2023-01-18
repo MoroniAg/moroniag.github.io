@@ -85,7 +85,7 @@
                     ]
                 },
                 {
-                    "name": "professional_work",
+                    "name": "experience",
                     "url_img": "",
                     "tittles": [
                         {
@@ -93,15 +93,15 @@
                             "values": [
                                 {
                                     "name": "job_name",
-                                    "value": "InstallGas/Cumorah Center"
+                                    "value": "InstallGas/Cumorah"
                                 },
                                 {
                                     "name": "role_description",
-                                    "value": "This "
+                                    "value": "experience.role.installgas"
                                 },
                                 {
                                     "name": "years",
-                                    "value": "sep. 2017 - ago 2020 (3 years)"
+                                    "value": "experience.years.installgas"
                                 }
                             ]
                         },
@@ -114,38 +114,31 @@
                                 },
                                 {
                                     "name": "role_description",
-                                    "value": "This "
+                                    "value": "experience.role.emunay"
                                 },
                                 {
                                     "name": "years",
-                                    "value": "sep. 2019 - ene 2021 (1 year 5 months)"
+                                    "value": "experience.years.emunay"
                                 }
                             ]
                         },
                         {
-                            "name": "phcodes",
+                            "name": "la_katuna",
                             "values": [
                                 {
                                     "name": "job_name",
-                                    "value": "La Katuna/PhCodes"
+                                    "value": "La Katuna"
                                 },
                                 {
                                     "name": "role_description",
-                                    "value": "This "
+                                    "value": "experience.role.lakatuna"
                                 },
                                 {
                                     "name": "years",
-                                    "value": "abr. 2021 - 2022 (1 year 9 months)"
+                                    "value": "experience.years.lakatuna"
                                 }
                             ]
-                        }
-                    ]
-                },
-                {
-                    "name": "personal_work",
-                    "url_img": "",
-                    "tittles": [
-                        {
+                        }, {
                             "name": "personal_projects",
                             "values": [
                                 {
@@ -172,6 +165,7 @@
                                 }
                             ]
                         }
+
                     ]
                 }
             ]
