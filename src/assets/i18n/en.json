@@ -20,14 +20,15 @@
         "professional_work":"Professional Experience",
         "personal_experience":"Personal Experience",
         "role":{
-            "installGas":"Developer - CEO",
+            "installGas":"CEO - Developer",
             "emunay":"Developer",
             "lakatuna":"Developer - Team Leader"
         },
         "years":{
             "installgas":"sep. 2017 - aug 2020 (3 years)",
-            "emunay":"sep. 2019 - jan 2021 (1 year 5 month)",
-            "lakatuna":"apr. 2021 - dec. 2022 (1 year 9 month)"
-        }
+            "emunay":"sep. 2019 - jan 2021 (1 year 5 months)",
+            "lakatuna":"apr. 2021 - dec. 2022 (1 year 9 months)"
+        },
+        "personal_projects":"Personal Projects"
     }
 }

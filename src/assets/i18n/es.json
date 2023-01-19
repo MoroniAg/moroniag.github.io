@@ -20,7 +20,7 @@
         "professional_work":"Experiencia Profesional",
         "personal_experience":"Experiencia Personal",
         "role":{
-            "installgas":"Desarrollador - CEO",
+            "installgas":"CEO - Desarrollador",
             "emunay":"Desarrollador",
             "lakatuna":"Desarrollador - Lider de Equipo"
         },
@@ -28,7 +28,8 @@
             "installgas":"sep. 2017 - ago 2020 (3 años)",
             "emunay":"sep. 2019 - ene 2021 (1 año 5 meses)",
             "lakatuna":"abr. 2021 - dic 2022 (1 año 9 meses)"
-        }
+        },
+        "personal_projects":"Proyectos personales"
     }
     
 

@@ -138,8 +138,9 @@
                                     "value": "experience.years.lakatuna"
                                 }
                             ]
-                        }, {
-                            "name": "personal_projects",
+                        },
+                        {
+                            "name": "experience.personal_projects",
                             "values": [
                                 {
                                     "name": "Livestock Management System",
@@ -165,7 +166,6 @@
                                 }
                             ]
                         }
-
                     ]
                 }
             ]

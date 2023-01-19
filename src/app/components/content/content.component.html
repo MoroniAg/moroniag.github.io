@@ -37,16 +37,23 @@
 </div>
 
 <div *ngIf="content.name=='experience'" class="m-0 p-0 h-100 position-relative">
-    <div class="position-absolute" id="legend">
+    <!-- <div class="position-absolute" id="legend">
         <span class="d-block legend">{{'experience.professional_work'|translate}}</span>
         <span class="d-block legend">{{'experience.personal_experience'|translate}}</span>
-  
-    </div>
+
+    </div> -->
     <div class="h-100 position-relative">
-        <div class="timeline"> </div>
-        <app-chat-bubble color="#FF7000" class="first position-absolute" [tittle]="findTittle(content.tittles, 'installgas')" ></app-chat-bubble>
-        <app-chat-bubble class="second position-absolute" [tittle]="findTittle(content.tittles, 'emunay')"></app-chat-bubble>
-        <app-chat-bubble class="third position-absolute" [tittle]="findTittle(content.tittles, 'la_katuna')"></app-chat-bubble>
+        <div class="timeline d-flex justify-content-between "> <span class="ms-2">2017</span> <span>2018</span> <span>2019</span> <span>2020</span>
+        <span>2021</span> <span>2022</span> <span class="me-2 text-uppercase">actual</span> </div>
+        <app-chat-bubble [color]="'#10A19D'" class="first position-absolute"
+            [tittle]="findTittle(content.tittles, 'installgas')"></app-chat-bubble>
+        <app-chat-bubble [color]="'#FF7000'" class="second position-absolute"
+            [tittle]="findTittle(content.tittles, 'emunay')"></app-chat-bubble>
+        <app-chat-bubble [color]="'#FFBF00'" class="third position-absolute"
+            [tittle]="findTittle(content.tittles, 'la_katuna')"></app-chat-bubble>
+        <app-chat-bubble  class="fourth position-absolute" 
+            [tittle]="findTittle(content.tittles, 'experience.personal_projects')">
+        </app-chat-bubble>
     </div>
 
 </div>
