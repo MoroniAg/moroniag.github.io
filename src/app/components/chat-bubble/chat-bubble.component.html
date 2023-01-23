@@ -1,14 +1,15 @@
 <!-- <span *ngFor="let value of tittle.values">{{value.value}}<br></span> -->
 
-<div appChangeStyle [backgroundColor]="color" class="bubble position-relative"
+<div appChangeStyle [backgroundColor]="color" [height]="height" [width]="width" class="bubble position-relative row "
     *ngIf="tittle.name!='experience.personal_projects'">
-    <div class="head d-flex justify-content-center align-items-center">
-        <span> {{findValue(tittle, 'job_name').value }}
+    <div class="col-5 head d-flex justify-content-left align-items-center h-25 p-1">
+        <span class="ms-2 text-uppercase"> {{findValue(tittle, 'job_name').value }}
         </span>
     </div>
-    <div class="content d-flex flex-column align-items-center"> <span class="mt-2">{{
+    <div class="head2 col-7 d-flex justify-content-left align-items-center p-1 h-25"> <span class="ms-2">{{
             findValue(tittle,
-            'role_description').value| translate}} </span> <br> <span> {{
+            'role_description').value| translate}} </span> </div>
+    <div class="col-12 h-25 p-1 content d-flex flex-column align-items-center"> <span> {{
             findValue(tittle, 'years').value| translate}} </span> </div>
     <div appChangeStyle [backgroundColor]="color" class="tab position-absolute"></div>
 </div>

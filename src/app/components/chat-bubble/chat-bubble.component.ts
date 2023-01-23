@@ -11,6 +11,8 @@ export class ChatBubbleComponent implements OnInit {
 
   @Input() tittle!: Tittle
   @Input() color!: string
+  @Input() width!: number
+  @Input() height!: number
   constructor() { 
     
    }

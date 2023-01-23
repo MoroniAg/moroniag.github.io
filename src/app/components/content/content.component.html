@@ -45,11 +45,11 @@
     <div class="h-100 position-relative">
         <div class="timeline d-flex justify-content-between "> <span class="ms-2">2017</span> <span>2018</span> <span>2019</span> <span>2020</span>
         <span>2021</span> <span>2022</span> <span class="me-2 text-uppercase">actual</span> </div>
-        <app-chat-bubble [color]="'#10A19D'" class="first position-absolute"
+        <app-chat-bubble [color]="'#10A19D'" [width]="550" class="first position-absolute"
             [tittle]="findTittle(content.tittles, 'installgas')"></app-chat-bubble>
-        <app-chat-bubble [color]="'#FF7000'" class="second position-absolute"
+        <app-chat-bubble [color]="'#FF7000'" [width]="300" class="second position-absolute"
             [tittle]="findTittle(content.tittles, 'emunay')"></app-chat-bubble>
-        <app-chat-bubble [color]="'#FFBF00'" class="third position-absolute"
+        <app-chat-bubble [color]="'#FFBF00'" [width]="300" class="third position-absolute"
             [tittle]="findTittle(content.tittles, 'la_katuna')"></app-chat-bubble>
         <app-chat-bubble  class="fourth position-absolute" 
             [tittle]="findTittle(content.tittles, 'experience.personal_projects')">
