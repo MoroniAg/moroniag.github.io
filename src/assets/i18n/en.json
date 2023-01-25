@@ -12,23 +12,37 @@
         "description": "Full Stack Developer"
     },
     "experience": {
+        "technologies": "Technologies Used:",
         "description": {
             "description": "I have 5 years of experience in the world of software development; I have done several projects, some of these for foreign companies, I also have experience as a team leader. I am at the forefront of technologies, updating my knowledge and developing new skills. ",
-            "more":"If you want to know more about the technologies I manage, click ",
-            "link" :"here."
+            "more": "If you want to know more about the technologies I manage, click ",
+            "link": "here."
         },
-        "professional_work":"Professional Experience",
-        "personal_experience":"Personal Experience",
-        "role":{
-            "installgas":"CEO - Developer",
-            "emunay":"Developer",
-            "lakatuna":"Developer - Team Leader"
+        "professional_work": "Professional Experience",
+        "personal_experience": "Personal Experience",
+        "role": {
+            "installgas": "CEO - Developer",
+            "emunay": "Developer",
+            "lakatuna": "Developer - Team Leader"
         },
-        "years":{
-            "installgas":"sep. 2017 - aug 2020 (3 years)",
-            "emunay":"sep. 2019 - jan 2021 (1 year 5 months)",
-            "lakatuna":"apr. 2021 - dec. 2022 (1 year 9 months)"
+        "years": {
+            "installgas": "apr. 2017 - aug 2020 (3 years 4 months)",
+            "emunay": "sep. 2019 - jan 2021 (1 year 5 months)",
+            "lakatuna": "apr. 2021 - dec. 2022 (1 year 9 months)"
         },
-        "personal_projects":"Personal Projects"
+        "personal_projects": {
+            "experience_0": "Sistema de inventario de bodega",
+            "years_0": "apr. 2017 - mar. 2018",
+            "experience_1": "Sistema de gestión de ganado",
+            "years_1": "sep. 2017 - mar. 2019",
+            "experience_2": "Sistema de control de permisos y multas",
+            "years_2": "apr. 2019 - sep. 2019",
+            "experience_3": "Sistema de control de una bomba de carga",
+            "years_3": "jun. 2020",
+            "experience_4": "Convertidor de numeros a letras",
+            "years_4": "jan. 2021",
+            "experience_5": "Mi portafolio Personal",
+            "years_5": "jan. 2023"
+        }
     }
 }

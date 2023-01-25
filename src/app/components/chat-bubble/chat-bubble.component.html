@@ -1,22 +1,39 @@
 <!-- <span *ngFor="let value of tittle.values">{{value.value}}<br></span> -->
 
 <div appChangeStyle [backgroundColor]="color" [height]="height" [width]="width" class="bubble position-relative row "
-    *ngIf="tittle.name!='experience.personal_projects'">
-    <div class="col-5 head d-flex justify-content-left align-items-center h-25 p-1">
-        <span class="ms-2 text-uppercase"> {{findValue(tittle, 'job_name').value }}
+    *ngIf="tittle.name.search('experience') ">
+    <div class="col-5 head_0 d-flex justify-content-left align-items-center h-25 p-1">
+        <span class="ms-2 text-uppercase"> {{findValue(tittle, 'job_name').value | translate}}
         </span>
     </div>
-    <div class="head2 col-7 d-flex justify-content-left align-items-center p-1 h-25"> <span class="ms-2">{{
-            findValue(tittle,
-            'role_description').value| translate}} </span> </div>
-    <div class="col-12 h-25 p-1 content d-flex flex-column align-items-center"> <span> {{
-            findValue(tittle, 'years').value| translate}} </span> </div>
-    <div appChangeStyle [backgroundColor]="color" class="tab position-absolute"></div>
+    <div class="head_1 col-7 d-flex justify-content-left align-items-center p-1 h-25">
+        <span class="ms-2">{{ findValue(tittle,
+            'role_description').value| translate}} </span>
+    </div>
+    <div class="col-12 h-25 p-1 content d-flex flex-column align-items-center">
+        <span> {{findValue(tittle, 'years').value| translate}} </span>
+    </div>
+    <div appChangeStyle [backgroundColor]="color" [height]="height" [width]="width" class="tab position-absolute"></div>
 </div>
 
-<div appChangeStyle [backgroundColor]="color" class="bubble2 position-relative"
-    *ngIf="tittle.name=='experience.personal_projects'">
-    <div class="head d-flex justify-content-center align-items-center"> <span>
-            {{tittle.name | translate }}
-        </span> </div>
+<div appChangeStyle [backgroundColor]="color" [height]="height" [width]="width" class="bubble2 position-relative row"
+    *ngIf="!tittle.name.search('experience') ">
+    <div class="col-12 d-flex p-0 m-0 h-25">
+        <div class="head_0_1 col-8 d-flex justify-content-left align-items-center  p-1">
+            <span class="ms-2 text-uppercase"> {{findValue(tittle, 'job_name').value | translate}}
+            </span>
+        </div>
+        <div class="head_1_1 col-4 d-flex justify-content-center align-items-center p-1 ">
+            <span class="ms-2"> {{ findValue(tittle, 'years').value| translate}}</span>
+        </div>
+    </div>
+    <div class="col-12 h-25 p-1 content d-flex flex-column align-items-center">
+        <span class="w-50"> {{'experience.technologies'|translate}}</span>
+        <ul class="p-0 m-0 text-start">
+            <li *ngFor="let value of findValue(tittle, 'role_description').value"> <span>{{ value}}</span></li>
+        </ul>
+
+    </div>
+    <div class="tab2 position-absolute"></div>
+
 </div>

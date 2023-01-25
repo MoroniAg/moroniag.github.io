@@ -1,4 +1,4 @@
-.head {
+.head_0 {
 
 background-color: #EAEAEA;
 border-radius: 10px 0 0 0;
@@ -6,13 +6,23 @@ border-radius: 10px 0 0 0;
 /* overflow-wrap: break-word; */
 }
 
-.head2{
+.head_0_1{
+    background-color: #EAEAEA;
+border-radius: 0 0 0 0;
+}
+
+.head_1{
     background-color: #B2B2B2;
 border-radius: 0 10px 0 0;
 /* height: 20px; */
 /* overflow-wrap: break-word; */
 }
-
+.head_1_1{
+    background-color: #B2B2B2;
+border-radius: 0 10px 0 0;
+/* height: 20px; */
+/* overflow-wrap: break-word; */
+}
 .head > span{
 
    
@@ -29,12 +39,10 @@ border-radius: 0 10px 0 0;
 }
 
 .bubble2 {
-    width: 600px;
-    height: 200px;
-    border-radius: 10px;
+    /* height: 200px; */
+    border-radius: 0px 10px 10px 10px;
     position: relative;
-    background-color: #3C4048;
-    font-size: small;
+    font-size: xx-small;
     box-shadow: 0px 5px 10px #B2B2B2;
 }
 
@@ -42,7 +50,6 @@ border-radius: 0 10px 0 0;
     color: #3C4048;
     transform: scaleX(1.6);
 }
-
 .tab{
     width: 30px;
     height: 30px;
@@ -50,7 +57,21 @@ border-radius: 0 10px 0 0;
     bottom: -30px;
     left: 0px;
     z-index: 10;
-    clip-path: border-box polygon(0px 0px, 30px 0px, 0px 30px);
+    clip-path: border-box polygon(0px 0px, 15px 0px, 0px 15px);
+    box-shadow: 0px 5px 10px #B2B2B2;
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+    
+}
+
+.tab2 {
+    width: 30px;
+    height: 30px;
+    background-color: #EAEAEA;
+    top: -15px;
+    left: 0px;
+    z-index: 10;
+    clip-path: border-box polygon(0px 0px, 0px 15px, 15px 15px);
     box-shadow: 0px 5px 10px #B2B2B2;
     /* border: 1px solid black; */
     box-sizing: border-box;

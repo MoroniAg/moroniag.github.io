@@ -140,29 +140,123 @@
                             ]
                         },
                         {
-                            "name": "experience.personal_projects",
+                            "name": "experience_0",
                             "values": [
                                 {
-                                    "name": "Livestock Management System",
-                                    "value": "Technologies used: Java, PrimeFaces"
+                                    "name": "job_name",
+                                    "value": "experience.personal_projects.experience_0"
                                 },
                                 {
-                                    "name": "Permit and Fine Control System",
-                                    "value": "Technologies used: Java, PrimeFaces "
+                                    "name": "role_description",
+                                    "value": [
+                                        "Java",
+                                        "Swing GUI"
+                                    ]
                                 },
                                 {
-                                    "name": "Control System of a Filling Pump",
-                                    "value": "Technologies used: Arduino, C++"
+                                    "name": "years",
+                                    "value": "experience.personal_projects.years_0"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "experience_1",
+                            "values": [
+                                {
+                                    "name": "job_name",
+                                    "value": "experience.personal_projects.experience_1"
                                 },
                                 {
-                                    "name": "Number to letter converter",
-                                    "value": "Technologies used: Rust, Git",
-                                    "link": ""
+                                    "name": "role_description",
+                                    "value": [
+                                        "Java",
+                                        "PrimeFaces"
+                                    ]
                                 },
                                 {
-                                    "name": "My personal portfolio",
-                                    "value": "Technologies used: Angular, Git",
-                                    "link": ""
+                                    "name": "years",
+                                    "value": "experience.personal_projects.years_1"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "experience_2",
+                            "values": [
+                                {
+                                    "name": "job_name",
+                                    "value": "experience.personal_projects.experience_2"
+                                },
+                                {
+                                    "name": "role_description",
+                                    "value": [
+                                        "Java",
+                                        "PrimeFaces"
+                                    ]
+                                },
+                                {
+                                    "name": "years",
+                                    "value": "experience.personal_projects.years_2"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "experience_3",
+                            "values": [
+                                {
+                                    "name": "job_name",
+                                    "value": "experience.personal_projects.experience_3"
+                                },
+                                {
+                                    "name": "role_description",
+                                    "value": [
+                                        "Arduino",
+                                        "C++",
+                                        "Git"
+                                    ]
+                                },
+                                {
+                                    "name": "years",
+                                    "value": "experience.personal_projects.years_3"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "experience_4",
+                            "values": [
+                                {
+                                    "name": "job_name",
+                                    "value": "experience.personal_projects.experience_4"
+                                },
+                                {
+                                    "name": "role_description",
+                                    "value": [
+                                        "Rust",
+                                        "Git"
+                                    ]
+                                },
+                                {
+                                    "name": "years",
+                                    "value": "experience.personal_projects.years_4"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "experience_5",
+                            "values": [
+                                {
+                                    "name": "job_name",
+                                    "value": "experience.personal_projects.experience_5"
+                                },
+                                {
+                                    "name": "role_description",
+                                    "value": [
+                                        "Angular",
+                                        "Git"
+                                    ]
+                                },
+                                {
+                                    "name": "years",
+                                    "value": "experience.personal_projects.years_5"
                                 }
                             ]
                         }

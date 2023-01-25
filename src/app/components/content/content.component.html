@@ -43,17 +43,31 @@
 
     </div> -->
     <div class="h-100 position-relative">
-        <div class="timeline d-flex justify-content-between "> <span class="ms-2">2017</span> <span>2018</span> <span>2019</span> <span>2020</span>
-        <span>2021</span> <span>2022</span> <span class="me-2 text-uppercase">actual</span> </div>
-        <app-chat-bubble [color]="'#10A19D'" [width]="550" class="first position-absolute"
+        <span class="experience_professional position-absolute">{{'experience.professional_work'|translate}}</span>
+        <span class="experience_personal position-absolute">{{'experience.personal_experience'|translate}}</span>
+        <div class="timeline d-flex justify-content-between ">
+            <span class="ms-2">2017</span>
+            <!-- <span>2018</span>
+            <span>2019</span> 
+            <span>2020</span>
+            <span>2021</span> 
+            <span>2022</span>  -->
+            <span class="me-2 text-uppercase">actual</span>
+        </div>
+        <app-chat-bubble [color]="'#10A19D'" [width]="600" class="first position-absolute"
             [tittle]="findTittle(content.tittles, 'installgas')"></app-chat-bubble>
-        <app-chat-bubble [color]="'#FF7000'" [width]="300" class="second position-absolute"
+        <app-chat-bubble [color]="'#10A19D'" [width]="300" class="second position-absolute"
             [tittle]="findTittle(content.tittles, 'emunay')"></app-chat-bubble>
-        <app-chat-bubble [color]="'#FFBF00'" [width]="300" class="third position-absolute"
+        <app-chat-bubble [color]="'#10A19D'" [width]="300" class="third position-absolute"
             [tittle]="findTittle(content.tittles, 'la_katuna')"></app-chat-bubble>
-        <app-chat-bubble  class="fourth position-absolute" 
-            [tittle]="findTittle(content.tittles, 'experience.personal_projects')">
-        </app-chat-bubble>
+        <app-chat-bubble [color]="'#FFBF00'" [width]="350" class="experience_0 position-absolute"
+            [tittle]="findTittle(content.tittles, 'experience_0')"></app-chat-bubble>
+        <app-chat-bubble [color]="'#FFBF00'" [width]="350" class="experience_1 position-absolute"
+            [tittle]="findTittle(content.tittles, 'experience_1')"></app-chat-bubble>
+        <app-chat-bubble [color]="'#FFBF00'" [width]="350" class="experience_2 position-absolute"
+            [tittle]="findTittle(content.tittles, 'experience_2')"></app-chat-bubble>
+        <app-chat-bubble [color]="'#FFBF00'" [width]="350" class="experience_3 position-absolute"
+            [tittle]="findTittle(content.tittles, 'experience_3')"></app-chat-bubble>
     </div>
 
 </div>
