@@ -16,7 +16,10 @@
     <div appChangeStyle [backgroundColor]="color" [height]="height" [width]="width" class="tab position-absolute"></div>
 </div>
 
-<div appChangeStyle [backgroundColor]="color" class="bubble2 position-relative row"
+<div appChangeStyle [backgroundColor]="color" class="button1 d-flex justify-content-center align-items-center" 
+    *ngIf="!tittle.name.search('experience') "><i class="bi bi-hand-index-thumb"></i></div>
+
+<div appChangeStyle [backgroundColor]="color" id="bubble2" class="bubble2 position-absolute row"
     *ngIf="!tittle.name.search('experience') ">
     <div class="col-12 d-flex p-0 m-0 h-25">
         <div class="head_0_1 col-8 d-flex justify-content-left align-items-center  p-1">
@@ -27,13 +30,13 @@
             <span class="ms-2"> {{ findValue(tittle, 'years').value| translate}}</span>
         </div>
     </div>
-    <div class="col-12 content d-flex flex-column align-items-center">
+    <div class="col-12 content d-flex flex-column align-items-center mt-2 mb-2">
         <span class="w-50"> {{'experience.technologies'|translate}}</span>
         <ul class="p-0 m-0 text-start">
             <li *ngFor="let value of findValue(tittle, 'role_description').value"> <span>{{ value}}</span></li>
         </ul>
 
     </div>
-    <div class="tab2 position-absolute"></div>
+    <!-- <div class="tab2 position-absolute"></div> -->
 
 </div>

@@ -13,9 +13,9 @@ export class ChatBubbleComponent implements OnInit {
   @Input() color!: string
   @Input() width!: number
   @Input() height!: number
-  constructor() { 
-    
-   }
+  constructor() {
+
+  }
 
   ngOnInit(): void {
   }
@@ -28,5 +28,16 @@ export class ChatBubbleComponent implements OnInit {
 
   }
 
+  showContent() {
+    let tag = document.getElementsByClassName("bubble2")
+    console.log(tag)
+    if (tag != null) {
+      
+      // tag[0].style.display = "flex"
+      
+    }
 
+
+
+  }
 }
