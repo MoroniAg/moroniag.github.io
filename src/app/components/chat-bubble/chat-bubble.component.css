@@ -1,0 +1,137 @@
+.head_0 {
+
+    background-color: #EAEAEA;
+    border-radius: 10px 0 0 0;
+    /* height: 20px; */
+    /* overflow-wrap: break-word; */
+}
+
+.head_0_1 {
+    background-color: #EAEAEA;
+    border-radius: 10px 0 0 0;
+}
+
+.head_1 {
+    background-color: #B2B2B2;
+    border-radius: 0 10px 0 0;
+    /* height: 20px; */
+    /* overflow-wrap: break-word; */
+}
+
+.head_1_1 {
+    background-color: #B2B2B2;
+    border-radius: 0 10px 0 0;
+    /* height: 20px; */
+    /* overflow-wrap: break-word; */
+}
+
+.head>span {}
+
+.bubble {
+    width: 250px;
+    /* height: 110px; */
+    border-radius: 10px 10px 10px 0px;
+    position: relative;
+    background-color: #3C4048;
+    font-size: xx-small;
+    box-shadow: 0px 5px 10px #B2B2B2;
+}
+
+.bubble2 {
+    /* height: 200px; */
+    width: 250px;
+    /* height: 200px; */
+    border-radius: 10px 10px 10px 10px;
+    /* position: relative; */
+    font-size: xx-small;
+    box-shadow: 0px 5px 10px #B2B2B2;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    transform: translateX(-100px) translateY(-60px);
+    z-index: 0;
+
+}
+
+.button1 {
+    width: 40px;
+    height: 40px;
+    border-radius: 30px 30px 30px 30px;
+    box-shadow: 2px 2px 10px #B2B2B2;
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+    z-index: 10;
+    position: relative;
+}
+
+.button1>i{
+    animation: 2s linear 1s infinite alternate arrow_down;
+    
+}
+
+@keyframes arrow_down {
+    0%{
+        transform: scale(1.75);
+    }
+   
+    50%{
+        transform:  scale(1.35);
+    }
+    
+    100%{
+        transform: scale(1.0);
+    }
+}
+
+.button1:hover{
+    opacity: 0;
+}
+
+.button1:hover+.bubble2 {
+    opacity: 1 !important;
+    /* transform: translateX(50px);
+   transition: all 1s ease-in-out; */
+}
+
+
+/* .bubble2>div>span,
+.bubble2>div>div,
+.bubble2>div>div>span,
+.bubble2>div>ul {
+    /* transition: all 1s ease-in-out; 
+    transition-delay: 1s;
+    /* color: aqua; 
+    animation: showText 0.5s none 1s;
+}
+*/
+.content {
+    color: #3C4048;
+    transform: scaleX(1.6);
+}
+
+.tab {
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    bottom: -30px;
+    left: 0px;
+    z-index: 10;
+    clip-path: border-box polygon(0px 0px, 15px 0px, 0px 15px);
+    box-shadow: 0px 5px 10px #B2B2B2;
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+
+}
+
+.tab2 {
+    width: 30px;
+    height: 30px;
+    background-color: #EAEAEA;
+    top: -15px;
+    left: 0px;
+    z-index: 10;
+    clip-path: border-box polygon(0px 0px, 0px 15px, 15px 15px);
+    box-shadow: 0px 5px 10px #B2B2B2;
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+
+}

@@ -90,7 +90,7 @@ app-page {
 
 /*.header nav a:nth-child(2),*/
 #page-two {
-    background-color: #540375;
+    background-color: rgba(84,3,117,0.8);
 }
 
 /*.header nav a:nth-child(3),*/

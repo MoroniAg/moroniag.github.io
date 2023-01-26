@@ -62,7 +62,30 @@
             "name": "experience",
             "list_content": [
                 {
-                    "name": "professional_work",
+                    "name": "tittle",
+                    "url_img": "",
+                    "tittles": [
+                        {
+                            "name": "description",
+                            "values": [
+                                {
+                                    "name": "description",
+                                    "value": "experience.description.description"
+                                },
+                                {
+                                    "name": "more",
+                                    "value": "experience.description.more"
+                                },
+                                {
+                                    "name": "link",
+                                    "value": "experience.description.link"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "experience",
                     "url_img": "",
                     "tittles": [
                         {
@@ -70,15 +93,15 @@
                             "values": [
                                 {
                                     "name": "job_name",
-                                    "value": "InstallGas/Cumorah Center"
+                                    "value": "InstallGas/Cumorah"
                                 },
                                 {
                                     "name": "role_description",
-                                    "value": "This "
+                                    "value": "experience.role.installgas"
                                 },
                                 {
                                     "name": "years",
-                                    "value": "sep. 2017 - ago 2020 (3 years)"
+                                    "value": "experience.years.installgas"
                                 }
                             ]
                         },
@@ -91,61 +114,149 @@
                                 },
                                 {
                                     "name": "role_description",
-                                    "value": "This "
+                                    "value": "experience.role.emunay"
                                 },
                                 {
                                     "name": "years",
-                                    "value": "sep. 2019 - ene 2021 (1 year 5 months)"
+                                    "value": "experience.years.emunay"
                                 }
                             ]
                         },
                         {
-                            "name": "phcodes",
+                            "name": "la_katuna",
                             "values": [
                                 {
                                     "name": "job_name",
-                                    "value": "La Katuna/PhCodes"
+                                    "value": "La Katuna"
                                 },
                                 {
                                     "name": "role_description",
-                                    "value": "This "
+                                    "value": "experience.role.lakatuna"
                                 },
                                 {
                                     "name": "years",
-                                    "value": "abr. 2021 - 2022 (1 year 9 months)"
+                                    "value": "experience.years.lakatuna"
                                 }
                             ]
-                        }
-                    ]
-                },
-                {
-                    "name": "personal_work",
-                    "url_img": "",
-                    "tittles": [
+                        },
                         {
-                            "name": "personal_projects",
+                            "name": "experience_0",
                             "values": [
                                 {
-                                    "name": "Livestock Management System",
-                                    "value": "Technologies used: Java, PrimeFaces"
+                                    "name": "job_name",
+                                    "value": "experience.personal_projects.experience_0"
                                 },
                                 {
-                                    "name": "Permit and Fine Control System",
-                                    "value": "Technologies used: Java, PrimeFaces "
+                                    "name": "role_description",
+                                    "value": [
+                                        "Java",
+                                        "Swing GUI"
+                                    ]
                                 },
                                 {
-                                    "name": "Control System of a Filling Pump",
-                                    "value": "Technologies used: Arduino, C++"
+                                    "name": "years",
+                                    "value": "experience.personal_projects.years_0"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "experience_1",
+                            "values": [
+                                {
+                                    "name": "job_name",
+                                    "value": "experience.personal_projects.experience_1"
                                 },
                                 {
-                                    "name": "Number to letter converter",
-                                    "value": "Technologies used: Rust, Git",
-                                    "link": ""
+                                    "name": "role_description",
+                                    "value": [
+                                        "Java",
+                                        "PrimeFaces"
+                                    ]
                                 },
                                 {
-                                    "name": "My personal portfolio",
-                                    "value": "Technologies used: Angular, Git",
-                                    "link": ""
+                                    "name": "years",
+                                    "value": "experience.personal_projects.years_1"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "experience_2",
+                            "values": [
+                                {
+                                    "name": "job_name",
+                                    "value": "experience.personal_projects.experience_2"
+                                },
+                                {
+                                    "name": "role_description",
+                                    "value": [
+                                        "Java",
+                                        "PrimeFaces"
+                                    ]
+                                },
+                                {
+                                    "name": "years",
+                                    "value": "experience.personal_projects.years_2"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "experience_3",
+                            "values": [
+                                {
+                                    "name": "job_name",
+                                    "value": "experience.personal_projects.experience_3"
+                                },
+                                {
+                                    "name": "role_description",
+                                    "value": [
+                                        "Arduino",
+                                        "C++",
+                                        "Git"
+                                    ]
+                                },
+                                {
+                                    "name": "years",
+                                    "value": "experience.personal_projects.years_3"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "experience_4",
+                            "values": [
+                                {
+                                    "name": "job_name",
+                                    "value": "experience.personal_projects.experience_4"
+                                },
+                                {
+                                    "name": "role_description",
+                                    "value": [
+                                        "Rust",
+                                        "Git"
+                                    ]
+                                },
+                                {
+                                    "name": "years",
+                                    "value": "experience.personal_projects.years_4"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "experience_5",
+                            "values": [
+                                {
+                                    "name": "job_name",
+                                    "value": "experience.personal_projects.experience_5"
+                                },
+                                {
+                                    "name": "role_description",
+                                    "value": [
+                                        "Angular",
+                                        "Git"
+                                    ]
+                                },
+                                {
+                                    "name": "years",
+                                    "value": "experience.personal_projects.years_5"
                                 }
                             ]
                         }

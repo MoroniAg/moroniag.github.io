@@ -1,5 +1,6 @@
 .second_background {
   --height_second_backgorund: 70vh;
+  clip-path: polygon(0px 50%, 0px 100%, 100% 100%, 100% 0px );
 }
 
 .photo_profile {
@@ -22,7 +23,7 @@
   z-index: 10;
 }
 
-.second_background::before {
+/* .second_background::before {
   content: '';
   background-color: #00ABB3;
   height: 250px;
@@ -30,7 +31,7 @@
   display: block;
   transform: rotate(-10deg) translate(-30px, -150px);
   z-index: 0;
-}
+} */
 
 .next {
   background-color: #EAEAEA;
