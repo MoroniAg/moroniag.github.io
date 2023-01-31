@@ -1,8 +1,26 @@
-<div class="card " style="width: 18rem;">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      {{listContent.name}}
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">{{listContent.value}}</h5>
+
+
+
+    <div class="d-flex">
+
+      <ng-template #content let-modal>
+        <div class="modal-header">
+          <h4 class="modal-title" id="modal-basic-title">{{listContent.name}}</h4>
+          <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+        </div>
+        <div class="modal-body">
+          
+        </div>
+      </ng-template>
+
+      <button class="btn btn-lg btn-outline-primary" (click)="open(content)">Launch demo modal</button>
+
     </div>
+
+
+
   </div>
+</div>

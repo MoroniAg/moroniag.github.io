@@ -12,6 +12,7 @@ export class ChangeStyleDirective implements OnInit {
   width!: number;
   @Input()
   height!: number;
+  
 
   constructor(private el: ElementRef, private renderer: Renderer2) {
     // console.log("color: "+this.backgroundColor)
