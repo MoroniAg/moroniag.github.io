@@ -1,6 +1,6 @@
 .second_background {
   --height_second_backgorund: 70vh;
-  clip-path: polygon(0px 50%, 0px 100%, 100% 100%, 100% 0px );
+  clip-path: polygon(0px 50%, 0px 100%, 100% 100%, 100% 0px);
 }
 
 .photo_profile {
@@ -54,18 +54,23 @@
   0% {
     transform: scale(1.03);
   }
+
   10% {
     transform: scale(1.06);
   }
+
   20% {
     transform: scale(1.09);
   }
+
   30% {
     transform: scale(1.12);
   }
+
   40% {
     transform: scale(1.15);
   }
+
   50% {
     transform: scale(1.2);
   }
@@ -85,7 +90,21 @@ a.next i {
   font-size: x-large;
 }
 
+.skills_tittle {
+  width: 9rem;
+  transform: scale(3.5);
+  right: 20%;
+  top: 20%;
+  color: #3C4048;
+  z-index: 10;
+}
 
+.technologies {
+  background-color: #B2B2B2;
+  height: 15%;
+  clip-path: polygon(25% 0px, 100% 0px, 100% 100%);
+  /* left: -5%; */
+}
 
 @media (min-width: 1400px) {
   .second_background {

@@ -4,7 +4,7 @@
     "nav": {
         "page-one": "Inicio",
         "page-two": "Experiencia",
-        "page-three": "Tecnologías",
+        "page-three": "Habilidades",
         "page-four": "Proyectos",
         "page-five": "Contáctame"
     },
@@ -44,5 +44,8 @@
             "experience_5": "Mi portafolio Personal",
             "years_5": "ene. 2023"
         }
+    },
+    "skills":{
+        "tittle":"Mis habilidades y conocimientos"
     }
 }

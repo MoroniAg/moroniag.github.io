@@ -276,7 +276,7 @@
                 {
                     "name": "tech_backend",
                     "value": "Backend",
-                    "url_img": "",
+                    "url_img": "assets/images/photo1-512.png",
                     "tittles": [
                         {
                             "name": "Java",

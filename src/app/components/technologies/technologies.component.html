@@ -1,18 +1,17 @@
-<div class="card" style="width: 18rem;">
+<div class="card card-content" appChangeStyle backgroundImage="{{listContent.url_img}}" style="width: 18rem;">
   <div class="card-body">
     <h5 class="card-title">{{listContent.value}}</h5>
 
 
 
     <div class="d-flex">
-
       <ng-template #content let-modal>
         <div class="modal-header">
           <h4 class="modal-title" id="modal-basic-title">{{listContent.name}}</h4>
           <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
         </div>
         <div class="modal-body">
-          
+
         </div>
       </ng-template>
 

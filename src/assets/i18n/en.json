@@ -4,7 +4,7 @@
     "nav": {
         "page-one": "Home",
         "page-two": "Experience",
-        "page-three": "Technologies",
+        "page-three": "Knowledge",
         "page-four": "Projects",
         "page-five": "Contact"
     },
@@ -44,5 +44,8 @@
             "experience_5": "My Personal Portfolio",
             "years_5": "jan. 2023"
         }
+    },
+    "skills":{
+        "tittle":"My skills and knowledge"
     }
 }
