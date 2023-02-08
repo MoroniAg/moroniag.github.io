@@ -46,6 +46,10 @@
         }
     },
     "skills":{
-        "tittle":"My skills and knowledge"
+        "tittle":"My skills and knowledge",
+        "backend":"Backend",
+        "frontend":"Frontend",
+        "devops":"DevOps",
+        "other":"Other Technologies"
     }
 }

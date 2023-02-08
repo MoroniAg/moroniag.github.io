@@ -46,6 +46,12 @@
         }
     },
     "skills":{
-        "tittle":"Mis habilidades y conocimientos"
+        "tittle":"Mis habilidades y conocimientos",
+        "backend":"Backend",
+        "frontend":"Frontend",
+        "devops":"DevOps",
+        "other":"Tecnologías Adicionales"
+
     }
+    
 }
