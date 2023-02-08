@@ -10,7 +10,12 @@
 
     </div>
   </ng-template>
-  <div class="w-75"><span class="">text</span></div>
-  <button type="button" class="btn btn-success" (click)="open(content)"><i class="bi bi-eye"></i> </button>
+  <div class="w-75 position-relative d-flex align-items-center">
+
+    <div class="bg-experience"></div>
+    <div class="bg-experience-real position-absolute" appChangeStyle widthPercent="{{listContent.percent}}" ></div>
+
+  </div>
+  <button type="button" class="btn btn-success ms-3" (click)="open(content)"><i class="bi bi-eye"></i> </button>
 
 </div>
