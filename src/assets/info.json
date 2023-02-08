@@ -274,8 +274,10 @@
             "name": "technologies",
             "list_content": [
                 {
-                    "name": "backend",
-                    "url_img": "",
+                    "name": "tech_backend",
+                    "value": "Backend",
+                    "url_img": "assets/images/photo1-512.png",
+                    "percent":"80",
                     "tittles": [
                         {
                             "name": "Java",
@@ -310,8 +312,10 @@
                     ]
                 },
                 {
-                    "name": "frontend",
+                    "name": "tech_frontend",
+                    "value": "Frontend",
                     "url_img": "",
+                    "percent":"60",
                     "tittles": [
                         {
                             "name": "Angular",
@@ -328,8 +332,10 @@
                     ]
                 },
                 {
-                    "name": "devops",
+                    "name": "tech_devops",
+                    "value": "DevOps",
                     "url_img": "",
+                    "percent":"50",
                     "tittles": [
                         {
                             "name": "Plan",
@@ -436,8 +442,10 @@
                     ]
                 },
                 {
-                    "name": "other",
+                    "name": "tech_other",
+                    "value": "Other Technologes",
                     "url_img": "",
+                    "percent":"70",
                     "tittles": [
                         {
                             "name": "MySQL",

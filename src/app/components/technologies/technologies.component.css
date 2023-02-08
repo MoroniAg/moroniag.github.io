@@ -1,0 +1,25 @@
+.card-content{
+    background-size: 100% 100%;
+    background-color: none;
+    /* border: 1px solid #3C4048; */
+    /* box-shadow: 5px 5px 5px #B2B2B2; */
+}
+h5{
+    color: #EAEAEA;
+}
+
+.bg-experience{
+    background-color: #EAEAEA;
+    height: 10px;
+    width: 100%;
+    margin: auto;
+
+}
+
+.bg-experience-real{
+
+    background-color: #00ABB3;
+    height: 10px;
+    margin: auto;
+
+}

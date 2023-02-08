@@ -10,7 +10,7 @@ import { ContentService } from './service/content.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  constructor(private contentService: ContentService) {}
+  constructor(private contentService: ContentService) { }
 
   public pageList: Page[] = [];
 

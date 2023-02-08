@@ -16,3 +16,14 @@
 
     <!-- <a href="#{{next}}" class="next"> <i class="bi bi-arrow-down"></i> </a> -->
 </div>
+
+<div class="h-100 w-100 position-relative d-flex align-items-center" *ngIf="content.name==='technologies'">
+    <div class="w-100 h-100 technologies d-flex justify-content-center align-items-center position-absolute">
+        <span class="skills_tittle position-absolute text-wrap"> {{'skills.tittle'|translate}} </span>
+    </div>
+
+    <div class="rox w-50 h-75 align-content-start offset-1 d-flex align-content-center flex-wrap container-technologies ps-5 ">
+        <app-technologies class="m-3 w-100" *ngFor="let listContent of content.list_content"
+            [listContent]="listContent"></app-technologies>
+    </div>
+</div>
