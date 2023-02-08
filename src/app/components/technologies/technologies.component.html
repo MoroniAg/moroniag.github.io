@@ -1,25 +1,16 @@
-<div class="card card-content" appChangeStyle backgroundImage="{{listContent.url_img}}" style="width: 18rem;">
-  <div class="card-body">
-    <h5 class="card-title">{{listContent.value}}</h5>
+<div class="card-content d-flex flex-wrap">
+  <h5 class="w-100 text-start">{{listContent.value}}</h5>
 
-
-
-    <div class="d-flex">
-      <ng-template #content let-modal>
-        <div class="modal-header">
-          <h4 class="modal-title" id="modal-basic-title">{{listContent.name}}</h4>
-          <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
-        </div>
-        <div class="modal-body">
-
-        </div>
-      </ng-template>
-
-      <button class="btn btn-lg btn-outline-primary" (click)="open(content)">Launch demo modal</button>
+  <ng-template #content let-modal>
+    <div class="modal-header">
+      <h4 class="modal-title" id="modal-basic-title">{{listContent.name}}</h4>
+      <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+    </div>
+    <div class="modal-body">
 
     </div>
+  </ng-template>
+  <div class="w-75"><span class="">text</span></div>
+  <button type="button" class="btn btn-success" (click)="open(content)"><i class="bi bi-eye"></i> </button>
 
-
-
-  </div>
 </div>

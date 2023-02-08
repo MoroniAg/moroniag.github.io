@@ -93,8 +93,8 @@ a.next i {
 .skills_tittle {
   width: 9rem;
   transform: scale(3.5);
-  right: 20%;
-  top: 20%;
+  right: 15%;
+  top: 45%;
   color: #3C4048;
   z-index: 10;
 }
@@ -102,8 +102,18 @@ a.next i {
 .technologies {
   background-color: #B2B2B2;
   height: 15%;
-  clip-path: polygon(25% 0px, 100% 0px, 100% 100%);
+  clip-path: polygon(75% 0px, 100% 0px, 100% 100%, 75% 100%, 50% 50%);
   /* left: -5%; */
+}
+
+.container-technologies{
+  border: 5px solid #B2B2B2;
+  border-radius: 20px;
+  top: 10%;
+  background-color: rgba(30, 32, 36, 0.8);
+  /* background-color: rgba(178, 178, 178, 0.9); */
+  /* box-shadow: 1px 1px 1px #3C4048; */
+
 }
 
 @media (min-width: 1400px) {
