@@ -15,9 +15,14 @@
       overflow-x: hidden;
     }
   </style>
+  <script>
+    function onload() {
+      console.log('Onload called');
+    }
+  </script>
 </head>
 
-<body style="display: block; margin: 0; overflow-x:hidden;">
+<body style="display: block; margin: 0; overflow-x:hidden;" onload="onload();">
   <app-root></app-root>
   <!-- <script src="./assets/resources/effects.js"></script> -->
 </body>

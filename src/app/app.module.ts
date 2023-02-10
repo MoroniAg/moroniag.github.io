@@ -12,6 +12,7 @@ import { ChatBubbleComponent } from "./components/chat-bubble/chat-bubble.compon
 import { ChangeStyleDirective } from './directives/change-style.directive';
 import { TechnologiesComponent } from './components/technologies/technologies.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { CollapseComponent } from './components/collapse/collapse.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -24,7 +25,8 @@ export function HttpLoaderFactory(http: HttpClient) {
         ContentComponent,
         ChatBubbleComponent,
         ChangeStyleDirective,
-        TechnologiesComponent
+        TechnologiesComponent,
+        CollapseComponent
     ],
     providers: [],
     bootstrap: [AppComponent],

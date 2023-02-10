@@ -298,7 +298,13 @@
                         {
                             "name": "Python",
                             "percent":"60",
-                            "icon": "devicon-python-plain"
+                            "icon": "devicon-python-plain",
+                            "values":[
+                                {
+                                    "name":"description",
+                                    "value":"aosdasdsa"
+                                }
+                            ]
                         },
                         {
                             "name": "Go",

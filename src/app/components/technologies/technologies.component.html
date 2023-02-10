@@ -13,12 +13,15 @@
 
         <div class="list-group">
           <div class="list-group-item list-group-item-action d-flex" *ngFor="let tittle of listContent.tittles">
-            <span class="w-25 me-2"><i class="{{tittle.icon}} me-2"></i> {{tittle.name}} </span>
+            <span class="w-25 me-2 align-self-center"><i class="{{tittle.icon}} me-2"></i> {{tittle.name}} </span>
             <div class="w-50 position-relative align-self-center">
               <div class="bg-experience position-absolute"></div>
               <div class="bg-experience-real position-absolute " appChangeStyle widthPercent="{{tittle.percent}}"></div>
             </div>
-            <div class=""></div>
+            <div class="position-relative" *ngIf="tittle.values !=null " >
+              <app-collapse [values]="tittle.values" ></app-collapse>
+             
+            </div>
 
           </div>
         </div>
