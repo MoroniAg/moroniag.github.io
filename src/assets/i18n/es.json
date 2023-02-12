@@ -45,13 +45,13 @@
             "years_5": "ene. 2023"
         }
     },
-    "skills":{
-        "tittle":"Mis habilidades y conocimientos",
-        "backend":"Backend",
-        "frontend":"Frontend",
-        "devops":"DevOps",
-        "other":"Tecnologías Adicionales"
-
+    "skills": {
+        "tittle": "Mis habilidades y conocimientos",
+        "backend": "Backend",
+        "frontend": "Frontend",
+        "devops": "DevOps",
+        "other": "Tecnologías Adicionales",
+        "version": "Versiones usadas:",
+        "more":"Mostrar más"
     }
-    
 }

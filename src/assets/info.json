@@ -285,13 +285,13 @@
                             "icon": "devicon-java-plain",
                             "values": [
                                 {
-                                    "name": "description",
-                                    "value": "I have developed in Java 8, Java 11, Java 17"
+                                    "name": "skills.version",
+                                    "value": "Java 8, 11, 17"
                                 },
                                 {
-                                    "name": "frameworks",
-                                    "value": "Quarkus,Vert.x,Spring",
-                                    "link": ""
+                                    "name": "Frameworks:",
+                                    "value": "Quarkus, Vert.x, Spring"
+                            
                                 }
                             ]
                         },
@@ -301,8 +301,8 @@
                             "icon": "devicon-python-plain",
                             "values":[
                                 {
-                                    "name":"description",
-                                    "value":"aosdasdsa"
+                                    "name":"skills.version",
+                                    "value":"Python 2, Python 3"
                                 }
                             ]
                         },
@@ -362,7 +362,13 @@
                         {
                             "name": "Angular",
                             "percent":"70",
-                            "icon": "devicon-angularjs-plain"
+                            "icon": "devicon-angularjs-plain",
+                            "values":[
+                                {
+                                    "name":"skills.version",
+                                    "value":"Anuglar 4, 9, 12, 14"
+                                }
+                            ]
                         },
                         {
                             "name": "React",
@@ -490,7 +496,13 @@
                         {
                             "name": "MySQL",
                             "percent":"75",
-                            "icon": "devicon-mysql-plain"
+                            "icon": "devicon-mysql-plain",
+                            "values":[
+                                {
+                                    "name":"skills.version",
+                                    "value":"MySql 5, 8"
+                                }
+                            ]
                         },
                         {
                             "name": "PostgreSQL",
