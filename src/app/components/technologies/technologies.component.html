@@ -1,19 +1,41 @@
 <div class="card-content d-flex flex-wrap">
-  <h5 class="w-100 text-start">{{listContent.value}}</h5>
+  <h5 class="w-100 text-start">{{listContent.value | translate}}</h5>
 
   <ng-template #content let-modal>
     <div class="modal-header">
-      <h4 class="modal-title" id="modal-basic-title">{{listContent.name}}</h4>
+      <h4 class="modal-title" id="modal-basic-title">{{listContent.value | translate}}</h4>
       <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
     </div>
-    <div class="modal-body">
+    <div class="modal-body"  >
+
+      <div *ngIf="listContent.name==='tech_devops' "> devops </div>
+      <div *ngIf="listContent.name!='tech_devops' ">
+
+        <div class="list-group">
+          <div class="list-group-item list-group-item-action d-flex flex-wrap" *ngFor="let tittle of listContent.tittles">
+            <span class="w-25 me-2 align-self-center"><i class="{{tittle.icon}} me-2"></i> {{tittle.name}} </span>
+            <div class="w-50 position-relative align-self-center">
+              <div class="bg-experience position-absolute"></div>
+              <div class="bg-experience-real position-absolute " appChangeStyle widthPercent="{{tittle.percent}}"></div>
+            </div>
+
+            <div class="w-100 mt-3">
+              <app-collapse class="" *ngIf="tittle.values !=null " [values]="tittle.values"></app-collapse>
+            </div>
+
+
+
+
+          </div>
+        </div>
+      </div>
 
     </div>
   </ng-template>
   <div class="w-75 position-relative d-flex align-items-center">
 
     <div class="bg-experience"></div>
-    <div class="bg-experience-real position-absolute" appChangeStyle widthPercent="{{listContent.percent}}" ></div>
+    <div class="bg-experience-real position-absolute" appChangeStyle widthPercent="{{listContent.percent}}"></div>
 
   </div>
   <button type="button" class="btn btn-success ms-3" (click)="open(content)"><i class="bi bi-eye"></i> </button>

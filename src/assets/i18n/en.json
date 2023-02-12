@@ -45,7 +45,13 @@
             "years_5": "jan. 2023"
         }
     },
-    "skills":{
-        "tittle":"My skills and knowledge"
+    "skills": {
+        "tittle": "My skills and knowledge",
+        "backend": "Backend",
+        "frontend": "Frontend",
+        "devops": "DevOps",
+        "other": "Other Technologies",
+        "version": "Versions Used: ",
+        "more":"Show more"
     }
 }

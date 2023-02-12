@@ -275,67 +275,113 @@
             "list_content": [
                 {
                     "name": "tech_backend",
-                    "value": "Backend",
+                    "value": "skills.backend",
                     "url_img": "assets/images/photo1-512.png",
-                    "percent":"80",
+                    "percent": "80",
                     "tittles": [
                         {
                             "name": "Java",
+                            "percent":"80",
+                            "icon": "devicon-java-plain",
                             "values": [
                                 {
-                                    "name": "description",
-                                    "value": "I have developed in Java 8, Java 11, Java 17"
+                                    "name": "skills.version",
+                                    "value": "Java 8, 11, 17"
                                 },
                                 {
-                                    "name": "frameworks",
-                                    "value": "Quarkus,Vert.x,Spring",
-                                    "link": ""
+                                    "name": "Frameworks:",
+                                    "value": "Quarkus, Vert.x, Spring"
+                            
                                 }
                             ]
                         },
                         {
                             "name": "Python",
-                            "values": []
+                            "percent":"60",
+                            "icon": "devicon-python-plain",
+                            "values":[
+                                {
+                                    "name":"skills.version",
+                                    "value":"Python 2, Python 3"
+                                }
+                            ]
                         },
                         {
                             "name": "Go",
-                            "values": []
+                            "percent":"50",
+                            "icon": "devicon-go-original-wordmark"
                         },
                         {
-                            "name": "C, C++, C#",
-                            "values": []
+                            "name": "C",
+                            "percent":"50",
+                            "icon": "devicon-c-plain-wordmark"
+                        },
+                        {
+                            "name": "C++",
+                            "percent":"50",
+                            "icon": "devicon-cplusplus-plain-wordmark"
+                        },
+                        {
+                            "name": "C#",
+                            "percent":"50",
+                            "icon": "devicon-csharp-plain-wordmark"
                         },
                         {
                             "name": "Rust",
-                            "values": []
+                            "percent":"50",
+                            "icon": "devicon-rust-plain"
                         }
                     ]
                 },
                 {
                     "name": "tech_frontend",
-                    "value": "Frontend",
+                    "value": "skills.frontend",
                     "url_img": "",
-                    "percent":"60",
+                    "percent": "60",
                     "tittles": [
                         {
+                            "name": "Html5",
+                            "percent":"80",
+                            "icon": "devicon-html5-plain"
+                        },
+                        {
+                            "name": "Css3",
+                            "percent":"80",
+                            "icon": "devicon-css3-plain"
+                        },
+                        {
+                            "name": "Bootstrap",
+                            "percent":"60",
+                            "icon": "devicon-bootstrap-plain"
+                        },
+                        {
+                            "name": "Javascript",
+                            "percent":"65",
+                            "icon": "devicon-javascript-plain"
+                        },
+                        {
                             "name": "Angular",
-                            "values": []
+                            "percent":"70",
+                            "icon": "devicon-angularjs-plain",
+                            "values":[
+                                {
+                                    "name":"skills.version",
+                                    "value":"Anuglar 4, 9, 12, 14"
+                                }
+                            ]
                         },
                         {
                             "name": "React",
-                            "values": []
-                        },
-                        {
-                            "name": "Html/Css",
-                            "values": []
+                            "percent":"50",
+                            "icon": "devicon-react-original"
                         }
                     ]
                 },
                 {
                     "name": "tech_devops",
-                    "value": "DevOps",
+                    "value": "skills.devops",
                     "url_img": "",
-                    "percent":"50",
+                    "percent": "50",
                     "tittles": [
                         {
                             "name": "Plan",
@@ -443,37 +489,47 @@
                 },
                 {
                     "name": "tech_other",
-                    "value": "Other Technologes",
+                    "value": "skills.other",
                     "url_img": "",
-                    "percent":"70",
+                    "percent": "70",
                     "tittles": [
                         {
                             "name": "MySQL",
-                            "values": []
+                            "percent":"75",
+                            "icon": "devicon-mysql-plain",
+                            "values":[
+                                {
+                                    "name":"skills.version",
+                                    "value":"MySql 5, 8"
+                                }
+                            ]
                         },
                         {
                             "name": "PostgreSQL",
-                            "values": []
+                            "percent":"75",
+                            "icon": "devicon-postgresql-plain"
                         },
                         {
                             "name": "Oracle Database",
-                            "values": []
+                            "percent":"50",
+                            "icon": "devicon-oracle-original"
                         },
                         {
                             "name": "MongoDB",
-                            "values": []
+                            "percent":"70",
+                            "icon": "devicon-mongodb-plain"
                         },
                         {
                             "name": "Traefik",
-                            "values": []
+                            "percent":"60"
                         },
                         {
                             "name": "Keycloak",
-                            "values": []
+                            "percent":"60"
                         },
                         {
                             "name": "Sonarqube",
-                            "values": []
+                            "percent":"60"
                         }
                     ]
                 }

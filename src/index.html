@@ -7,15 +7,22 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
   <style>
     html {
       scroll-behavior: smooth;
       overflow-x: hidden;
     }
   </style>
+  <script>
+    function onload() {
+      console.log('Onload called');
+    }
+  </script>
 </head>
 
-<body style="display: block; margin: 0; overflow-x:hidden;">
+<body style="display: block; margin: 0; overflow-x:hidden;" onload="onload();">
   <app-root></app-root>
   <!-- <script src="./assets/resources/effects.js"></script> -->
 </body>
