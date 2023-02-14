@@ -13,7 +13,6 @@
 }
 
 .second_line {
-    /* position: absolute; */
     font-size: var(--fs-second-line);
     -webkit-text-stroke: 2px #EAEAEA;
     color: #10A19D;
@@ -24,15 +23,9 @@
 }
 
 .legend {
-    /* position: absolute; */
-    /* font-size: var(--fs-second-line);*/
-    /* -webkit-text-stroke: 2px #EAEAEA;  */
     color: white;
     font-family: 'Share Tech Mono', monospace;
-    /* transform: scaleX(2) scaleY(1.8); */
     font-weight: 100;
-    /* text-shadow: 0 0 80px rgba(234, 234, 234, 1); */
-    /* line-height: 75px; */
     margin: 10px;
 }
 
@@ -62,9 +55,6 @@
     color: white;
     font-size: 75px;
     position: relative;
-
-    /* width: 800px; */
-    /* margin: 0 auto; */
     font-family: 'Varela', sans-serif;
     text-shadow: 5px 5px #3C4048;
 }
@@ -73,12 +63,8 @@
     content: attr(id);
     position: absolute;
     left: 2px;
-    /* text-shadow: 1px 0 red; */
-    /* top: 0; */
     color: white;
-    /* background: #00ABB3; */
     overflow: hidden;
-
     clip-path: inset(0px 0px 0px 0px);
     animation: noise-anim-2 3s infinite linear alternate-reverse;
 }
@@ -87,10 +73,7 @@
     content: attr(id);
     position: absolute;
     left: 1px;
-    /* text-shadow: 1px 0 blue; */
-    /* top: 0; */
     color: white;
-    /* background: #00ABB3; */
     overflow: hidden;
     clip-path: inset(0px 0px 0px 0px);
     animation: noise-anim 3s infinite linear alternate-reverse;
@@ -103,41 +86,32 @@
 }
 
 .description {
-
     color: #3C4048;
     font-size: small;
     font-weight: 900;
-
 }
 
 .timeline {
-
-    /* display: block; */
-    /* float: left; */
     width: 95%;
     height: 20px;
     background-color: #B2B2B2;
-    /* height: 100%; */
     border-radius: 75px;
     position: absolute;
-    /* left: 50%; */
     top: 50%;
     z-index: 10;
     box-shadow: 5px 5px 10px #3C4048;
 }
 
 .experience_professional {
-
     left: -10%;
     top: 25%;
     transform: rotate(-90deg);
     text-shadow: 0px 0px 10px #3C4048;
     color: #EAEAEA;
-    
+
 }
 
 .experience_personal {
-
     left: -9%;
     top: 75%;
     transform: rotate(-90deg);
@@ -145,43 +119,6 @@
     color: #EAEAEA;
 
 }
-
-/* .timeline::before {
-    content: '2017';
-    background-color: #B2B2B2;
-    display: block;
-    width: 60px;
-    height: 20px;
-    position: relative;
-    right: 0px;
-    top: 30px;
-    right: 20px;
-    border-radius: 50px;
-    font-size: small;
-    /* box-shadow: 5px 5px 10px #3C4048; 
-    /* margin-top: 50%;
-    margin-bottom: 50%; 
-    box-shadow: 5px 5px 10px #3C4048;
-}*/
-/*
-.timeline::after {
-    content: 'actual';
-    background-color: #B2B2B2;
-    display: block;
-    width: 100px;
-    height: 20px;
-    position: relative;
-    left:  95%; 
-    border-radius: 50px;
-    top: 10px;
-    text-transform: uppercase;
-    /* margin-top: 50%;
-    margin-bottom: 50%; 
-    font-size: small;
-    box-shadow: 5px 5px 10px #3C4048;
-} */
-
-.timeline>span {}
 
 .first {
     top: 5%;
@@ -199,23 +136,28 @@
     left: 70%;
 
 }
+
 .experience_0 {
     top: 58%;
     left: 6%;
 }
+
 .experience_1 {
     top: 80%;
     left: 13%;
 }
+
 .experience_2 {
     top: 58%;
     left: 37%;
 }
+
 .experience_3 {
     top: 80%;
     left: 44%;
 }
-.container_personal{
+
+.container_personal {
     top: 70%;
     left: 10%;
 }
@@ -495,12 +437,10 @@
 
 @media (max-width: 768px) {
     .glitch:after {
-        /* transform: translateX(-179%) translateY(100%); */
         content: "";
     }
 
     .glitch:before {
-        /* transform: translateX(-175%) translateY(103%); */
         content: "";
     }
 
@@ -526,12 +466,10 @@
 
 @media (max-width: 576px) {
     .glitch:after {
-        /* transform: translateX(-179%) translateY(100%); */
         content: "";
     }
 
     .glitch:before {
-        /* transform: translateX(-175%) translateY(103%); */
         content: "";
     }
 
@@ -557,12 +495,10 @@
     }
 
     .glitch:after {
-        /* transform: translateX(-179%) translateY(100%); */
         content: "";
     }
 
     .glitch:before {
-        /* transform: translateX(-175%) translateY(103%); */
         content: "";
     }
 

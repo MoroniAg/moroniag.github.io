@@ -103,16 +103,13 @@ a.next i {
   background-color: #B2B2B2;
   height: 15%;
   clip-path: polygon(75% 0px, 100% 0px, 100% 100%, 75% 100%, 50% 50%);
-  /* left: -5%; */
 }
 
-.container-technologies{
+.container-technologies {
   border: 5px solid #B2B2B2;
   border-radius: 20px;
   top: 10%;
   background-color: rgba(30, 32, 36, 0.8);
-  /* background-color: rgba(178, 178, 178, 0.9); */
-  /* box-shadow: 1px 1px 1px #3C4048; */
 
 }
 

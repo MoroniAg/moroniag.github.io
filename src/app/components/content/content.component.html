@@ -1,10 +1,7 @@
 <!-- home page -->
 <div *ngIf="content.name == 'name'" class="w-100 h-100">
-
     <div class="translate">
-
         <select name="" id="select" class="form-select" aria-label="Default select example">
-            <!-- <option selected> {{ 'select' | translate}} </option> -->
             <option value="1" (click)="translateSite('es')">Español</option>
             <option value="2" (click)="translateSite('en')">English</option>
         </select>
@@ -25,7 +22,6 @@
 <!-- end home page -->
 
 <!-- experience -->
-
 <div *ngIf="content.name=='tittle'" class="row text-start w-100">
     <div class="tittle mt-3 mb-3 col-11 p-3 rounded scroll-content ">
         <p class="description mt-0 mb-0"> {{ findValue( findTittle(content.tittles, 'description'),'description').value
@@ -35,23 +31,13 @@
         </p>
     </div>
 </div>
-
 <div *ngIf="content.name=='experience'" class="m-0 p-0 h-100 position-relative">
-    <!-- <div class="position-absolute" id="legend">
-        <span class="d-block legend">{{'experience.professional_work'|translate}}</span>
-        <span class="d-block legend">{{'experience.personal_experience'|translate}}</span>
-
-    </div> -->
     <div class="h-100 position-relative">
         <span class="experience_professional position-absolute">{{'experience.professional_work'|translate}}</span>
         <span class="experience_personal position-absolute">{{'experience.personal_experience'|translate}}</span>
         <div class="timeline d-flex justify-content-between ">
             <span class="ms-2">2017</span>
-            <!-- <span>2018</span>
-            <span>2019</span> -->
             <span>2020</span>
-        <!-- <span>2021</span> 
-            <span>2022</span>  -->
             <span class="me-2 text-uppercase">actual</span>
         </div>
         <app-chat-bubble [color]="'#10A19D'" [width]="600" class="first position-absolute"

@@ -1,14 +1,13 @@
-.card-content{
+.card-content {
     background-size: 100% 100%;
     background-color: none;
-    /* border: 1px solid #3C4048; */
-    /* box-shadow: 5px 5px 5px #B2B2B2; */
 }
-h5{
+
+h5 {
     color: #EAEAEA;
 }
 
-.bg-experience{
+.bg-experience {
     background-color: #EAEAEA;
     height: 10px;
     width: 100%;
@@ -16,16 +15,15 @@ h5{
 
 }
 
-.bg-experience-real{
-
+.bg-experience-real {
     background-color: #00ABB3;
     height: 10px;
     margin: auto;
 
 }
 
-.button-coolapse{
+.button-coolapse {
 
-right: 0;
+    right: 0;
 
 }

@@ -2,7 +2,6 @@
   <app-page class="container-fluid text-center" *ngFor="let page of pageList" id={{page.page}} [content]="page.content"
     [next]="page.next"></app-page>
 </article>
-
 <nav class="container-fluid d-none d-md-block">
   <a class="icono" *ngFor="let page of pageList" href="#{{page.page}}" id="{{page.name | translate}}"> <i
       class="{{page.icon}}"></i> </a>

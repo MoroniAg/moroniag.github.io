@@ -32,9 +32,9 @@ export class ChatBubbleComponent implements OnInit {
     let tag = document.getElementsByClassName("bubble2")
     console.log(tag)
     if (tag != null) {
-      
+
       // tag[0].style.display = "flex"
-      
+
     }
 
 
