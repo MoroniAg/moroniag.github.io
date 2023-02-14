@@ -1,17 +1,13 @@
 <div class="card-content d-flex flex-wrap">
   <h5 class="w-100 text-start">{{listContent.value | translate}}</h5>
-
   <ng-template #content let-modal>
     <div class="modal-header">
       <h4 class="modal-title" id="modal-basic-title">{{listContent.value | translate}}</h4>
       <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
     </div>
     <div class="modal-body">
-
       <div *ngIf="listContent.name==='tech_devops' " class="border ">
-
         <app-devops [tittles]="listContent.tittles"></app-devops>
-`
       </div>
       <div *ngIf="listContent.name!='tech_devops' ">
         <div class="list-group">
@@ -22,29 +18,20 @@
               <div class="bg-experience position-absolute"></div>
               <div class="bg-experience-real position-absolute " appChangeStyle widthPercent="{{tittle.percent}}"></div>
             </div>
-
             <div class="w-100 mt-3">
               <app-collapse class="" *ngIf="tittle.values !=null " [values]="tittle.values"></app-collapse>
             </div>
           </div>
         </div>
       </div>
-
     </div>
   </ng-template>
   <div class="w-75 position-relative d-flex align-items-center">
-
     <div class="bg-experience"></div>
     <div class="bg-experience-real position-absolute" appChangeStyle widthPercent="{{listContent.percent}}"></div>
-
   </div>
-
   <button *ngIf="listContent.name==='tech_devops'" type="button" class="btn btn-success ms-3"
     (click)="openXl(content)"><i class="bi bi-eye"></i> </button>
-
   <button *ngIf="listContent.name!='tech_devops'" type="button" class="btn btn-success ms-3" (click)="open(content)"><i
       class="bi bi-eye"></i> </button>
-
-
-
 </div>

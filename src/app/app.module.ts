@@ -7,7 +7,7 @@ import { ContentComponent } from './components/content/content.component';
 
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-import { HttpClient,HttpClientModule } from '@angular/common/http';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { ChatBubbleComponent } from "./components/chat-bubble/chat-bubble.component";
 import { ChangeStyleDirective } from './directives/change-style.directive';
 import { TechnologiesComponent } from './components/technologies/technologies.component';
@@ -16,7 +16,7 @@ import { CollapseComponent } from './components/collapse/collapse.component';
 import { DevopsComponent } from './components/devops/devops.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
-  return new TranslateHttpLoader(http);
+    return new TranslateHttpLoader(http);
 }
 
 @NgModule({

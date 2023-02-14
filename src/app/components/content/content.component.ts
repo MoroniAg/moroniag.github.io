@@ -34,9 +34,9 @@ export class ContentComponent implements OnInit {
     return tittle
   }
 
-  findValue(tittle: Tittle, valueName: string): Value{
+  findValue(tittle: Tittle, valueName: string): Value {
     let values = tittle.values.find(value => value.name == valueName)
-    if(values == null){
+    if (values == null) {
       return new Value
     }
     return values

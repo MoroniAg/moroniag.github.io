@@ -1,72 +1,38 @@
-#first-container{
-    /* position: relative; */
-    /* right: 15px; */
+#first-container {
     width: 95%;
 }
 
-.content-tittle{
-    /* border: 2px solid black; */
-    /* height: 100px; */
-}
-
 .arrows {
-    /* position: relative; */
     overflow: visible;
-   
+
 }
 
 #Collaborate {
-/* 
-    transform: rotate(-45deg);
-    top: 25%;
-    left: 33%; */
-   fill: #10A19D;
+    fill: #10A19D;
 }
 
 #first-container>div>ul>li {
-    /* 
-        transform: rotate(-45deg);
-        top: 25%;
-        left: 33%; */
-       /* background-color: rgba(178, 178, 178, 0.5) ; */
-       background-color: #EAEAEA;
-       box-shadow: 2px 2px 2px #3C4048;
-       
-    }
+    background-color: #EAEAEA;
+    box-shadow: 2px 2px 2px #3C4048;
+
+}
 
 #Build {
-    /* transform: rotate(-90deg);
-    top: 12%;
-    left: 13%; */
     fill: #540375;
-    
+
 }
 
 #Test {
-
-    /* transform: rotate(-180deg);
-    top: 33%;
-    left: 0%; */
     fill: #FF7000;
 
 }
 
 #Deploy {
-
-    /* transform: rotate(90deg);
-    top: 50%;
-    left: 13%; */
     fill: #FFBF00;
 
 }
 
 #Run {
-
-    /* transform: rotate(45deg) scaleY(1.5);
-    top: 25%;
-    left: 33%; */
     fill: #3C4048;
 
 }
-
-
