@@ -281,7 +281,7 @@
                     "tittles": [
                         {
                             "name": "Java",
-                            "percent":"80",
+                            "percent": "80",
                             "icon": "devicon-java-plain",
                             "values": [
                                 {
@@ -291,44 +291,43 @@
                                 {
                                     "name": "Frameworks:",
                                     "value": "Quarkus, Vert.x, Spring"
-                            
                                 }
                             ]
                         },
                         {
                             "name": "Python",
-                            "percent":"60",
+                            "percent": "60",
                             "icon": "devicon-python-plain",
-                            "values":[
+                            "values": [
                                 {
-                                    "name":"skills.version",
-                                    "value":"Python 2, Python 3"
+                                    "name": "skills.version",
+                                    "value": "Python 2, 3"
                                 }
                             ]
                         },
                         {
                             "name": "Go",
-                            "percent":"50",
+                            "percent": "50",
                             "icon": "devicon-go-original-wordmark"
                         },
                         {
                             "name": "C",
-                            "percent":"50",
+                            "percent": "50",
                             "icon": "devicon-c-plain-wordmark"
                         },
                         {
                             "name": "C++",
-                            "percent":"50",
+                            "percent": "50",
                             "icon": "devicon-cplusplus-plain-wordmark"
                         },
                         {
                             "name": "C#",
-                            "percent":"50",
+                            "percent": "50",
                             "icon": "devicon-csharp-plain-wordmark"
                         },
                         {
                             "name": "Rust",
-                            "percent":"50",
+                            "percent": "50",
                             "icon": "devicon-rust-plain"
                         }
                     ]
@@ -341,38 +340,38 @@
                     "tittles": [
                         {
                             "name": "Html5",
-                            "percent":"80",
+                            "percent": "80",
                             "icon": "devicon-html5-plain"
                         },
                         {
                             "name": "Css3",
-                            "percent":"80",
+                            "percent": "80",
                             "icon": "devicon-css3-plain"
                         },
                         {
                             "name": "Bootstrap",
-                            "percent":"60",
+                            "percent": "60",
                             "icon": "devicon-bootstrap-plain"
                         },
                         {
                             "name": "Javascript",
-                            "percent":"65",
+                            "percent": "65",
                             "icon": "devicon-javascript-plain"
                         },
                         {
                             "name": "Angular",
-                            "percent":"70",
+                            "percent": "70",
                             "icon": "devicon-angularjs-plain",
-                            "values":[
+                            "values": [
                                 {
-                                    "name":"skills.version",
-                                    "value":"Anuglar 4, 9, 12, 14"
+                                    "name": "skills.version",
+                                    "value": "Anuglar 4, 9, 12, 14"
                                 }
                             ]
                         },
                         {
                             "name": "React",
-                            "percent":"50",
+                            "percent": "50",
                             "icon": "devicon-react-original"
                         }
                     ]
@@ -384,7 +383,7 @@
                     "percent": "50",
                     "tittles": [
                         {
-                            "name": "Plan",
+                            "name": "Collaborate",
                             "values": [
                                 {
                                     "name": "Office"
@@ -397,20 +396,23 @@
                                 },
                                 {
                                     "name": "LaTeX"
+                                },
+                                {
+                                    "name": "Slack"
+                                },
+                                {
+                                    "name": "Jira"
                                 }
                             ]
                         },
                         {
-                            "name": "Code",
+                            "name": "Build",
                             "values": [
                                 {
                                     "name": "Git"
                                 },
                                 {
                                     "name": "GitFlow"
-                                },
-                                {
-                                    "name": "Jira"
                                 },
                                 {
                                     "name": "Eclipse"
@@ -420,12 +422,7 @@
                                 },
                                 {
                                     "name": "NetBeans"
-                                }
-                            ]
-                        },
-                        {
-                            "name": "Build",
-                            "values": [
+                                },
                                 {
                                     "name": "Maven"
                                 },
@@ -446,8 +443,20 @@
                             ]
                         },
                         {
-                            "name": "Release",
+                            "name": "Deploy",
                             "values": [
+                                {
+                                    "name": "SSH"
+                                },
+                                {
+                                    "name": "Docker"
+                                },
+                                {
+                                    "name": "Wildfly"
+                                },
+                                {
+                                    "name": "Apache"
+                                },
                                 {
                                     "name": "GitHub Actions"
                                 },
@@ -457,33 +466,21 @@
                             ]
                         },
                         {
-                            "name": "Deploy",
+                            "name": "Run",
                             "values": [
                                 {
-                                    "name": "Docker"
+                                    "name": "Oracle Vm"
                                 },
                                 {
-                                    "name": "Wildfly"
-                                },
-                                {
-                                    "name": "Apache"
-                                }
-                            ]
-                        },
-                        {
-                            "name": "Operate",
-                            "values": [
-                                {
-                                    "name": "Jira"
+                                    "name": "Linux Cloud"
                                 },
                                 {
                                     "name": "Confluense"
+                                },
+                                {
+                                    "name": "GrayLog"
                                 }
                             ]
-                        },
-                        {
-                            "name": "Monitor",
-                            "values": []
                         }
                     ]
                 },
@@ -495,41 +492,41 @@
                     "tittles": [
                         {
                             "name": "MySQL",
-                            "percent":"75",
+                            "percent": "75",
                             "icon": "devicon-mysql-plain",
-                            "values":[
+                            "values": [
                                 {
-                                    "name":"skills.version",
-                                    "value":"MySql 5, 8"
+                                    "name": "skills.version",
+                                    "value": "MySql 5, 8"
                                 }
                             ]
                         },
                         {
                             "name": "PostgreSQL",
-                            "percent":"75",
+                            "percent": "75",
                             "icon": "devicon-postgresql-plain"
                         },
                         {
                             "name": "Oracle Database",
-                            "percent":"50",
+                            "percent": "50",
                             "icon": "devicon-oracle-original"
                         },
                         {
                             "name": "MongoDB",
-                            "percent":"70",
+                            "percent": "70",
                             "icon": "devicon-mongodb-plain"
                         },
                         {
                             "name": "Traefik",
-                            "percent":"60"
+                            "percent": "60"
                         },
                         {
                             "name": "Keycloak",
-                            "percent":"60"
+                            "percent": "60"
                         },
                         {
                             "name": "Sonarqube",
-                            "percent":"60"
+                            "percent": "60"
                         }
                     ]
                 }
