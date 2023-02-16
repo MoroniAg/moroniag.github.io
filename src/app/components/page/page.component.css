@@ -209,3 +209,30 @@ a.next i {
   }
 
 }
+
+.bubble-contanct {
+  background-color: rgba(60, 64, 72, 0.7);
+  height: 75%;
+  width: 75%;
+  top: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  left: 50%;
+  border-radius: 500px 200px 116px 200px / 250px 500px 100px 300px;
+  border: dashed 5px #EAEAEA ;
+  color: #EAEAEA;
+
+}
+
+.first{
+  
+  width: 50%;
+  border-right: dotted 2px #EAEAEA;
+
+}
+
+.second{
+  width: 50%;
+}
+.info:visited, .info:link{
+color: #EAEAEA;
+}
