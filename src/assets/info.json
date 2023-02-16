@@ -534,22 +534,6 @@
         }
     },
     {
-        "page": "page-four",
-        "next": "page-five",
-        "icon": "bi bi-person-workspace",
-        "name": "nav.page-four",
-        "content": {
-            "name": "projects",
-            "list_content": [
-                {
-                    "name": "project_one",
-                    "url_img": "",
-                    "tittles": []
-                }
-            ]
-        }
-    },
-    {
         "page": "page-five",
         "next": "page-one",
         "icon": "bi bi-envelope-at-fill",
@@ -558,9 +542,46 @@
             "name": "contact",
             "list_content": [
                 {
-                    "name": "contant",
+                    "name": "contact",
                     "url_img": "",
-                    "tittles": []
+                    "tittles": [
+                        {
+                            "key": "direction",
+                            "name": "Ambato, Tungurahua, Ecuador",
+                            "icon": "bi bi-geo-alt-fill"
+                        },
+                        {
+                            "key": "email",
+                            "name": "moroniaguilera1993@gmail.com",
+                            "icon": "bi bi-envelope-fill"
+                        },
+                        {
+                            "key": "phone",
+                            "name": "+593 984410453",
+                            "icon": "bi bi-telephone-forward-fill"
+                        }
+                    ]
+                },
+                {
+                    "name": "social_media",
+                    "url_img": "",
+                    "tittles": [
+                        {
+                            "key": "Twitter",
+                            "name": "https://twitter.com/AguileraMoroni/",
+                            "icon": "devicon-twitter-original colored"
+                        },
+                        {
+                            "key": "Linkedin",
+                            "name": "https://www.linkedin.com/in/moroni-aguilera/",
+                            "icon": "devicon-linkedin-plain "
+                        },
+                        {
+                            "key": "GitHub",
+                            "name": "https://github.com/MoroniAg",
+                            "icon": "devicon-github-original colored"
+                        }
+                    ]
                 }
             ]
         }

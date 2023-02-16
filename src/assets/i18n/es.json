@@ -53,5 +53,8 @@
         "other": "Tecnologías Adicionales",
         "version": "Versiones usadas:",
         "more":"Mostrar más"
+    },
+    "contact":{
+        "tittle":"Contáctame"
     }
 }

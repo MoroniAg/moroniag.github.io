@@ -6,7 +6,7 @@
         "page-two": "Experience",
         "page-three": "Knowledge",
         "page-four": "Projects",
-        "page-five": "Contact"
+        "page-five": "Contact me"
     },
     "content": {
         "description": "Full Stack Developer"
@@ -53,5 +53,8 @@
         "other": "Other Technologies",
         "version": "Versions Used: ",
         "more":"Show more"
+    },
+    "contact":{
+        "tittle":"Contact me"
     }
 }

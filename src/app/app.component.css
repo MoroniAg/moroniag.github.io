@@ -96,9 +96,11 @@ app-page {
 }
 
 #page-four {
-    background-color: #FFBF00;
+    background-color: #B2B2B2;
 }
 
 #page-five {
-    background-color: #B2B2B2;
+    /* background-color: #B2B2B2; */
+    background: no-repeat url('../assets/images/buildings.jpg');
+    background-size: cover;
 }
