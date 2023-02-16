@@ -1,0 +1,67 @@
+<!-- home page -->
+<div *ngIf="content.name == 'name'" class="w-100 h-100">
+    <div class="translate">
+        <select name="" id="select" class="form-select" aria-label="Default select example">
+            <option value="1" (click)="translateSite('es')">Español</option>
+            <option value="2" (click)="translateSite('en')">English</option>
+        </select>
+    </div>
+
+    <span class="name"> {{findValue(findTittle(content.tittles, 'personal_information'),'0').value | translate}} </span>
+    <span class="glitch" id=" {{findValue(findTittle(content.tittles, 'personal_information'),'1').value}} ">
+        {{findValue(findTittle(content.tittles, "personal_information"),"1").value}}
+    </span>
+    <span class="name"> {{findValue(findTittle(content.tittles, "personal_information"),"2").value}}</span>
+
+</div>
+<img class="photo_profile" *ngIf="content.name == 'photo_profile'" src="{{content.url_img}}" alt="photo_profile">
+<div *ngIf="content.name=='description'">
+    <span class="second_line">{{findValue(findTittle(content.tittles, "description"), "second_line").value |
+        translate}}</span>
+</div>
+<!-- end home page -->
+
+<!-- experience -->
+<div *ngIf="content.name=='tittle'" class="row text-start w-100">
+    <div class="tittle mt-3 mb-3 col-11 p-3 rounded scroll-content ">
+        <p class="description mt-0 mb-0"> {{ findValue( findTittle(content.tittles, 'description'),'description').value
+            | translate}}
+            <br><br>{{findValue( findTittle(content.tittles, 'description'),'more').value | translate}} <a
+                href="#{{next}}">{{findValue(findTittle( content.tittles, 'description'),'link').value | translate}}</a>
+        </p>
+    </div>
+</div>
+<div *ngIf="content.name=='experience'" class="m-0 p-0 h-100 position-relative">
+    <div class="h-100 position-relative">
+        <span class="experience_professional position-absolute">{{'experience.professional_work'|translate}}</span>
+        <span class="experience_personal position-absolute">{{'experience.personal_experience'|translate}}</span>
+        <div class="timeline d-flex justify-content-between ">
+            <span class="ms-2">2017</span>
+            <span>2020</span>
+            <span class="me-2 text-uppercase">actual</span>
+        </div>
+        <app-chat-bubble [color]="'#10A19D'" [width]="600" class="first position-absolute"
+            [tittle]="findTittle(content.tittles, 'installgas')"></app-chat-bubble>
+        <app-chat-bubble [color]="'#10A19D'" [width]="300" class="second position-absolute"
+            [tittle]="findTittle(content.tittles, 'emunay')"></app-chat-bubble>
+        <app-chat-bubble [color]="'#10A19D'" [width]="300" class="third position-absolute"
+            [tittle]="findTittle(content.tittles, 'la_katuna')"></app-chat-bubble>
+        <div class="d-flex justify-content-between position-absolute container_personal w-75 ">
+            <app-chat-bubble [color]="'#FFBF00'" [width]="350" class="experience_0"
+                [tittle]="findTittle(content.tittles, 'experience_0')"></app-chat-bubble>
+            <app-chat-bubble [color]="'#FFBF00'" [width]="350" class="experience_1"
+                [tittle]="findTittle(content.tittles, 'experience_1')"></app-chat-bubble>
+            <app-chat-bubble [color]="'#FFBF00'" [width]="350" class="experience_2"
+                [tittle]="findTittle(content.tittles, 'experience_2')"></app-chat-bubble>
+            <app-chat-bubble [color]="'#FFBF00'" [width]="350" class="experience_3"
+                [tittle]="findTittle(content.tittles, 'experience_3')"></app-chat-bubble>
+            <app-chat-bubble [color]="'#FFBF00'" [width]="350" class="experience_4"
+                [tittle]="findTittle(content.tittles, 'experience_4')"></app-chat-bubble>
+            <app-chat-bubble [color]="'#FFBF00'" [width]="350" class="experience_5"
+                [tittle]="findTittle(content.tittles, 'experience_5')"></app-chat-bubble>
+        </div>
+    </div>
+
+</div>
+
+<!-- end experience -->

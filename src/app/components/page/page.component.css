@@ -1,0 +1,238 @@
+.second_background {
+  --height_second_backgorund: 70vh;
+  clip-path: polygon(0px 50%, 0px 100%, 100% 100%, 100% 0px);
+}
+
+.photo_profile {
+  position: absolute;
+  top: 18%;
+  z-index: 10;
+}
+
+.name {
+  position: absolute;
+  top: 30px;
+  /* left: 10px; */
+  z-index: 10;
+  /* height: auto; */
+}
+
+.description {
+  position: relative;
+  bottom: 10%;
+  z-index: 10;
+}
+
+/* .second_background::before {
+  content: '';
+  background-color: #00ABB3;
+  height: 250px;
+  width: 120%;
+  display: block;
+  transform: rotate(-10deg) translate(-30px, -150px);
+  z-index: 0;
+} */
+
+.next {
+  background-color: #EAEAEA;
+  border-radius: 40px;
+  width: 40px;
+  height: 40px;
+  z-index: 10;
+  bottom: -100px;
+  left: 50%;
+  border: 2px solid #3C4048;
+  position: relative;
+  display: block;
+  padding: 0;
+  animation: increase ease-in 0.8s infinite;
+}
+
+
+
+@keyframes increase {
+  0% {
+    transform: scale(1.03);
+  }
+
+  10% {
+    transform: scale(1.06);
+  }
+
+  20% {
+    transform: scale(1.09);
+  }
+
+  30% {
+    transform: scale(1.12);
+  }
+
+  40% {
+    transform: scale(1.15);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+a.next i {
+  position: relative;
+  top: 0%;
+}
+
+.bi {
+  color: #3C4048;
+  font-size: x-large;
+}
+
+.skills_tittle {
+  width: 9rem;
+  transform: scale(3.5);
+  right: 15%;
+  top: 45%;
+  color: #3C4048;
+  z-index: 10;
+}
+
+.technologies {
+  background-color: #B2B2B2;
+  height: 15%;
+  clip-path: polygon(75% 0px, 100% 0px, 100% 100%, 75% 100%, 50% 50%);
+}
+
+.container-technologies {
+  border: 5px solid #B2B2B2;
+  border-radius: 20px;
+  top: 10%;
+  background-color: rgba(30, 32, 36, 0.8);
+
+}
+
+@media (min-width: 1400px) {
+  .second_background {
+    background-color: #3C4048;
+    position: absolute;
+    height: var(--height_second_backgorund);
+    bottom: 0%;
+    z-index: 0;
+  }
+}
+
+@media (max-width: 1400px) {
+  .second_background {
+    background-color: #3C4048;
+    position: absolute;
+    height: var(--height_second_backgorund);
+    bottom: 0%;
+    z-index: 0;
+  }
+}
+
+@media (max-width: 1200px) {
+  .second_background {
+    background-color: #3C4048;
+    position: absolute;
+    height: var(--height_second_backgorund);
+    bottom: 0%;
+    z-index: 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .second_background {
+    background-color: #3C4048;
+    position: absolute;
+    height: var(--height_second_backgorund);
+    bottom: 0%;
+    z-index: 0;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .photo_profile {
+    top: 25%;
+  }
+
+  .second_background {
+    background-color: #3C4048;
+    position: absolute;
+    height: var(--height_second_backgorund);
+    bottom: 0%;
+    z-index: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .description {
+    bottom: 15%;
+  }
+
+  .photo_profile {
+    top: 35%;
+  }
+
+  .second_background {
+    background-color: #3C4048;
+    position: absolute;
+    height: var(--height_second_backgorund);
+    bottom: 0%;
+    z-index: 0;
+  }
+
+}
+
+@media (max-width: 411px) {
+  .description {
+    bottom: 5%;
+  }
+
+  .photo_profile {
+    top: 35%;
+  }
+
+  .name {
+    top: 10%;
+  }
+
+  .second_background {
+    background-color: #3C4048;
+    position: absolute;
+    height: var(--height_second_backgorund);
+    bottom: 0%;
+    z-index: 0;
+  }
+
+}
+
+.bubble-contanct {
+  background-color: rgba(60, 64, 72, 0.7);
+  height: 75%;
+  width: 75%;
+  top: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  left: 50%;
+  border-radius: 500px 200px 116px 200px / 250px 500px 100px 300px;
+  border: dashed 5px #EAEAEA ;
+  color: #EAEAEA;
+
+}
+
+.first{
+  
+  width: 50%;
+  border-right: dotted 2px #EAEAEA;
+
+}
+
+.second{
+  width: 50%;
+}
+.info:visited, .info:link{
+color: #EAEAEA;
+}

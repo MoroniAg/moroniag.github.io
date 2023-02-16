@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: bold;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    overflow-x: hidden;
+}
+
+
+nav {
+    position: fixed;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    width: 200px;
+    z-index: 100;
+}
+
+nav a {
+    position: relative;
+    border: 0px solid rgba(0, 0, 0, 0.582);
+    border-radius: 50px;
+    display: block;
+    margin: 10px;
+    height: 50px;
+    width: 50px;
+    transition: all 0.5s ease-out;
+    text-align: left;
+    line-height: 50px;
+    box-sizing: border-box;
+    background-color: white;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.582);
+    font-size: 30px;
+    text-decoration: none;
+    color: #3C4048;
+}
+
+nav a::before {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.icono::after {
+    position: absolute;
+    transition-property: visibility;
+    transition-delay: 2s;
+    transition-duration: 1s;
+    visibility: hidden;
+
+}
+
+.icono:hover::after {
+    content: attr(id);
+    visibility: visible;
+    font-size: 20px;
+    color: rgb(56, 56, 56);
+    transform: translateX(10px);
+    text-decoration: none;
+    text-align: center;
+}
+
+nav a:hover {
+    width: 200px;
+    background-color: white;
+}
+
+nav a i {
+    display: inline;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+app-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#page-one {
+    background-color: #00ABB3;
+}
+
+#page-two {
+    background-color: rgba(84, 3, 117, 0.8);
+}
+
+#page-three {
+    background-color: #FF7000;
+}
+
+#page-four {
+    background-color: #B2B2B2;
+}
+
+#page-five {
+    /* background-color: #B2B2B2; */
+    background: no-repeat url('../assets/images/buildings.jpg');
+    background-size: cover;
+}
+
+footer{
+    background-color: #3C4048;
+    color: #EAEAEA;
+    height: 100px;
+}

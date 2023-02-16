@@ -1,0 +1,589 @@
+[
+    {
+        "page": "page-one",
+        "next": "page-two",
+        "icon": "bi bi-house-fill",
+        "name": "nav.page-one",
+        "content": {
+            "name": "home",
+            "list_content": [
+                {
+                    "name": "name",
+                    "url_img": "",
+                    "tittles": [
+                        {
+                            "name": "personal_information",
+                            "values": [
+                                {
+                                    "name": "0",
+                                    "value": "tittle"
+                                },
+                                {
+                                    "name": "1",
+                                    "value": "Moroni"
+                                },
+                                {
+                                    "name": "2",
+                                    "value": "Aguilera"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "photo_profile",
+                    "url_img": "assets/images/photo1-512.png",
+                    "tittles": []
+                },
+                {
+                    "name": "description",
+                    "url_img": "",
+                    "tittles": [
+                        {
+                            "name": "description",
+                            "values": [
+                                {
+                                    "name": "second_line",
+                                    "value": "content.description"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "page": "page-two",
+        "next": "page-three",
+        "icon": "bi bi-briefcase-fill",
+        "name": "nav.page-two",
+        "content": {
+            "name": "experience",
+            "list_content": [
+                {
+                    "name": "tittle",
+                    "url_img": "",
+                    "tittles": [
+                        {
+                            "name": "description",
+                            "values": [
+                                {
+                                    "name": "description",
+                                    "value": "experience.description.description"
+                                },
+                                {
+                                    "name": "more",
+                                    "value": "experience.description.more"
+                                },
+                                {
+                                    "name": "link",
+                                    "value": "experience.description.link"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "experience",
+                    "url_img": "",
+                    "tittles": [
+                        {
+                            "name": "installgas",
+                            "values": [
+                                {
+                                    "name": "job_name",
+                                    "value": "InstallGas/Cumorah"
+                                },
+                                {
+                                    "name": "role_description",
+                                    "value": "experience.role.installgas"
+                                },
+                                {
+                                    "name": "years",
+                                    "value": "experience.years.installgas"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "emunay",
+                            "values": [
+                                {
+                                    "name": "job_name",
+                                    "value": "Emunay Cia. Ltda."
+                                },
+                                {
+                                    "name": "role_description",
+                                    "value": "experience.role.emunay"
+                                },
+                                {
+                                    "name": "years",
+                                    "value": "experience.years.emunay"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "la_katuna",
+                            "values": [
+                                {
+                                    "name": "job_name",
+                                    "value": "La Katuna"
+                                },
+                                {
+                                    "name": "role_description",
+                                    "value": "experience.role.lakatuna"
+                                },
+                                {
+                                    "name": "years",
+                                    "value": "experience.years.lakatuna"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "experience_0",
+                            "values": [
+                                {
+                                    "name": "job_name",
+                                    "value": "experience.personal_projects.experience_0"
+                                },
+                                {
+                                    "name": "role_description",
+                                    "value": [
+                                        "Java",
+                                        "Swing GUI"
+                                    ]
+                                },
+                                {
+                                    "name": "years",
+                                    "value": "experience.personal_projects.years_0"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "experience_1",
+                            "values": [
+                                {
+                                    "name": "job_name",
+                                    "value": "experience.personal_projects.experience_1"
+                                },
+                                {
+                                    "name": "role_description",
+                                    "value": [
+                                        "Java",
+                                        "PrimeFaces"
+                                    ]
+                                },
+                                {
+                                    "name": "years",
+                                    "value": "experience.personal_projects.years_1"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "experience_2",
+                            "values": [
+                                {
+                                    "name": "job_name",
+                                    "value": "experience.personal_projects.experience_2"
+                                },
+                                {
+                                    "name": "role_description",
+                                    "value": [
+                                        "Java",
+                                        "PrimeFaces"
+                                    ]
+                                },
+                                {
+                                    "name": "years",
+                                    "value": "experience.personal_projects.years_2"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "experience_3",
+                            "values": [
+                                {
+                                    "name": "job_name",
+                                    "value": "experience.personal_projects.experience_3"
+                                },
+                                {
+                                    "name": "role_description",
+                                    "value": [
+                                        "Arduino",
+                                        "C++",
+                                        "Git"
+                                    ]
+                                },
+                                {
+                                    "name": "years",
+                                    "value": "experience.personal_projects.years_3"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "experience_4",
+                            "values": [
+                                {
+                                    "name": "job_name",
+                                    "value": "experience.personal_projects.experience_4"
+                                },
+                                {
+                                    "name": "role_description",
+                                    "value": [
+                                        "Rust",
+                                        "Git"
+                                    ]
+                                },
+                                {
+                                    "name": "years",
+                                    "value": "experience.personal_projects.years_4"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "experience_5",
+                            "values": [
+                                {
+                                    "name": "job_name",
+                                    "value": "experience.personal_projects.experience_5"
+                                },
+                                {
+                                    "name": "role_description",
+                                    "value": [
+                                        "Angular",
+                                        "Git"
+                                    ]
+                                },
+                                {
+                                    "name": "years",
+                                    "value": "experience.personal_projects.years_5"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "page": "page-three",
+        "next": "page-four",
+        "icon": "bi bi-pc-display-horizontal",
+        "name": "nav.page-three",
+        "content": {
+            "name": "technologies",
+            "list_content": [
+                {
+                    "name": "tech_backend",
+                    "value": "skills.backend",
+                    "url_img": "assets/images/photo1-512.png",
+                    "percent": "80",
+                    "tittles": [
+                        {
+                            "name": "Java",
+                            "percent": "80",
+                            "icon": "devicon-java-plain",
+                            "values": [
+                                {
+                                    "name": "skills.version",
+                                    "value": "Java 8, 11, 17"
+                                },
+                                {
+                                    "name": "Frameworks:",
+                                    "value": "Quarkus, Vert.x, Spring"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Python",
+                            "percent": "60",
+                            "icon": "devicon-python-plain",
+                            "values": [
+                                {
+                                    "name": "skills.version",
+                                    "value": "Python 2, 3"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Go",
+                            "percent": "50",
+                            "icon": "devicon-go-original-wordmark"
+                        },
+                        {
+                            "name": "C",
+                            "percent": "50",
+                            "icon": "devicon-c-plain-wordmark"
+                        },
+                        {
+                            "name": "C++",
+                            "percent": "50",
+                            "icon": "devicon-cplusplus-plain-wordmark"
+                        },
+                        {
+                            "name": "C#",
+                            "percent": "50",
+                            "icon": "devicon-csharp-plain-wordmark"
+                        },
+                        {
+                            "name": "Rust",
+                            "percent": "50",
+                            "icon": "devicon-rust-plain"
+                        }
+                    ]
+                },
+                {
+                    "name": "tech_frontend",
+                    "value": "skills.frontend",
+                    "url_img": "",
+                    "percent": "60",
+                    "tittles": [
+                        {
+                            "name": "Html5",
+                            "percent": "80",
+                            "icon": "devicon-html5-plain"
+                        },
+                        {
+                            "name": "Css3",
+                            "percent": "80",
+                            "icon": "devicon-css3-plain"
+                        },
+                        {
+                            "name": "Bootstrap",
+                            "percent": "60",
+                            "icon": "devicon-bootstrap-plain"
+                        },
+                        {
+                            "name": "Javascript",
+                            "percent": "65",
+                            "icon": "devicon-javascript-plain"
+                        },
+                        {
+                            "name": "Angular",
+                            "percent": "70",
+                            "icon": "devicon-angularjs-plain",
+                            "values": [
+                                {
+                                    "name": "skills.version",
+                                    "value": "Anuglar 4, 9, 12, 14"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "React",
+                            "percent": "50",
+                            "icon": "devicon-react-original"
+                        }
+                    ]
+                },
+                {
+                    "name": "tech_devops",
+                    "value": "skills.devops",
+                    "url_img": "",
+                    "percent": "50",
+                    "tittles": [
+                        {
+                            "name": "Collaborate",
+                            "values": [
+                                {
+                                    "name": "Office"
+                                },
+                                {
+                                    "name": "Google Drive"
+                                },
+                                {
+                                    "name": "Google Docs"
+                                },
+                                {
+                                    "name": "LaTeX"
+                                },
+                                {
+                                    "name": "Slack"
+                                },
+                                {
+                                    "name": "Jira"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Build",
+                            "values": [
+                                {
+                                    "name": "Git"
+                                },
+                                {
+                                    "name": "GitFlow"
+                                },
+                                {
+                                    "name": "Eclipse"
+                                },
+                                {
+                                    "name": "IntelliJ Idea"
+                                },
+                                {
+                                    "name": "NetBeans"
+                                },
+                                {
+                                    "name": "Maven"
+                                },
+                                {
+                                    "name": "Gradle"
+                                },
+                                {
+                                    "name": "Docker"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Test",
+                            "values": [
+                                {
+                                    "name": "JUnit5"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Deploy",
+                            "values": [
+                                {
+                                    "name": "SSH"
+                                },
+                                {
+                                    "name": "Docker"
+                                },
+                                {
+                                    "name": "Wildfly"
+                                },
+                                {
+                                    "name": "Apache"
+                                },
+                                {
+                                    "name": "GitHub Actions"
+                                },
+                                {
+                                    "name": "Jenkins"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Run",
+                            "values": [
+                                {
+                                    "name": "Oracle Vm"
+                                },
+                                {
+                                    "name": "Linux Cloud"
+                                },
+                                {
+                                    "name": "Confluense"
+                                },
+                                {
+                                    "name": "GrayLog"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "tech_other",
+                    "value": "skills.other",
+                    "url_img": "",
+                    "percent": "70",
+                    "tittles": [
+                        {
+                            "name": "MySQL",
+                            "percent": "75",
+                            "icon": "devicon-mysql-plain",
+                            "values": [
+                                {
+                                    "name": "skills.version",
+                                    "value": "MySql 5, 8"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "PostgreSQL",
+                            "percent": "75",
+                            "icon": "devicon-postgresql-plain"
+                        },
+                        {
+                            "name": "Oracle Database",
+                            "percent": "50",
+                            "icon": "devicon-oracle-original"
+                        },
+                        {
+                            "name": "MongoDB",
+                            "percent": "70",
+                            "icon": "devicon-mongodb-plain"
+                        },
+                        {
+                            "name": "Traefik",
+                            "percent": "60"
+                        },
+                        {
+                            "name": "Keycloak",
+                            "percent": "60"
+                        },
+                        {
+                            "name": "Sonarqube",
+                            "percent": "60"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "page": "page-five",
+        "next": "page-one",
+        "icon": "bi bi-envelope-at-fill",
+        "name": "nav.page-five",
+        "content": {
+            "name": "contact",
+            "list_content": [
+                {
+                    "name": "contact",
+                    "url_img": "",
+                    "tittles": [
+                        {
+                            "key": "direction",
+                            "name": "Ambato, Tungurahua, Ecuador",
+                            "icon": "bi bi-geo-alt-fill"
+                        },
+                        {
+                            "key": "email",
+                            "name": "moroniaguilera1993@gmail.com",
+                            "icon": "bi bi-envelope-fill"
+                        },
+                        {
+                            "key": "phone",
+                            "name": "+593 984410453",
+                            "icon": "bi bi-telephone-forward-fill"
+                        }
+                    ]
+                },
+                {
+                    "name": "social_media",
+                    "url_img": "",
+                    "tittles": [
+                        {
+                            "key": "Twitter",
+                            "name": "https://twitter.com/AguileraMoroni/",
+                            "icon": "devicon-twitter-original colored"
+                        },
+                        {
+                            "key": "Linkedin",
+                            "name": "https://www.linkedin.com/in/moroni-aguilera/",
+                            "icon": "devicon-linkedin-plain "
+                        },
+                        {
+                            "key": "GitHub",
+                            "name": "https://github.com/MoroniAg",
+                            "icon": "devicon-github-original colored"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+]

@@ -1,0 +1,38 @@
+#first-container {
+    width: 95%;
+}
+
+.arrows {
+    overflow: visible;
+
+}
+
+#Collaborate {
+    fill: #10A19D;
+}
+
+#first-container>div>ul>li {
+    background-color: #EAEAEA;
+    box-shadow: 2px 2px 2px #3C4048;
+
+}
+
+#Build {
+    fill: #540375;
+
+}
+
+#Test {
+    fill: #FF7000;
+
+}
+
+#Deploy {
+    fill: #FFBF00;
+
+}
+
+#Run {
+    fill: #3C4048;
+
+}

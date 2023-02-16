@@ -1,0 +1,29 @@
+.card-content {
+    background-size: 100% 100%;
+    background-color: none;
+}
+
+h5 {
+    color: #EAEAEA;
+}
+
+.bg-experience {
+    background-color: #EAEAEA;
+    height: 10px;
+    width: 100%;
+    margin: auto;
+
+}
+
+.bg-experience-real {
+    background-color: #00ABB3;
+    height: 10px;
+    margin: auto;
+
+}
+
+.button-coolapse {
+
+    right: 0;
+
+}
