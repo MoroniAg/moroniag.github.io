@@ -104,3 +104,9 @@ app-page {
     background: no-repeat url('../assets/images/buildings.jpg');
     background-size: cover;
 }
+
+footer{
+    background-color: #3C4048;
+    color: #EAEAEA;
+    height: 100px;
+}
