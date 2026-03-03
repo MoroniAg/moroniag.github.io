@@ -2,7 +2,7 @@
   "name": "React + Tailwind Dev Container",
   "image": "mcr.microsoft.com/vscode/devcontainers/javascript-node:20",
   "mounts": [
-    "source=${workspaceFolder}/portfolio-ui/node_modules,target=/workspace/portfolio-ui/node_modules,type=bind"
+    "source=/home/moroniaguilera/porfolio/portfolio-ui/node_modules,target=/workspace/portfolio-ui/node_modules,type=bind"
   ],
   "features": {
     "ghcr.io/devcontainers/features/node:1": {
