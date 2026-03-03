@@ -1,0 +1,29 @@
+{
+  "name": "React + Tailwind Dev Container",
+  "image": "mcr.microsoft.com/vscode/devcontainers/javascript-node:20",
+  "mounts": [
+    "source=${workspaceFolder}/portfolio-ui/node_modules,target=/workspace/portfolio-ui/node_modules,type=bind"
+  ],
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "20"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "editor.formatOnSave": true,
+        "files.autoSave": "onWindowChange"
+      },
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "bradlc.vscode-tailwindcss"
+      ]
+    }
+  },
+  "forwardPorts": [
+    5173
+  ],
+  "postCreateCommand": "cd portfolio-ui && npm create vite@latest . -- --template react && npm install && npm install -D tailwindcss postcss autoprefixer && npx tailwindcss init -p"
+}
