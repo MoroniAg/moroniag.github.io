@@ -2,7 +2,8 @@
   "name": "React + Tailwind Dev Container",
   "image": "mcr.microsoft.com/vscode/devcontainers/javascript-node:20",
   "mounts": [
-    "source=/home/moroniaguilera/porfolio/portfolio-ui/node_modules,target=/workspace/portfolio-ui/node_modules,type=bind"
+    "source=/home/moroniaguilera/porfolio/portfolio-ui/node_modules,target=/workspace/portfolio-ui/node_modules,type=bind",
+    "source=/home/moroniaguilera/.ssh,target=/home/node/.ssh,type=bind,consistency=cached"
   ],
   "features": {
     "ghcr.io/devcontainers/features/node:1": {
@@ -25,5 +26,5 @@
   "forwardPorts": [
     5173
   ],
-  "postCreateCommand": "cd portfolio-ui && npm create vite@latest . -- --template react && npm install && npm install -D tailwindcss postcss autoprefixer && npx tailwindcss init -p"
+  "postCreateCommand": "cd portfolio-ui && npm create vite@latest . -- --template react && npm install && npm install -D tailwindcss postcss autoprefixer && npx tailwindcss init -p && git config --global user.name 'moroniaguilera' && git config --global user.email 'moroniaguilera1993@gmail.com'"
 }
