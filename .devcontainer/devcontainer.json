@@ -26,5 +26,5 @@
   "forwardPorts": [
     5173
   ],
-  "postCreateCommand": "cd portfolio-ui && npm create vite@latest . -- --template react && npm install && npm install -D tailwindcss postcss autoprefixer && npx tailwindcss init -p && git config --global user.name 'moroniaguilera' && git config --global user.email 'moroniaguilera1993@gmail.com'"
+  "postCreateCommand": "git config --global user.name 'moroniaguilera' && git config --global user.email 'moroniaguilera1993@gmail.com'"
 }
