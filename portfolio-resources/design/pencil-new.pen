@@ -1,5 +1,5 @@
 {
-  "version": "2.8",
+  "version": "2.9",
   "children": [
     {
       "type": "frame",
@@ -753,6 +753,8 @@
             {
               "type": "frame",
               "id": "AMLzw",
+              "x": 0,
+              "y": 0,
               "name": "Portrait",
               "enabled": false,
               "metadata": {
@@ -892,7 +894,7 @@
               "textAlign": "center",
               "fontFamily": "Orbitron",
               "fontSize": 11.5,
-              "fontWeight": "normal",
+              "fontWeight": "500",
               "letterSpacing": 0.06
             }
           ]
@@ -3435,11 +3437,13 @@
                     {
                       "type": "text",
                       "id": "s7C2B",
+                      "x": 0,
+                      "y": 0,
                       "name": "TEXT",
                       "enabled": false,
                       "fill": "#000000ff",
                       "textGrowth": "fixed-width",
-                      "width": "fill_container",
+                      "width": "fill_container(0)",
                       "textAlign": "center",
                       "textAlignVertical": "middle",
                       "fontFamily": "Orbitron",
@@ -4665,11 +4669,13 @@
                         {
                           "type": "frame",
                           "id": "Vn6vb",
+                          "x": 0,
+                          "y": 0,
                           "name": "Frame 188",
                           "enabled": false,
                           "clip": true,
-                          "width": "fill_container",
-                          "height": "fill_container",
+                          "width": "fill_container(0)",
+                          "height": "fill_container(0)",
                           "stroke": {
                             "align": "inside",
                             "thickness": 1
@@ -6217,6 +6223,8 @@
                             {
                               "type": "frame",
                               "id": "WgnV9",
+                              "x": 0,
+                              "y": 0,
                               "name": "ChipPortfolio",
                               "enabled": false,
                               "clip": true,
@@ -6249,6 +6257,8 @@
                             {
                               "type": "frame",
                               "id": "m72ve",
+                              "x": 0,
+                              "y": 0,
                               "name": "ChipPortfolio",
                               "enabled": false,
                               "clip": true,
@@ -6640,11 +6650,13 @@
                         {
                           "type": "frame",
                           "id": "PGIhs",
+                          "x": 0,
+                          "y": 0,
                           "name": "Frame 188",
                           "enabled": false,
                           "clip": true,
-                          "width": "fill_container",
-                          "height": "fill_container",
+                          "width": "fill_container(0)",
+                          "height": "fill_container(0)",
                           "stroke": {
                             "align": "inside",
                             "thickness": 1
@@ -7043,6 +7055,8 @@
                             {
                               "type": "frame",
                               "id": "CMZZh",
+                              "x": 0,
+                              "y": 0,
                               "name": "ChipPortfolio",
                               "enabled": false,
                               "clip": true,
@@ -7434,11 +7448,13 @@
                         {
                           "type": "frame",
                           "id": "DbqBM",
+                          "x": 0,
+                          "y": 0,
                           "name": "Frame 188",
                           "enabled": false,
                           "clip": true,
-                          "width": "fill_container",
-                          "height": "fill_container",
+                          "width": "fill_container(0)",
+                          "height": "fill_container(0)",
                           "stroke": {
                             "align": "inside",
                             "thickness": 1
@@ -7837,6 +7853,8 @@
                             {
                               "type": "frame",
                               "id": "34FCX",
+                              "x": 0,
+                              "y": 0,
                               "name": "ChipPortfolio",
                               "enabled": false,
                               "clip": true,
@@ -8226,6 +8244,8 @@
                             {
                               "type": "frame",
                               "id": "ZXF97",
+                              "x": 0,
+                              "y": 0,
                               "name": "ChipPortfolio",
                               "enabled": false,
                               "clip": true,
@@ -8584,6 +8604,8 @@
                             {
                               "type": "frame",
                               "id": "CdvB2",
+                              "x": 0,
+                              "y": 0,
                               "name": "ChipPortfolio",
                               "enabled": false,
                               "clip": true,
@@ -8616,6 +8638,8 @@
                             {
                               "type": "frame",
                               "id": "arHxr",
+                              "x": 0,
+                              "y": 0,
                               "name": "ChipPortfolio",
                               "enabled": false,
                               "clip": true,
@@ -8912,6 +8936,8 @@
                             {
                               "type": "frame",
                               "id": "Qb8tr",
+                              "x": 0,
+                              "y": 0,
                               "name": "ChipPortfolio",
                               "enabled": false,
                               "clip": true,
@@ -9008,11 +9034,13 @@
                         {
                           "type": "frame",
                           "id": "tOo7c",
+                          "x": 0,
+                          "y": 0,
                           "name": "Frame 188",
                           "enabled": false,
                           "clip": true,
-                          "width": "fill_container",
-                          "height": "fill_container",
+                          "width": "fill_container(0)",
+                          "height": "fill_container(0)",
                           "stroke": {
                             "align": "inside",
                             "thickness": 1
@@ -9445,11 +9473,13 @@
                     {
                       "type": "text",
                       "id": "VGNbS",
+                      "x": 0,
+                      "y": 0,
                       "name": "TEXT",
                       "enabled": false,
                       "fill": "#000000ff",
                       "textGrowth": "fixed-width",
-                      "width": "fill_container",
+                      "width": "fill_container(0)",
                       "textAlign": "center",
                       "textAlignVertical": "middle",
                       "fontFamily": "Orbitron",
@@ -9812,11 +9842,13 @@
                     {
                       "type": "text",
                       "id": "DUrCF",
+                      "x": 0,
+                      "y": 0,
                       "name": "TEXT",
                       "enabled": false,
                       "fill": "#000000ff",
                       "textGrowth": "fixed-width",
-                      "width": "fill_container",
+                      "width": "fill_container(0)",
                       "textAlign": "center",
                       "textAlignVertical": "middle",
                       "fontFamily": "Orbitron",
@@ -10542,11 +10574,13 @@
                         {
                           "type": "frame",
                           "id": "1CCPH",
+                          "x": 0,
+                          "y": 0,
                           "name": "Frame 188",
                           "enabled": false,
                           "clip": true,
-                          "width": "fill_container",
-                          "height": "fill_container",
+                          "width": "fill_container(0)",
+                          "height": "fill_container(0)",
                           "stroke": {
                             "align": "inside",
                             "thickness": 1
@@ -12094,6 +12128,8 @@
                             {
                               "type": "frame",
                               "id": "vWpBk",
+                              "x": 0,
+                              "y": 0,
                               "name": "ChipPortfolio",
                               "enabled": false,
                               "clip": true,
@@ -12126,6 +12162,8 @@
                             {
                               "type": "frame",
                               "id": "fTAE1",
+                              "x": 0,
+                              "y": 0,
                               "name": "ChipPortfolio",
                               "enabled": false,
                               "clip": true,
@@ -12517,11 +12555,13 @@
                         {
                           "type": "frame",
                           "id": "mhSBR",
+                          "x": 0,
+                          "y": 0,
                           "name": "Frame 188",
                           "enabled": false,
                           "clip": true,
-                          "width": "fill_container",
-                          "height": "fill_container",
+                          "width": "fill_container(0)",
+                          "height": "fill_container(0)",
                           "stroke": {
                             "align": "inside",
                             "thickness": 1
@@ -12920,6 +12960,8 @@
                             {
                               "type": "frame",
                               "id": "7txWY",
+                              "x": 0,
+                              "y": 0,
                               "name": "ChipPortfolio",
                               "enabled": false,
                               "clip": true,
@@ -13311,11 +13353,13 @@
                         {
                           "type": "frame",
                           "id": "AW7vH",
+                          "x": 0,
+                          "y": 0,
                           "name": "Frame 188",
                           "enabled": false,
                           "clip": true,
-                          "width": "fill_container",
-                          "height": "fill_container",
+                          "width": "fill_container(0)",
+                          "height": "fill_container(0)",
                           "stroke": {
                             "align": "inside",
                             "thickness": 1
@@ -13714,6 +13758,8 @@
                             {
                               "type": "frame",
                               "id": "EIOz6",
+                              "x": 0,
+                              "y": 0,
                               "name": "ChipPortfolio",
                               "enabled": false,
                               "clip": true,
@@ -14103,6 +14149,8 @@
                             {
                               "type": "frame",
                               "id": "uF519",
+                              "x": 0,
+                              "y": 0,
                               "name": "ChipPortfolio",
                               "enabled": false,
                               "clip": true,
@@ -14461,6 +14509,8 @@
                             {
                               "type": "frame",
                               "id": "5w2rF",
+                              "x": 0,
+                              "y": 0,
                               "name": "ChipPortfolio",
                               "enabled": false,
                               "clip": true,
@@ -14493,6 +14543,8 @@
                             {
                               "type": "frame",
                               "id": "NP0a5",
+                              "x": 0,
+                              "y": 0,
                               "name": "ChipPortfolio",
                               "enabled": false,
                               "clip": true,
@@ -14789,6 +14841,8 @@
                             {
                               "type": "frame",
                               "id": "xJdRo",
+                              "x": 0,
+                              "y": 0,
                               "name": "ChipPortfolio",
                               "enabled": false,
                               "clip": true,
@@ -14885,11 +14939,13 @@
                         {
                           "type": "frame",
                           "id": "w1Pyy",
+                          "x": 0,
+                          "y": 0,
                           "name": "Frame 188",
                           "enabled": false,
                           "clip": true,
-                          "width": "fill_container",
-                          "height": "fill_container",
+                          "width": "fill_container(0)",
+                          "height": "fill_container(0)",
                           "stroke": {
                             "align": "inside",
                             "thickness": 1
@@ -15943,11 +15999,13 @@
                         {
                           "type": "frame",
                           "id": "gG7Zf",
+                          "x": 0,
+                          "y": 0,
                           "name": "Frame 188",
                           "enabled": false,
                           "clip": true,
-                          "width": "fill_container",
-                          "height": "fill_container",
+                          "width": "fill_container(0)",
+                          "height": "fill_container(0)",
                           "stroke": {
                             "align": "inside",
                             "thickness": 1
@@ -17495,6 +17553,8 @@
                             {
                               "type": "frame",
                               "id": "h3yti",
+                              "x": 0,
+                              "y": 0,
                               "name": "ChipPortfolio",
                               "enabled": false,
                               "clip": true,
@@ -17527,6 +17587,8 @@
                             {
                               "type": "frame",
                               "id": "agZVM",
+                              "x": 0,
+                              "y": 0,
                               "name": "ChipPortfolio",
                               "enabled": false,
                               "clip": true,
@@ -17918,11 +17980,13 @@
                         {
                           "type": "frame",
                           "id": "rJcTu",
+                          "x": 0,
+                          "y": 0,
                           "name": "Frame 188",
                           "enabled": false,
                           "clip": true,
-                          "width": "fill_container",
-                          "height": "fill_container",
+                          "width": "fill_container(0)",
+                          "height": "fill_container(0)",
                           "stroke": {
                             "align": "inside",
                             "thickness": 1
@@ -18321,6 +18385,8 @@
                             {
                               "type": "frame",
                               "id": "TiLXB",
+                              "x": 0,
+                              "y": 0,
                               "name": "ChipPortfolio",
                               "enabled": false,
                               "clip": true,
@@ -18712,11 +18778,13 @@
                         {
                           "type": "frame",
                           "id": "6qOIT",
+                          "x": 0,
+                          "y": 0,
                           "name": "Frame 188",
                           "enabled": false,
                           "clip": true,
-                          "width": "fill_container",
-                          "height": "fill_container",
+                          "width": "fill_container(0)",
+                          "height": "fill_container(0)",
                           "stroke": {
                             "align": "inside",
                             "thickness": 1
@@ -19115,6 +19183,8 @@
                             {
                               "type": "frame",
                               "id": "Ago8I",
+                              "x": 0,
+                              "y": 0,
                               "name": "ChipPortfolio",
                               "enabled": false,
                               "clip": true,
@@ -19504,6 +19574,8 @@
                             {
                               "type": "frame",
                               "id": "1gEvc",
+                              "x": 0,
+                              "y": 0,
                               "name": "ChipPortfolio",
                               "enabled": false,
                               "clip": true,
@@ -19862,6 +19934,8 @@
                             {
                               "type": "frame",
                               "id": "8VDkD",
+                              "x": 0,
+                              "y": 0,
                               "name": "ChipPortfolio",
                               "enabled": false,
                               "clip": true,
@@ -19894,6 +19968,8 @@
                             {
                               "type": "frame",
                               "id": "IoHRt",
+                              "x": 0,
+                              "y": 0,
                               "name": "ChipPortfolio",
                               "enabled": false,
                               "clip": true,
@@ -20190,6 +20266,8 @@
                             {
                               "type": "frame",
                               "id": "ensop",
+                              "x": 0,
+                              "y": 0,
                               "name": "ChipPortfolio",
                               "enabled": false,
                               "clip": true,
@@ -20286,11 +20364,13 @@
                         {
                           "type": "frame",
                           "id": "cq7BY",
+                          "x": 0,
+                          "y": 0,
                           "name": "Frame 188",
                           "enabled": false,
                           "clip": true,
-                          "width": "fill_container",
-                          "height": "fill_container",
+                          "width": "fill_container(0)",
+                          "height": "fill_container(0)",
                           "stroke": {
                             "align": "inside",
                             "thickness": 1
@@ -20772,11 +20852,13 @@
                     {
                       "type": "text",
                       "id": "7cAiv",
+                      "x": 0,
+                      "y": 0,
                       "name": "TEXT",
                       "enabled": false,
                       "fill": "#000000ff",
                       "textGrowth": "fixed-width",
-                      "width": "fill_container",
+                      "width": "fill_container(0)",
                       "textAlign": "center",
                       "textAlignVertical": "middle",
                       "fontFamily": "Orbitron",
@@ -22361,11 +22443,13 @@
                     {
                       "type": "text",
                       "id": "hFDlX",
+                      "x": 0,
+                      "y": 0,
                       "name": "TEXT",
                       "enabled": false,
                       "fill": "#000000ff",
                       "textGrowth": "fixed-width",
-                      "width": "fill_container",
+                      "width": "fill_container(0)",
                       "textAlign": "center",
                       "textAlignVertical": "middle",
                       "fontFamily": "Orbitron",
@@ -25405,11 +25489,13 @@
                     {
                       "type": "text",
                       "id": "iFwem",
+                      "x": 0,
+                      "y": 0,
                       "name": "TEXT",
                       "enabled": false,
                       "fill": "#000000ff",
                       "textGrowth": "fixed-width",
-                      "width": "fill_container",
+                      "width": "fill_container(0)",
                       "textAlign": "center",
                       "textAlignVertical": "middle",
                       "fontFamily": "Orbitron",
@@ -26122,11 +26208,13 @@
                     {
                       "type": "text",
                       "id": "RyjC0",
+                      "x": 0,
+                      "y": 0,
                       "name": "TEXT",
                       "enabled": false,
                       "fill": "#000000ff",
                       "textGrowth": "fixed-width",
-                      "width": "fill_container",
+                      "width": "fill_container(0)",
                       "textAlign": "center",
                       "textAlignVertical": "middle",
                       "fontFamily": "Orbitron",
