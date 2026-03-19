@@ -1,11 +1,16 @@
 import { Outlet, NavLink } from "react-router-dom";
 import React, { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import logo from "../../assets/logo.svg";
 
 export default function Template() {
+  const { t: translation, i18n: i18nInstance } = useTranslation();
+
   const [lang, setLang] = useState(() => {
     try {
-      return localStorage.getItem("lang") || "ES";
+      const saved = localStorage.getItem("lang");
+      if (saved) return saved;
+      return (i18nInstance?.language || "es").toUpperCase();
     } catch (e) {
       return "ES";
     }
@@ -19,9 +24,11 @@ export default function Template() {
     } catch (e) {
       // ignore
     }
-    if (typeof document !== "undefined")
-      document.documentElement.lang = lang.toLowerCase();
-  }, [lang]);
+    const lower = lang.toLowerCase();
+    if (i18nInstance && i18nInstance.changeLanguage)
+      i18nInstance.changeLanguage(lower);
+    if (typeof document !== "undefined") document.documentElement.lang = lower;
+  }, [lang, i18nInstance]);
 
   const toggleLang = () => setLang((p) => (p === "ES" ? "EN" : "ES"));
 
@@ -42,7 +49,7 @@ export default function Template() {
                     isActive ? "text-accent-red text-[1rem]" : "text-[1rem]"
                   }
                 >
-                  INICIO
+                  {translation("nav.home")}
                 </NavLink>
               </li>
               <li>
@@ -52,7 +59,7 @@ export default function Template() {
                     isActive ? "text-accent-red text-[1rem]" : "text-[1rem]"
                   }
                 >
-                  SOBRE MI
+                  {translation("nav.about")}
                 </NavLink>
               </li>
               <li>
@@ -62,7 +69,7 @@ export default function Template() {
                     isActive ? "text-accent-red text-[1rem]" : "text-[1rem]"
                   }
                 >
-                  EXPERIENCIA
+                  {translation("nav.experience")}
                 </NavLink>
               </li>
               <li>
@@ -72,7 +79,7 @@ export default function Template() {
                     isActive ? "text-accent-red text-[1rem]" : "text-[1rem]"
                   }
                 >
-                  TECNOLOGIAS
+                  {translation("nav.technologies")}
                 </NavLink>
               </li>
               <li>
@@ -82,7 +89,7 @@ export default function Template() {
                     isActive ? "text-accent-red text-[1rem]" : "text-[1rem]"
                   }
                 >
-                  CONTACTAME
+                  {translation("nav.contact")}
                 </NavLink>
               </li>
             </ul>
@@ -90,7 +97,7 @@ export default function Template() {
             <div className="flex items-center gap-3">
               <button
                 type="button"
-                aria-label={`Cambiar idioma. Idioma actual ${lang}`}
+                aria-label={translation("lang.change", { lang })}
                 onClick={toggleLang}
                 onMouseEnter={() => setHovered(true)}
                 onMouseLeave={() => setHovered(false)}
@@ -111,7 +118,7 @@ export default function Template() {
 
       <footer className="flex-none h-12.5 bg-footer text-white flex items-center">
         <div className="w-full max-w-5xl mx-auto px-4 text-center text-[0.75rem]">
-          Code By Moroni Aguilera
+          {translation("footer.credit")}
         </div>
       </footer>
     </div>

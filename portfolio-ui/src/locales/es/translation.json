@@ -1,0 +1,15 @@
+{
+  "nav": {
+    "home": "INICIO",
+    "about": "SOBRE MI",
+    "experience": "EXPERIENCIA",
+    "technologies": "TECNOLOGÍAS",
+    "contact": "CONTÁCTAME"
+  },
+  "footer": {
+    "credit": "Desarrollado por Moroni Aguilera"
+  },
+  "lang": {
+    "change": "Cambiar idioma. Idioma actual: {{lang}}"
+  }
+}

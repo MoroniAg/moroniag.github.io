@@ -1,0 +1,15 @@
+{
+  "nav": {
+    "home": "HOME",
+    "about": "ABOUT ME",
+    "experience": "EXPERIENCE",
+    "technologies": "TECHNOLOGIES",
+    "contact": "CONTACT ME"
+  },
+  "footer": {
+    "credit": "Code By Moroni Aguilera"
+  },
+  "lang": {
+    "change": "Change language. Current: {{lang}}"
+  }
+}
