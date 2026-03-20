@@ -2,6 +2,7 @@ import { Outlet, NavLink } from "react-router-dom";
 import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import logo from "../../assets/logo.svg";
+import Navbar from "./Navbar";
 
 export default function Template() {
   const { t: translation, i18n: i18nInstance } = useTranslation();
@@ -17,6 +18,9 @@ export default function Template() {
   });
 
   const [hovered, setHovered] = useState(false);
+  const [mobileOpen, setMobileOpen] = useState(false);
+
+  const toggleMobile = () => setMobileOpen((v) => !v);
 
   useEffect(() => {
     try {
@@ -36,65 +40,38 @@ export default function Template() {
     <div className="flex flex-col min-h-screen text-base">
       <header className="flex-none h-17.5 bg-brand-dark text-on-brand-dark flex items-center header-bottom-accent">
         <div className="w-full max-w-5xl mx-auto px-4">
-          <nav className="flex items-center justify-between py-3">
+          <nav className="relative flex items-center justify-between py-3">
             <div className="logo">
-              <img src={logo} alt="Logo" className="h-10 w-auto" />
+              <NavLink to="/" aria-label="Home">
+                <img src={logo} alt="Logo" className="h-10 w-auto" />
+              </NavLink>
             </div>
-
-            <ul className="hidden md:flex gap-6 items-center text-sm">
-              <li>
-                <NavLink
-                  to="/"
-                  className={({ isActive }) =>
-                    isActive ? "text-accent-red text-[1rem]" : "text-[1rem]"
-                  }
-                >
-                  {translation("nav.home")}
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/about-me"
-                  className={({ isActive }) =>
-                    isActive ? "text-accent-red text-[1rem]" : "text-[1rem]"
-                  }
-                >
-                  {translation("nav.about")}
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/experience"
-                  className={({ isActive }) =>
-                    isActive ? "text-accent-red text-[1rem]" : "text-[1rem]"
-                  }
-                >
-                  {translation("nav.experience")}
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/technologies"
-                  className={({ isActive }) =>
-                    isActive ? "text-accent-red text-[1rem]" : "text-[1rem]"
-                  }
-                >
-                  {translation("nav.technologies")}
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/contact-me"
-                  className={({ isActive }) =>
-                    isActive ? "text-accent-red text-[1rem]" : "text-[1rem]"
-                  }
-                >
-                  {translation("nav.contact")}
-                </NavLink>
-              </li>
-            </ul>
-
+            <Navbar className="hidden lg:flex gap-6 items-center text-sm" />
             <div className="flex items-center gap-3">
+              <button
+                type="button"
+                className="lg:hidden p-2 rounded bg-transparent border border-white/10 text-white hover:bg-white/5"
+                onClick={toggleMobile}
+                aria-expanded={mobileOpen}
+                aria-label={mobileOpen ? "Close menu" : "Open menu"}
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden
+                >
+                  <path
+                    d="M4 6h16M4 12h16M4 18h16"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </button>
               <button
                 type="button"
                 aria-label={translation("lang.change", { lang })}
@@ -106,6 +83,15 @@ export default function Template() {
                 {lang}
               </button>
             </div>
+            {mobileOpen && (
+              <div className="lg:hidden absolute left-0 top-full w-full bg-(--brand-darker) text-white shadow-md z-40">
+                <Navbar
+                  vertical={true}
+                  onLinkClick={() => setMobileOpen(false)}
+                  className="flex flex-col gap-2 p-4 text-sm"
+                />
+              </div>
+            )}
           </nav>
         </div>
       </header>
