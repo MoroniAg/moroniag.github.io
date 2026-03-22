@@ -154,6 +154,7 @@
                   "id": "6XHKw",
                   "name": "Frame 5",
                   "width": "fill_container",
+                  "height": 58,
                   "gap": 16,
                   "alignItems": "center",
                   "children": [
