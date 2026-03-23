@@ -11,5 +11,11 @@
   },
   "lang": {
     "change": "Cambiar idioma. Idioma actual: {{lang}}"
+  },
+  "home": {
+    "greeting": "Soy",
+    "name": "Moroni",
+    "description": "Desarrollador con visión... virtual y profesional",
+    "contact": "CONTÁCTAME"
   }
 }

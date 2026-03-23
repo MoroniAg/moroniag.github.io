@@ -97,7 +97,7 @@ export default function Template() {
       </header>
 
       <main className="flex-1 overflow-auto bg-(--brand-dark) text-white">
-        <div className="w-full max-w-5xl mx-auto px-4">
+        <div className="w-full max-w-5xl mx-auto px-4 ">
           <Outlet />
         </div>
       </main>
