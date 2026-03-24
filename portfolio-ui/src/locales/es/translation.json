@@ -18,4 +18,8 @@
     "description": "Desarrollador con visión... virtual y profesional",
     "contact": "CONTÁCTAME"
   }
+  ,
+  "aboutme": {
+     "description": "Soy un <accent>Desarrollador</accent> con pasión por la tecnología y un enfoque claro en crear soluciones que generen un impacto real.<br/><br/>He trabajado en proyectos nacionales e internacionales usando herramientas como <strong>Java</strong>, <strong>Python</strong>, <strong>React</strong> y <strong>Docker</strong>.<br/><br/>Hoy combino el desarrollo con <strong>Data Science</strong> y <strong>Machine Learning</strong>, construyendo sistemas que no solo funcionan sino que también aprenden y evolucionan. Me defino por la comunicación clara, el liderazgo y una visión estratégica que va más allá del código."
+  }
 }
