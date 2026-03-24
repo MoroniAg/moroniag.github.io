@@ -31,6 +31,18 @@ export default function Experience() {
         mode="work"
         data={t("experience.phcodes", { returnObjects: true })}
       />
+      <CardExperience
+        mode="work"
+        data={t("experience.emunay", { returnObjects: true })}
+      />
+      <CardExperience
+        mode="project"
+        data={t("experience.inventory", { returnObjects: true })}
+      />
+      <CardExperience
+        mode="work"
+        data={t("experience.cumorahv1", { returnObjects: true })}
+      />
     </div>
   );
 }

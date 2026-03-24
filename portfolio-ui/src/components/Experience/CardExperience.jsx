@@ -27,19 +27,19 @@ export default function CardExperience({
 }) {
   return (
     <>
-      <div className="flex flex-row gap-4 bg-(--brand-darker) p-4 rounded-2xl w-full">
+      <div className="flex flex-row gap-4 bg-(--brand-dark-light) p-4 rounded-2xl w-full tracking-[1.08px] shadow-(--brand-darker)">
         <div className="w-[45%]">
           {mode === "work" ? (
             <>
               <div className="flex flex-col gap-2">
-                <div className="flex flex-row gap-2 justify-between items-end">
+                <div className="flex flex-row gap-2 justify-between items-end text-(--brand-darker)">
                   <span className="text-2xl">{data.company}</span>
-                  <span className="font-normal">{data.place}</span>
+                  <span className="font-normal ">{data.place}</span>
                 </div>
-                <div className="flex flex-row gap-2 justify-end items-end font-normal">
+                <div className="flex flex-row gap-2 justify-end items-end font-normal ">
                   <span>{data.position}</span>
                 </div>
-                <div className="font-normal text-[0.75rem] text-(--brand-dark-light)">
+                <div className="font-normal text-[0.75rem] text-(--brand-dark)">
                   <span>{data.description}</span>
                 </div>
                 <div className="flex flex-row gap-2">
@@ -85,7 +85,7 @@ export default function CardExperience({
             </>
           ) : mode === "project" ? (
             <>
-              <div className="flex flex-col gap-2 justify-end items-end font-normal text-(--brand-dark-light)">
+              <div className="flex flex-col gap-2 justify-end items-end font-normal text-(--brand-darker)">
                 <span>{data.date}</span>
               </div>
             </>
@@ -104,7 +104,7 @@ export default function CardExperience({
         <div className="w-[45%]">
           {mode === "work" ? (
             <>
-              <div className="flex flex-col gap-2 justify-start items-start font-normal text-(--brand-dark-light)">
+              <div className="flex flex-col gap-2 justify-start items-start font-normal text-(--brand-darker)">
                 <span>{data.date}</span>
               </div>
             </>
@@ -117,7 +117,7 @@ export default function CardExperience({
                 <div className="flex justify-start font-normal">
                   <span>{data.type}</span>
                 </div>
-                <div className="font-normal text-[0.75rem] text-(--brand-dark-light)">
+                <div className="font-normal text-[0.75rem] text-(--brand-dark)">
                   <span>{data.description}</span>
                 </div>
                 <div className="flex flex-row gap-2 justify-between">

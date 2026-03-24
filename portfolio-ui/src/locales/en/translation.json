@@ -17,9 +17,156 @@
     "name": "Moroni",
     "description": "Developer with vision... virtual and professional",
     "contact": "CONTACT ME"
-  }
-  ,
+  },
   "aboutme": {
     "description": "I am a <accent>Developer</accent> with a passion for technology and a clear focus on creating solutions that make a real impact.<br/><br/>I have worked on national and international projects using tools such as <strong>Java</strong>, <strong>Python</strong>, <strong>React</strong>, and <strong>Docker</strong>.<br/><br/>Today I combine development with <strong>Data Science</strong> and <strong>Machine Learning</strong>, building systems that not only work but also learn and evolve. I am defined by clear communication, leadership, and a strategic vision that goes beyond code."
+  },
+  "experience": {
+    "portfoliov2": {
+      "company": "My Portfolio v2",
+      "type": "Personal Project",
+      "description": "I redesigned and rebuilt my personal portfolio using React, Tailwind CSS and TypeScript. The new design is modern, responsive and better reflects my professional identity. I implemented smooth navigation, subtle animations and optimized performance to provide an excellent user experience.",
+      "date": "Jan 2026 - Mar 2026",
+      "labels": [
+        "React",
+        "Tailwind CSS",
+        "TypeScript"
+      ],
+      "links": [
+        {
+          "url": "https://github.com/MoroniAg/moroniag.github.io",
+          "icon": "https://simpleicons.org/icons/github.svg",
+          "tooltip": "Repository"
+        },
+        {
+          "url": "https://github.com/users/MoroniAg/projects/1",
+          "icon": "https://simpleicons.org/icons/githubactions.svg",
+          "tooltip": "Project Manager"
+        }
+      ]
+    },
+    "portfoliov1": {
+      "company": "My Portfolio v1",
+      "type": "Personal Project",
+      "description": "My first personal portfolio, built with Angular and hosted on GitHub Pages. This project helped me learn the fundamentals of web development and experiment with different technologies. Although it's a simpler version, it laid the foundation for my growth as a developer and helped me understand the importance of presenting my work well.",
+      "date": "Jan 2023 - Feb 2023",
+      "labels": [
+        "Angular",
+        "Git",
+        "GitHub Pages"
+      ],
+      "links": [
+        {
+          "url": "https://github.com/MoroniAg/moroniag.github.io",
+          "icon": "https://simpleicons.org/icons/github.svg",
+          "tooltip": "Repository"
+        },
+        {
+          "url": "https://github.com/users/MoroniAg/projects/1",
+          "icon": "https://simpleicons.org/icons/githubactions.svg",
+          "tooltip": "Project Manager"
+        }
+      ]
+    },
+    "feriaproject": {
+      "company": "Feria21",
+      "type": "Project",
+      "description": "Project for an online store startup; the project is under development and currently in beta.",
+      "date": "Apr 2023 - Present",
+      "labels": [
+        "React",
+        "Java",
+        "Docker",
+        "GitHub"
+      ],
+      "links": [
+        {
+          "url": "https://test.feria21.com/",
+          "icon": "https://simpleicons.org/icons/mailtrap.svg",
+          "tooltip": "Demo"
+        }
+      ]
+    },
+    "inventory": {
+      "company": "Inventory System",
+      "type": "Project",
+      "description": "Development of an inventory system for a local company, built as a desktop application and used for 3 years.",
+      "date": "Apr 2017 - Aug 2017",
+      "labels": [
+        "Java",
+        "GitHub"
+      ],
+      "links": [
+        {
+          "url": "TODO: URL del repositorio",
+          "icon": "https://simpleicons.org/icons/github.svg",
+          "tooltip": "Repositorio"
+        }
+      ]
+    },
+    "dwconsulware": {
+      "company": "DwConsulware",
+      "place": "Quito, Ecuador",
+      "position": "Software Developer",
+      "description": "I specialize in developing and implementing features for a Master Data Management (MDM) solution. My work focuses on ensuring data integrity, accuracy and consistency across multiple systems.",
+      "date": "Jun 2023 - Jan 2026",
+      "labels": [
+        "Java",
+        "XML",
+        "Rest API",
+        "SQL"
+      ]
+    },
+    "cumorah": {
+      "company": "Cumorah Center",
+      "place": "Ecuador",
+      "position": "Developer - Project Director",
+      "description": "As a project manager, I lead planning, execution and tracking of multiple projects through all phases. Working closely with a highly skilled team, we focus on development, implementation and continuous improvement of our initiatives. Our goal is to deliver high-quality solutions that meet business objectives.",
+      "date": "Jan 2023 - Present",
+      "labels": [
+        "Java",
+        "React",
+        "Rest API",
+        "Docket"
+      ]
+    },
+    "phcodes": {
+      "company": "La Katuna - PhCodes Ec",
+      "place": "Ambato, Ecuador",
+      "position": "Developer - Team Lead",
+      "description": "I led an agile development team, managing sprints and meeting demanding goals. I developed several APIs in Java for a European company, improving the functionality of a fines management system. I also actively participated in implementing new features, bug fixes and quality assurance across multiple systems.",
+      "date": "Apr 2021 - Dec 2022",
+      "labels": [
+        "Java",
+        "GitHub",
+        "Rest API",
+        "Docket"
+      ]
+    },
+    "emunay": {
+      "company": "Emunay",
+      "place": "Quito, Ecuador",
+      "position": "Full Stack Developer",
+      "description": "I actively participated in developing various modules of an ERP system, working on both frontend and backend. I also designed a highly efficient electronic invoicing system, achieving 100% effectiveness in its implementation and use.",
+      "date": "Sep 2019 - Jan 2021",
+      "labels": [
+        "Java",
+        "PrimeFaces",
+        "PostgresSQL",
+        "Git"
+      ]
+    },
+    "cumorahv1": {
+      "company": "Cumorah Center",
+      "place": "Quito, Ecuador",
+      "position": "Full Stack Developer/Technical Support",
+      "description": "I developed and implemented a desktop app for inventory and sales control.",
+      "date": "Apr 2017 - Aug 2020",
+      "labels": [
+        "Java",
+        "MySQL",
+        "Git"
+      ]
+    }
   }
 }

@@ -26,7 +26,7 @@
       "company": "Mi Portafolio v2",
       "type": "Proyecto Personal",
       "description": "Rediseñé y reconstruí mi portafolio personal utilizando React, Tailwind CSS y TypeScript. El nuevo diseño es moderno, responsivo y refleja mejor mi identidad profesional. Implementé una navegación fluida, animaciones sutiles y optimicé el rendimiento para ofrecer una experiencia de usuario excepcional.",
-      "date": "Ene 2025 - Presente",
+      "date": "Ene 2026 - Mar 2026",
       "labels": [
         "React",
         "Tailwind CSS",
@@ -34,14 +34,14 @@
       ],
       "links": [
         {
-          "url": "https://github.com/username/repo",
+          "url": "https://github.com/MoroniAg/moroniag.github.io",
           "icon": "https://simpleicons.org/icons/github.svg",
           "tooltip": "Repositorio"
         },
         {
-          "url": "https://demo.example.com",
-          "icon": "https://simpleicons.org/icons/netlify.svg",
-          "tooltip": "Demo"
+          "url": "https://github.com/users/MoroniAg/projects/1",
+          "icon": "https://simpleicons.org/icons/githubactions.svg",
+          "tooltip": "Gestor del Proyecto"
         }
       ]
     },
@@ -57,14 +57,14 @@
       ],
       "links": [
         {
-          "url": "https://github.com/username/repo",
+          "url": "https://github.com/MoroniAg/moroniag.github.io",
           "icon": "https://simpleicons.org/icons/github.svg",
           "tooltip": "Repositorio"
         },
         {
-          "url": "https://demo.example.com",
-          "icon": "https://simpleicons.org/icons/netlify.svg",
-          "tooltip": "Demo"
+          "url": "https://github.com/users/MoroniAg/projects/1",
+          "icon": "https://simpleicons.org/icons/githubactions.svg",
+          "tooltip": "Gestor del Proyecto"
         }
       ]
     },
@@ -81,9 +81,26 @@
       ],
       "links": [
         {
-          "url": "https://demo.example.com",
-          "icon": "https://simpleicons.org/icons/netlify.svg",
+          "url": "https://test.feria21.com/",
+          "icon": "https://simpleicons.org/icons/mailtrap.svg",
           "tooltip": "Demo"
+        }
+      ]
+    },
+    "inventory": {
+      "company": "Sistema de Inventario",
+      "type": "Proyecto",
+      "description": "Desarrollo de un sistema de inventario para una empresa local, el cual se desarrollo como aplicacion de escritorio y se uso por 3 años.",
+      "date": "Abr 2017 - Ago 2017",
+      "labels": [
+        "Java",
+        "GitHub"
+      ],
+      "links": [
+        {
+          "url": "TODO: URL del repositorio",
+          "icon": "https://simpleicons.org/icons/github.svg",
+          "tooltip": "Repositorio"
         }
       ]
     },
@@ -124,6 +141,31 @@
         "GitHub",
         "Rest API",
         "Docket"
+      ]
+    },
+    "emunay": {
+      "company": "Emunay",
+      "place": "Quito - Ecuador",
+      "position": "Desarrollador Full Stack",
+      "description": "Participé activamente en el desarrollo de diversos módulos de un sistema ERP, trabajando tanto en el Frontend como en el Backend. Además, diseñé un sistema de facturación electrónica altamente eficiente, logrando una efectividad del 100% en su implementación y uso.",
+      "date": "Sep 2019 - Ene 2021",
+      "labels": [
+        "Java",
+        "PrimeFaces",
+        "PostgresSQL",
+        "Git"
+      ]
+    },
+    "cumorahv1": {
+      "company": "Cumorah Center",
+      "place": "Quito - Ecuador",
+      "position": "Desarrollador Full Stack/Soporte Técnico",
+      "description": "Desarrollé e implementé una app de escritorio para el control de inventario y ventas.",
+      "date": "Abr 2017 - Ago 2020",
+      "labels": [
+        "Java",
+        "MySQL",
+        "Git"
       ]
     }
   }
