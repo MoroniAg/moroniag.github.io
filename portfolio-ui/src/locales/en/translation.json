@@ -18,4 +18,8 @@
     "description": "Developer with vision... virtual and professional",
     "contact": "CONTACT ME"
   }
+  ,
+  "aboutme": {
+    "description": "I am a <accent>Developer</accent> with a passion for technology and a clear focus on creating solutions that make a real impact.<br/><br/>I have worked on national and international projects using tools such as <strong>Java</strong>, <strong>Python</strong>, <strong>React</strong>, and <strong>Docker</strong>.<br/><br/>Today I combine development with <strong>Data Science</strong> and <strong>Machine Learning</strong>, building systems that not only work but also learn and evolve. I am defined by clear communication, leadership, and a strategic vision that goes beyond code."
+  }
 }
