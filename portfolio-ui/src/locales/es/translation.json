@@ -17,9 +17,114 @@
     "name": "Moroni",
     "description": "Desarrollador con visión... virtual y profesional",
     "contact": "CONTÁCTAME"
-  }
-  ,
+  },
   "aboutme": {
-     "description": "Soy un <accent>Desarrollador</accent> con pasión por la tecnología y un enfoque claro en crear soluciones que generen un impacto real.<br/><br/>He trabajado en proyectos nacionales e internacionales usando herramientas como <strong>Java</strong>, <strong>Python</strong>, <strong>React</strong> y <strong>Docker</strong>.<br/><br/>Hoy combino el desarrollo con <strong>Data Science</strong> y <strong>Machine Learning</strong>, construyendo sistemas que no solo funcionan sino que también aprenden y evolucionan. Me defino por la comunicación clara, el liderazgo y una visión estratégica que va más allá del código."
+    "description": "Soy un <accent>Desarrollador</accent> con pasión por la tecnología y un enfoque claro en crear soluciones que generen un impacto real.<br/><br/>He trabajado en proyectos nacionales e internacionales usando herramientas como <strong>Java</strong>, <strong>Python</strong>, <strong>React</strong> y <strong>Docker</strong>.<br/><br/>Hoy combino el desarrollo con <strong>Data Science</strong> y <strong>Machine Learning</strong>, construyendo sistemas que no solo funcionan sino que también aprenden y evolucionan. Me defino por la comunicación clara, el liderazgo y una visión estratégica que va más allá del código."
+  },
+  "experience": {
+    "portfoliov2": {
+      "company": "Mi Portafolio v2",
+      "type": "Proyecto Personal",
+      "description": "Rediseñé y reconstruí mi portafolio personal utilizando React, Tailwind CSS y TypeScript. El nuevo diseño es moderno, responsivo y refleja mejor mi identidad profesional. Implementé una navegación fluida, animaciones sutiles y optimicé el rendimiento para ofrecer una experiencia de usuario excepcional.",
+      "date": "Ene 2025 - Presente",
+      "labels": [
+        "React",
+        "Tailwind CSS",
+        "TypeScript"
+      ],
+      "links": [
+        {
+          "url": "https://github.com/username/repo",
+          "icon": "https://simpleicons.org/icons/github.svg",
+          "tooltip": "Repositorio"
+        },
+        {
+          "url": "https://demo.example.com",
+          "icon": "https://simpleicons.org/icons/netlify.svg",
+          "tooltip": "Demo"
+        }
+      ]
+    },
+    "portfoliov1": {
+      "company": "Mi Portafolio v1",
+      "type": "Proyecto Personal",
+      "description": "Mi primer portafolio personal, construido con Angular y alojado en GitHub Pages. Este proyecto me permitió aprender los fundamentos del desarrollo web y experimentar con diferentes tecnologías. Aunque es una versión más básica, sentó las bases para mi crecimiento como desarrollador y me ayudó a entender la importancia de una buena presentación de mi trabajo.",
+      "date": "Ene 2023 - Feb 2023",
+      "labels": [
+        "Angular",
+        "Git",
+        "GitHub Pages"
+      ],
+      "links": [
+        {
+          "url": "https://github.com/username/repo",
+          "icon": "https://simpleicons.org/icons/github.svg",
+          "tooltip": "Repositorio"
+        },
+        {
+          "url": "https://demo.example.com",
+          "icon": "https://simpleicons.org/icons/netlify.svg",
+          "tooltip": "Demo"
+        }
+      ]
+    },
+    "feriaproject": {
+      "company": "Feria21",
+      "type": "Proyecto",
+      "description": "Proyecto para una startup de tienda online, el proyecto está en desarrollo y en fase beta.",
+      "date": "Abr 2023 - Presente",
+      "labels": [
+        "React",
+        "Java",
+        "Docker",
+        "GitHub"
+      ],
+      "links": [
+        {
+          "url": "https://demo.example.com",
+          "icon": "https://simpleicons.org/icons/netlify.svg",
+          "tooltip": "Demo"
+        }
+      ]
+    },
+    "dwconsulware": {
+      "company": "DwConsulware",
+      "place": "Quito - Ecuador",
+      "position": "Desarrollador de Software",
+      "description": "Estoy especializado en el desarrollo e implementación de funcionalidades para una solución de Gestión de Datos Maestros (MDM). Mi trabajo se centra en garantizar la integridad, precisión y consistencia de los datos a través de múltiples sistemas.",
+      "date": "Jun 2023 - Ene 2026",
+      "labels": [
+        "Java",
+        "XML",
+        "Rest API",
+        "SQL"
+      ]
+    },
+    "cumorah": {
+      "company": "Cumorah Center",
+      "place": "Ecuador",
+      "position": "Desarrollador - Director de proyecto",
+      "description": "Como gestor de proyectos, dirijo la planificación, ejecución y seguimiento de múltiples proyectos en todas sus etapas. Trabajando en estrecha colaboración con un equipo de profesionales altamente calificados, nos enfocamos en el desarrollo, implementación y actualización continua de nuestras iniciativas. Nuestro objetivo es entregar soluciones de alta calidad que cumplan con los objetivos del negocio.",
+      "date": "Ene 2023 - Presente",
+      "labels": [
+        "Java",
+        "React",
+        "Rest API",
+        "Docket"
+      ]
+    },
+    "phcodes": {
+      "company": "La Katuna - PhCodes Ec",
+      "place": "Ambato - Ecuador",
+      "position": "Desarrollador - Lider de equipo",
+      "description": "Lideré un equipo de desarrollo ágil, gestionando sprints y cumpliendo objetivos exigentes. Desarrollé varias API’s construidas en Java para una empresa europea, mejorando la funcionalidad de un sistema de gestión de multas. También participé activamente en la implementación de nuevas funcionalidades, corrección de errores y aseguramiento de calidad en varios sistemas.",
+      "date": "Abr 2021 - Dic 2022",
+      "labels": [
+        "Java",
+        "GitHub",
+        "Rest API",
+        "Docket"
+      ]
+    }
   }
 }
