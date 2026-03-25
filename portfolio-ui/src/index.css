@@ -4,6 +4,8 @@
 :root {
   --spacing-17_5: 4.375rem;
   --spacing-12_5: 3.125rem;
+  --brand-light: #f5f5f5;
+  --brand-dark-light: #ffffff80;
   --brand-dark: #2e2e2e;
   --brand-darker: #1c1c1e;
   --accent-red: #ff3c38;
