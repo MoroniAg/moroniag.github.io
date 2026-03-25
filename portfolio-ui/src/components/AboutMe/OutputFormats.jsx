@@ -8,12 +8,12 @@ export default function OutputFormats({ format = "html" }) {
           {format === "java" ? (
             <span className="me-1 tracking-[1.08px]">
               System.<span className="text-(--accent-red)">out</span>.println
-              <span className="text-(--accent-red)">("</span>
+              <span className="text-(--accent-red)">{'("'}</span>
             </span>
           ) : format === "python" ? (
             <span className="me-1 tracking-[1.08px]">
               <span className="">print</span>
-              <span className="text-(--accent-red)">('</span>
+              <span className="text-(--accent-red)">{"('"}</span>
             </span>
           ) : format === "html" ? (
             <span className="me-1 tracking-[1.08px]">
