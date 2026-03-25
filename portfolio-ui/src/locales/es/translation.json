@@ -30,7 +30,7 @@
       "labels": [
         "React",
         "Tailwind CSS",
-        "TypeScript"
+        "Docker"
       ],
       "links": [
         {
@@ -98,7 +98,7 @@
       ],
       "links": [
         {
-          "url": "TODO: URL del repositorio",
+          "url": "https://github.com/MoroniAg/control_inventario",
           "icon": "https://simpleicons.org/icons/github.svg",
           "tooltip": "Repositorio"
         }
