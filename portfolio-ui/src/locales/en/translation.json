@@ -168,5 +168,12 @@
         "Git"
       ]
     }
+  },
+  "technologies": {
+    "title": "Main Technologies",
+    "backend": "Backend",
+    "frontend": "Frontend",
+    "devops": "DevOps",
+    "title2": "Additional Technologies"
   }
 }
