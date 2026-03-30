@@ -182,6 +182,10 @@
     "name": "Nombre",
     "email": "Correo electrónico",
     "message": "Mensaje",
-    "submit": "Enviar"
+    "submit": "Enviar",
+    "required": "Este campo es obligatorio",
+    "invalidEmail": "Correo electrónico no válido",
+    "success": "¡Mensaje enviado con éxito!",
+    "minLength": "Mínimo 10 caracteres"
   }
 }

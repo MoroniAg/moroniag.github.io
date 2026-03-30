@@ -37,33 +37,75 @@ export default function ContactMe() {
           </div>
         </div>
         <div className="flex flex-col gap-2 justify-center">
-          <div className="flex justify-center">
-            <input
-              className="border border-(--accent-red) py-2 px-4 rounded-md"
-              type="text"
-              placeholder={translate("contactMe.name")}
-            />
-          </div>
-          <div className="flex justify-center">
-            <input
-              className="border border-(--accent-red) py-2 px-4 rounded-md"
-              type="email"
-              placeholder={translate("contactMe.email")}
-            />
-          </div>
-          <div className="flex justify-center">
-            <textarea
-              className="border border-(--accent-red) py-2 px-4 rounded-md "
-              placeholder={translate("contactMe.message")}
-            ></textarea>
-          </div>
-        </div>
-        <div className="flex flex-row justify-center ">
-          <div>
-            <button className="border border-(--accent-red) py-2 px-4 rounded-md">
-              {translate("contactMe.submit")}
-            </button>
-          </div>
+          <form
+            onSubmit={handleSubmit(onSubmit)}
+            className="flex flex-col gap-2"
+          >
+            <div className="flex justify-center">
+              <input
+                className="border border-(--accent-red) py-2 px-4 rounded-md w-80"
+                type="text"
+                placeholder={translate("contactMe.name")}
+                {...register("name", {
+                  required: translate("contactMe.required"),
+                })}
+              />
+            </div>
+            {errors.name && (
+              <div className="text-(--accent-red) text-sm flex justify-center">
+                {errors.name.message}
+              </div>
+            )}
+
+            <div className="flex justify-center">
+              <input
+                className="border border-(--accent-red) py-2 px-4 rounded-md w-80"
+                type="email"
+                placeholder={translate("contactMe.email")}
+                {...register("email", {
+                  required: translate("contactMe.required"),
+                  pattern: {
+                    value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+                    message: translate("contactMe.invalidEmail"),
+                  },
+                })}
+              />
+            </div>
+            {errors.email && (
+              <div className="text-(--accent-red) text-sm flex justify-center">
+                {errors.email.message}
+              </div>
+            )}
+
+            <div className="flex justify-center">
+              <textarea
+                className="border border-(--accent-red) py-2 px-4 rounded-md w-80 h-32"
+                placeholder={translate("contactMe.message")}
+                {...register("message", {
+                  required: translate("contactMe.required"),
+                  minLength: {
+                    value: 10,
+                    message: translate("contactMe.minLength"),
+                  },
+                })}
+              ></textarea>
+            </div>
+            {errors.message && (
+              <div className="text-(--accent-red) text-sm flex justify-center">
+                {errors.message.message}
+              </div>
+            )}
+
+            <div className="flex justify-center mt-2">
+              <button
+                type="submit"
+                className="border border-(--accent-red) py-2 px-4 rounded-md"
+                disabled={isSubmitting}
+              >
+                {isSubmitting ? "Sending..." : translate("contactMe.submit")}
+              </button>
+            </div>
+          </form>
         </div>
         <div className="flex flex-row justify-center gap-4">
           <a

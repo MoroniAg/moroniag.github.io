@@ -182,6 +182,10 @@
     "name": "Name",
     "email": "Email",
     "message": "Message",
-    "submit": "Send"
+    "submit": "Send",
+    "required": "This field is required",
+    "invalidEmail": "Invalid email address",
+    "success": "Message sent successfully!",
+    "minLength": "Minimum 10 characters"
   }
 }
