@@ -175,5 +175,17 @@
     "frontend": "Frontend",
     "devops": "DevOps",
     "title2": "Additional Technologies"
+  },
+  "contactMe": {
+    "title": "Want to build something together?",
+    "subtitle": "I'm ready for your next mission",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "submit": "Send",
+    "required": "This field is required",
+    "invalidEmail": "Invalid email address",
+    "success": "Message sent successfully!",
+    "minLength": "Minimum 10 characters"
   }
 }

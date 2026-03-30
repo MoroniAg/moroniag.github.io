@@ -175,5 +175,17 @@
     "frontend": "Frontend",
     "devops": "DevOps",
     "title2": "Tecnologías adicionales"
+  },
+  "contactMe": {
+    "title": "¿Quieres construir algo juntos?",
+    "subtitle": "Estoy listo para tu próxima misión",
+    "name": "Nombre",
+    "email": "Correo electrónico",
+    "message": "Mensaje",
+    "submit": "Enviar",
+    "required": "Este campo es obligatorio",
+    "invalidEmail": "Correo electrónico no válido",
+    "success": "¡Mensaje enviado con éxito!",
+    "minLength": "Mínimo 10 caracteres"
   }
 }

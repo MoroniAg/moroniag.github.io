@@ -1,5 +1,4 @@
 import CardTechnologies from "./CardTechnologies";
-import javaicon from "../../assets/icons/java.svg";
 
 export default function Technologies() {
   return (
@@ -16,10 +15,7 @@ export default function Technologies() {
             <div className="flex flex-row gap-4">
               <div>
                 <span>
-                  <CardTechnologies
-                    title="Java"
-                    icon={javaicon}
-                  ></CardTechnologies>
+                  <CardTechnologies title="Java"></CardTechnologies>
                 </span>
               </div>
               <div>
