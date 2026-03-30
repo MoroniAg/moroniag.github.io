@@ -175,5 +175,13 @@
     "frontend": "Frontend",
     "devops": "DevOps",
     "title2": "Additional Technologies"
+  },
+  "contactMe": {
+    "title": "Want to build something together?",
+    "subtitle": "I'm ready for your next mission",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "submit": "Send"
   }
 }

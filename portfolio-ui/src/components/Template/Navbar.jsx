@@ -48,7 +48,7 @@ export default function Navbar({
           {translation("nav.experience")}
         </NavLink>
       </li>
-      <li>
+      <li className="hidden">
         <NavLink
           to="/technologies"
           onClick={onLinkClick}
