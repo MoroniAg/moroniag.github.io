@@ -5,15 +5,32 @@ set -euo pipefail
 # ROOT_DIR=$(cd "$(dirname "$0")/.." && pwd)
 # cd "$ROOT_DIR"
 
+# support optional -p flag to deploy to production directory/compose file
+PROD=false
+if [ "${1:-}" = "-p" ]; then
+  PROD=true
+  shift
+fi
+
 host=${1:-}
 tag=${2:-}
 
 # Validate inputs: require both host and tag
 if [ -z "$host" ] || [ -z "$tag" ]; then
-  echo "Usage: $0 <host> <tag>"
-  echo "Example: $0 usuario 1.0"
-  echo "You must provide both a Docker host/registry (e.g. usuario) and a tag (e.g. 1.0)."
+  echo "Usage: $0 [-p] <host> <tag>"
+  echo "  -p    deploy to production (remote folder: portfolio_prod)"
+  echo "Example: $0 -p usuario 1.0"
+  echo "You must provide both a Docker host (e.g. usuario) and a tag (e.g. 1.0)."
   exit 2
+fi
+
+# choose remote directory and compose filename
+if [ "$PROD" = true ]; then
+  REMOTE_DIR=portfolio_prod
+  COMPOSE_FILE=portfolio_docker-compose.yml
+else
+  REMOTE_DIR=portfolio_dev
+  COMPOSE_FILE=portfolio_docker-compose.yml
 fi
 
 if [ ! -f .env ]; then
@@ -51,14 +68,14 @@ docker save $host/portfolio-api:latest | gzip -c > "$outfile_latest"
 echo "Build complete. This script only builds the image. Run the container separately with docker run or docker compose."
 
 # copy artifacts to host:~/portfolio_dev
-echo "Copying artifacts to $host:~/portfolio_dev..."
-scp -C "$outfile_tag" "$host":~/portfolio_dev/
-scp -C "$outfile_latest" "$host":~/portfolio_dev/
+echo "Copying artifacts to $host:~/${REMOTE_DIR}..."
+scp -C "$outfile_tag" "$host":~/${REMOTE_DIR}/
+scp -C "$outfile_latest" "$host":~/${REMOTE_DIR}/
 
-ssh -v $host "cd ~/portfolio_dev && 
-docker-compose -f portfolio_docker-compose.yml down &&  
-docker load -i $outfile_latest &&
-docker-compose -f portfolio_docker-compose.yml up -d &&
+ssh -v $host "cd ~/${REMOTE_DIR} && \
+docker-compose -f ${COMPOSE_FILE} down && \
+gunzip -c ${outfile_latest} | docker load && \
+docker-compose -f ${COMPOSE_FILE} up -d && \
 exit"
 
 # delete .env
