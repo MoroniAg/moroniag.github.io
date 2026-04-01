@@ -1,0 +1,22 @@
+# Ignore environment files and local data
+.env
+.env.*
+data/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual env
+venv/
+.venv/
+
+# Editor/IDE
+.vscode/
+.idea/
+
+
+# Build
+dist/
+build/
