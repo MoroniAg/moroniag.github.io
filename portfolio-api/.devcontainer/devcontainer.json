@@ -1,0 +1,30 @@
+{
+  "name": "Python API Dev Container",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "python.pythonPath": "/usr/local/bin/python"
+      },
+      "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance"
+      ]
+    }
+  },
+   "features": {
+    "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {
+      "moby": false
+    }
+  },
+  "mounts": [
+    "source=/home/moroniaguilera/.ssh,target=/home/vscode/.ssh,type=bind"
+  ],
+  "forwardPorts": [8000],
+  // "postStartCommand": "pip install -r /workspace/requirements.txt || true",
+  // "postCreateCommand": "echo 'postCreate: checking docker binary'; docker --version || true",
+  "remoteUser": "vscode"
+}
