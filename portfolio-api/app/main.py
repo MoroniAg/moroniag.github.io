@@ -33,7 +33,6 @@ def health():
 def verify_tokenkey(request: Request, tokenkey: str | None = Header(None)) -> None:
     expected = os.environ.get("CONTACT_API_TOKEN")
     logging.debug("verify_tokenkey: received tokenkey=%r, expected=%r", tokenkey, expected)
-    # Log all incoming headers for debugging (remove in production)
     headers = dict(request.headers)
     logging.debug("verify_tokenkey: incoming headers: %s", headers)
 
@@ -52,7 +51,7 @@ def contact_me(payload: ContactRequest, _token: None = Depends(verify_tokenkey))
 
     data = payload.model_dump()
     today = datetime.utcnow().strftime("%d%m%Y")
-    out_dir = Path("data/contacts")
+    out_dir = Path("/data/contacts")
     out_dir.mkdir(parents=True, exist_ok=True)
     filename = out_dir / f"contact_{today}.csv"
 
@@ -75,7 +74,6 @@ def contact_me(payload: ContactRequest, _token: None = Depends(verify_tokenkey))
 
 @app.get("/routes")
 def list_routes():
-    """Devuelve las rutas registradas en la app (útil para debugging)."""
     routes = []
     for r in app.routes:
         methods = []
