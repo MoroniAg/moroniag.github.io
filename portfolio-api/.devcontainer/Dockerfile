@@ -7,6 +7,10 @@ WORKDIR /workspace
 # Avoid interactive prompts during package installs
 ENV DEBIAN_FRONTEND=noninteractive
 
+# Install git and ssh client for repo operations
+RUN apt-get update && apt-get install -y --no-install-recommends git openssh-client \
+    && rm -rf /var/lib/apt/lists/*
+
 
 # Create a non-root user and add to docker group
 # Crear usuario compatible con VSCode
