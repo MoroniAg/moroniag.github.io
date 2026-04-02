@@ -1,0 +1,23 @@
+version: "3.3"
+services:
+  portfolio-ui:
+    container_name: portfolio_ui
+    image: "${SERVER_HOST}/portfolio-ui:${TAG_UI:-latest}"
+    networks:
+      - portfolio-network
+    # volumes:
+    #   - ${VOLUME_DATA_PORTFOLIO}:/data/contacts
+    env_file:
+      - .env.portfolio
+    restart: unless-stopped
+    labels:
+        - "traefik.enable=true"
+        - "traefik.http.routers.portfolio-ui.rule=Host(`${SERVER_HOST}`)" 
+        # - "traefik.http.routers.portfolio-ui.middlewares=portfolio-ui-stripprefix"
+        # - "traefik.http.middlewares.portfolio-ui-stripprefix.stripprefix.prefixes=/service"
+        - "traefik.http.routers.portfolio-ui.entrypoints=web"
+        - "traefik.http.services.portfolio-ui.loadbalancer.server.port=80"
+networks:
+  portfolio-network:
+    external: true
+
