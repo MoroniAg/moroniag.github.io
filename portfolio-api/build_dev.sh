@@ -23,14 +23,12 @@ if [ -z "$host" ] || [ -z "$tag" ]; then
   echo "You must provide both a Docker host (e.g. usuario) and a tag (e.g. 1.0)."
   exit 2
 fi
-
+COMPOSE_FILE=portfolio_api_docker-compose.yml
 # choose remote directory and compose filename
 if [ "$PROD" = true ]; then
   REMOTE_DIR=portfolio_prod
-  COMPOSE_FILE=portfolio_docker-compose.yml
 else
   REMOTE_DIR=portfolio_dev
-  COMPOSE_FILE=portfolio_docker-compose.yml
 fi
 
 if [ ! -f .env ]; then

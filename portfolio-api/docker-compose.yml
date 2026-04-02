@@ -8,7 +8,7 @@ services:
     volumes:
       - ${VOLUME_DATA_PORTFOLIO}:/data/contacts
     env_file:
-      - .env.porfolio
+      - .env.portfolio
     restart: unless-stopped
     labels:
         - "traefik.enable=true"
