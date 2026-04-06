@@ -76,6 +76,5 @@ gunzip -c ${outfile_latest} | docker load && \
 docker-compose -f ${COMPOSE_FILE} up -d && \
 exit"
 
-# delete .env
-rm .env
+# rm .env
 rm "$outfile_tag" "$outfile_latest"

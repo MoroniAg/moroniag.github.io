@@ -13,10 +13,13 @@ services:
     labels:
         - "traefik.enable=true"
         - "traefik.http.routers.portfolio-api.rule=Host(`${SERVER_HOST}`) && PathPrefix(`/service`)" 
-        - "traefik.http.routers.portfolio-api.middlewares=portfolio-api-stripprefix"
+        - "traefik.http.routers.portfolio-api.middlewares=portfolio-api-stripprefix,portfolio-api-ratelimit"
         - "traefik.http.middlewares.portfolio-api-stripprefix.stripprefix.prefixes=/service"
         - "traefik.http.routers.portfolio-api.entrypoints=web"
         - "traefik.http.services.portfolio-api.loadbalancer.server.port=8000"
+        - "traefik.http.middlewares.portfolio-api-ratelimit.rateLimit.average=3"
+        - "traefik.http.middlewares.portfolio-api-ratelimit.rateLimit.period=1m"
+        - "traefik.http.middlewares.portfolio-api-ratelimit.rateLimit.burst=1"
 networks:
   portfolio-network:
     external: true
