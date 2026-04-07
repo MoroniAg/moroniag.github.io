@@ -72,7 +72,7 @@ scp -C "$outfile_latest" "$host":~/${REMOTE_DIR}/
 
 ssh -v $host "cd ~/${REMOTE_DIR} && \
 docker-compose -f ${COMPOSE_FILE} down && \
-gunzip -c ${outfile_latest} | docker load && \
+docker load -i ${outfile_latest} && \
 docker-compose -f ${COMPOSE_FILE} up -d && \
 exit"
 
