@@ -15,10 +15,6 @@ fi
 host=${1:-}
 tag=${2:-}
 
-cp vite.config.js vite.config_backup.js
-cp vite.config_prod.js vite.config.js
-
-
 # Validate inputs: require both host and tag
 if [ -z "$host" ] || [ -z "$tag" ]; then
   echo "Usage: $0 [-p] <host> <tag>"
@@ -27,10 +23,16 @@ if [ -z "$host" ] || [ -z "$tag" ]; then
   echo "You must provide both a Docker host (e.g. usuario) and a tag (e.g. 1.0)."
   exit 2
 fi
+
+cp vite.config.js vite.config_backup.js
+cp vite.config_prod.js vite.config.js
+
 COMPOSE_FILE=portfolio_ui_docker-compose.yml
 # choose remote directory and compose filename
 if [ "$PROD" = true ]; then
   REMOTE_DIR=portfolio_prod
+  cp .env .env.backup
+  cp .env.prod .env
 else
   REMOTE_DIR=portfolio_dev
 fi
@@ -71,3 +73,8 @@ exit"
   rm "$outfile_tag" "$outfile_latest"
   cp vite.config_backup.js vite.config.js 
   rm vite.config_backup.js 
+
+  if [ "$PROD" = true ]; then
+    cp .env.backup .env
+    rm .env.backup
+  fi

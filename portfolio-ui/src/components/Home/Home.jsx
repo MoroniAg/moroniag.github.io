@@ -9,7 +9,7 @@ export default function Home() {
     <div className="flex flex-col lg:flex-row lg:justify-center lg:h-[calc(100vh-7.5rem)] items-center w-full h-full">
       <div className="w-full h-1/2 flex-1 p-2 mt-12 flex items-center justify-center">
         <img
-          src={profile}
+          src={`${import.meta.env.VITE_PROFILE_IMG}/profile.png`}
           alt={translate("nav.home")}
           className="w-full h-full sm:h-96 object-contain"
         />
