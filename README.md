@@ -1,27 +1,32 @@
-# MyApp
+# Portfolio Workspace
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.3.
+This repository contains resources and UI code for my personal portfolio.
 
-## Development server
+## Structure
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- `portfolio-ui/` — React + Tailwind CSS frontend project.
+- `portfolio-resources/` — Design files and assets for the portfolio.
+    - `personal-projects.fig` — Figma file with personal projects.
+    - `design/` — Pen and design files.
 
-## Code scaffolding
+## Development Environment
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+A Dev Container is configured for easy setup with Node.js, React, and Tailwind CSS. To start developing:
 
-## Build
+1. Open this folder in VS Code.
+2. Reopen in Dev Container when prompted.
+3. The React project will be initialized in `portfolio-ui/` automatically.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## How to Run
 
-## Running unit tests
+Inside the Dev Container, run:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```bash
+cd portfolio-ui
+npm run dev
+```
 
-## Running end-to-end tests
+This will start the development server on port 5173.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+---
+Feel free to explore the design resources and UI code!
