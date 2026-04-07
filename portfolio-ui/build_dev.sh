@@ -23,10 +23,16 @@ if [ -z "$host" ] || [ -z "$tag" ]; then
   echo "You must provide both a Docker host (e.g. usuario) and a tag (e.g. 1.0)."
   exit 2
 fi
+
+cp vite.config.js vite.config_backup.js
+cp vite.config_prod.js vite.config.js
+
 COMPOSE_FILE=portfolio_ui_docker-compose.yml
 # choose remote directory and compose filename
 if [ "$PROD" = true ]; then
   REMOTE_DIR=portfolio_prod
+  cp .env .env.backup
+  cp .env.prod .env
 else
   REMOTE_DIR=portfolio_dev
 fi
@@ -58,10 +64,17 @@ scp -C "$outfile_latest" "$host":~/${REMOTE_DIR}/
 
 ssh -v $host "cd ~/${REMOTE_DIR} && \
 docker-compose -f ${COMPOSE_FILE} down && \
-gunzip -c ${outfile_latest} | docker load && \
+docker load -i ${outfile_latest} && \
 docker-compose -f ${COMPOSE_FILE} up -d && \
 exit"
 
-# delete .env
-# rm .env
-rm "$outfile_tag" "$outfile_latest"
+  # delete .env
+  # rm .env
+  rm "$outfile_tag" "$outfile_latest"
+  cp vite.config_backup.js vite.config.js 
+  rm vite.config_backup.js 
+
+  if [ "$PROD" = true ]; then
+    cp .env.backup .env
+    rm .env.backup
+  fi

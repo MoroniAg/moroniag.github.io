@@ -20,7 +20,7 @@ export default function AboutMe() {
     <div className="flex flex-col gap-4 lg:h-[calc(100vh-7.5rem)] justify-center items-center ">
       <div className="flex items-center justify-center w-full h-[50%]">
         <img
-          src={profileImg}
+          src={`${import.meta.env.VITE_PROFILE_IMG}/aboutme.jpg`}
           alt="Profile"
           className=" h-[50%] md:h-110 lg:h-full rounded-full object-cover"
         />

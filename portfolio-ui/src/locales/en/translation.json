@@ -186,6 +186,7 @@
     "required": "This field is required",
     "invalidEmail": "Invalid email address",
     "success": "Message sent successfully!",
-    "minLength": "Minimum 10 characters"
+    "minLength": "Minimum 10 characters",
+    "error": "Error sending message. Please try again later."
   }
 }

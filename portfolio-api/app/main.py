@@ -10,14 +10,31 @@ logging.basicConfig(level=logging.DEBUG)
 app = FastAPI(title="Portfolio API")
 
 from starlette.middleware.cors import CORSMiddleware
-FRONTEND_ORIGIN = os.environ.get("FRONTEND_ORIGIN", "https://mi-frontend.com")
+FRONTEND_ORIGINS = os.environ.get("FRONTEND_ORIGINS") or os.environ.get("FRONTEND_ORIGIN")
+if FRONTEND_ORIGINS:
+    # split CSV, strip whitespace, ignore empty
+    allow_origins = [o.strip() for o in FRONTEND_ORIGINS.split(",") if o.strip()]
+else:
+    # development fallback: allow all
+    allow_origins = ["*"]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[FRONTEND_ORIGIN],
+    allow_origins=allow_origins,
     allow_credentials=True,
-    allow_methods=["GET", "POST", "OPTIONS"],
-    allow_headers=["Content-Type", "tokenkey"],
+    allow_methods=["GET", "POST", "OPTIONS", "PUT", "DELETE", "PATCH"],
+    allow_headers=["*"],
 )
+
+# Debugging: log configured allowed origins
+logging.info("CORS allow_origins=%s", allow_origins)
+
+@app.middleware("http")
+async def log_origin_header(request: Request, call_next):
+    origin = request.headers.get("origin")
+    if origin:
+        logging.debug("Incoming request Origin header: %s %s", origin, request.method)
+    return await call_next(request)
 
 
 @app.get("/")
@@ -44,12 +61,15 @@ def verify_tokenkey(request: Request, tokenkey: str | None = Header(None)) -> No
 
 
 @app.post("/api/v1/contact_me", status_code=status.HTTP_201_CREATED)
-def contact_me(payload: ContactRequest, _token: None = Depends(verify_tokenkey)):
+def contact_me(payload: ContactRequest):
     from datetime import datetime
     import csv
     from pathlib import Path
 
     data = payload.model_dump()
+    # company_name MUST be empty; reject requests that provide a non-empty value
+    if data.get("company_name") and str(data.get("company_name")).strip():
+        raise HTTPException(status_code=400, detail="not allowed")
     today = datetime.utcnow().strftime("%d%m%Y")
     out_dir = Path("/data/contacts")
     out_dir.mkdir(parents=True, exist_ok=True)

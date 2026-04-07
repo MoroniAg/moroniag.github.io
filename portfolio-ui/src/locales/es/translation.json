@@ -186,6 +186,7 @@
     "required": "Este campo es obligatorio",
     "invalidEmail": "Correo electrónico no válido",
     "success": "¡Mensaje enviado con éxito!",
-    "minLength": "Mínimo 10 caracteres"
+    "minLength": "Mínimo 10 caracteres",
+    "error": "Error al enviar el mensaje. Por favor, inténtalo de nuevo más tarde."
   }
 }

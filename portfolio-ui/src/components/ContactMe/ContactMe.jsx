@@ -1,7 +1,10 @@
+
 import { useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";
+import { useState } from "react";
 import githubIcon from "../../assets/icons/github.png";
 import linkedinIcon from "../../assets/icons/linkedin.png";
+import { sendContact } from "../../services/contactmeService";
 
 export default function ContactMe() {
   const { t: translate, i18n: i18nInstance } = useTranslation();
@@ -13,13 +16,18 @@ export default function ContactMe() {
     reset,
   } = useForm();
 
+  const [toast, setToast] = useState(null)
+
   const onSubmit = async (data) => {
     try {
-      // Aquí podrías enviar `data` a una API
-      console.log("Contact form submitted:", data);
-      reset();
+      await sendContact(data)
+      reset()
+      setToast({ type: "success", text: translate("contactMe.success") })
+      setTimeout(() => setToast(null), 2000)
     } catch (e) {
-      console.error(e);
+      console.error(e)
+      setToast({ type: "error", text: translate("contactMe.error") })
+      setTimeout(() => setToast(null), 2000)
     }
   };
 
@@ -138,6 +146,11 @@ export default function ContactMe() {
             <span className="sr-only">LinkedIn</span>
           </a>
         </div>
+        {toast && (
+          <div className={`fixed top-6 right-6 px-4 py-2 rounded shadow-lg ${toast.type === 'success' ? 'bg-green-500 text-white' : 'bg-red-500 text-white'}`}>
+            {toast.text}
+          </div>
+        )}
       </div>
     </div>
   );
