@@ -15,6 +15,10 @@ fi
 host=${1:-}
 tag=${2:-}
 
+cp vite.config.js vite.config_backup.js
+cp vite.config_prod.js vite.config.js
+
+
 # Validate inputs: require both host and tag
 if [ -z "$host" ] || [ -z "$tag" ]; then
   echo "Usage: $0 [-p] <host> <tag>"
@@ -58,10 +62,12 @@ scp -C "$outfile_latest" "$host":~/${REMOTE_DIR}/
 
 ssh -v $host "cd ~/${REMOTE_DIR} && \
 docker-compose -f ${COMPOSE_FILE} down && \
-gunzip -c ${outfile_latest} | docker load && \
+docker load -i ${outfile_latest} && \
 docker-compose -f ${COMPOSE_FILE} up -d && \
 exit"
 
-# delete .env
-# rm .env
-rm "$outfile_tag" "$outfile_latest"
+  # delete .env
+  # rm .env
+  rm "$outfile_tag" "$outfile_latest"
+  cp vite.config_backup.js vite.config.js 
+  rm vite.config_backup.js 

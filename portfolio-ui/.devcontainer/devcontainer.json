@@ -3,11 +3,15 @@
   "image": "mcr.microsoft.com/vscode/devcontainers/javascript-node:20",
   "mounts": [
     "source=/home/moroniaguilera/porfolio/portfolio-ui/node_modules,target=/workspace/portfolio-ui/node_modules,type=bind",
-    "source=/home/moroniaguilera/.ssh,target=/home/node/.ssh,type=bind,consistency=cached"
+    "source=/home/moroniaguilera/.ssh,target=/home/node/.ssh,type=bind,consistency=cached",
+    "source=/home/moroniaguilera/.ssh,target=/home/vscode/.ssh,type=bind"
   ],
   "features": {
     "ghcr.io/devcontainers/features/node:1": {
       "version": "20"
+    },
+    "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {
+      "moby": false
     }
   },
   "customizations": {
