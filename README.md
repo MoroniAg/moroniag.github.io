@@ -65,7 +65,7 @@ If you need more information or want to report an issue, Please open an issue.
 
 ## License
 
-This project is available under the MIT License — adjust as you prefer.
+This project is available under the MIT License.
 
 ---
 Updated: basic instructions for local development and Docker.
