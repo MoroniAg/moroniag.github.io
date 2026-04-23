@@ -1,4 +1,4 @@
-import React from "react";
+                                                                                                                          import React from "react";
 import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
@@ -13,11 +13,11 @@ export default function Navbar({
   const linkClass = (isActive) =>
     vertical
       ? isActive
-        ? `text-accent-red block py-2 ${hoverShade} rounded`
-        : `block py-2 ${hoverShade} rounded`
+        ? `text-accent-red block py-2 ${hoverShade} rounded nav-link-hover nav-letter-shadow`
+        : `block py-2 ${hoverShade} rounded nav-link-hover nav-letter-anim nav-letter-shadow`
       : isActive
-        ? `text-accent-red text-[1rem] ${hoverShade} px-1 rounded`
-        : `text-[1rem] ${hoverShade} px-1 rounded`;
+        ? `text-accent-red text-[1rem] ${hoverShade} px-1 rounded nav-link-hover nav-letter-shadow`
+        : `text-[1rem] ${hoverShade} px-1 rounded nav-link-hover nav-letter-anim nav-letter-shadow`;
 
   return (
     <ul className={className}>
