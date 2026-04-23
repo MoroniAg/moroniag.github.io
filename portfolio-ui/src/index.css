@@ -127,6 +127,35 @@ button {
     will-change: transform;
   }
 
+  .main-tech-bg {
+    background-color: var(--brand-dark);
+    /* single combined background (no pseudo-elements) using color tokens from :root */
+    background-image:
+      repeating-linear-gradient(-45deg, rgba(0,0,0,0.06), transparent 12%);
+       /* repeating-radial-gradient(circle at 0 0, rgba(0,0,0,0.06), transparent 12%) */
+      
+    background-size: auto, 16px 16px, 420px 420px, 480px 480px;
+    background-position: 0 0, 0 0, 0 0, 0 0;
+    background-repeat: repeat-x;
+    background-attachment: scroll;
+    background-blend-mode: overlay, normal, screen, multiply;
+    position: relative;
+    overflow: visible;
+    /* animation: bgAnimate 28s linear infinite; */
+  }
+
+  @keyframes bgAnimate {
+    0% {
+      background-position: 0 0, 0 0, 0 0, 0 0;
+    }
+    50% {
+      background-position: -400px 0;
+    }
+    100% {
+      background-position: 0 0, 0 0, 0 0, 0 0;
+    }
+  }
+
   @keyframes subtle-bounce {
     0% { transform: translateY(0); }
     50% { transform: translateY(-6px); }

@@ -1,9 +1,8 @@
-import profile from "../../assets/images/profile.png";
 import { useTranslation } from "react-i18next";
 import { NavLink } from "react-router-dom";
 
 export default function Home() {
-  const { t: translate, i18n: i18nInstance } = useTranslation();
+  const { t: translate } = useTranslation();
 
   return (
     <div className="flex flex-col lg:flex-row lg:justify-center lg:h-[calc(100vh-7.5rem)] items-center w-full h-full">
