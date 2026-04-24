@@ -107,7 +107,7 @@
     "dwconsulware": {
       "company": "DwConsulware",
       "place": "Quito, Ecuador",
-      "position": "Software Developer",
+      "position": "Software Developer/Tech Lead",
       "description": "I specialize in developing and implementing features for a Master Data Management (MDM) solution. My work focuses on ensuring data integrity, accuracy and consistency across multiple systems.",
       "date": "Jun 2023 - Jan 2026",
       "labels": [
@@ -120,8 +120,8 @@
     "cumorah": {
       "company": "Cumorah Center",
       "place": "Ecuador",
-      "position": "Developer - Project Director",
-      "description": "As a project manager, I lead planning, execution and tracking of multiple projects through all phases. Working closely with a highly skilled team, we focus on development, implementation and continuous improvement of our initiatives. Our goal is to deliver high-quality solutions that meet business objectives.",
+      "position": "Developer/Tech Lead",
+      "description": "As a tech lead, I lead planning, execution and tracking of multiple projects through all phases. Working closely with a highly skilled team, we focus on development, implementation and continuous improvement of our initiatives. Our goal is to deliver high-quality solutions that meet business objectives.",
       "date": "Jan 2023 - Present",
       "labels": [
         "Java",
@@ -131,7 +131,7 @@
       ]
     },
     "phcodes": {
-      "company": "La Katuna - PhCodes Ec",
+      "company": "La Katuna/PhCodes Ec",
       "place": "Ambato, Ecuador",
       "position": "Developer - Team Lead",
       "description": "I led an agile development team, managing sprints and meeting demanding goals. I developed several APIs in Java for a European company, improving the functionality of a fines management system. I also actively participated in implementing new features, bug fixes and quality assurance across multiple systems.",

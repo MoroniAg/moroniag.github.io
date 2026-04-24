@@ -107,7 +107,7 @@
     "dwconsulware": {
       "company": "DwConsulware",
       "place": "Quito - Ecuador",
-      "position": "Desarrollador de Software",
+      "position": "Desarrollador de Software/Líder Técnico",
       "description": "Estoy especializado en el desarrollo e implementación de funcionalidades para una solución de Gestión de Datos Maestros (MDM). Mi trabajo se centra en garantizar la integridad, precisión y consistencia de los datos a través de múltiples sistemas.",
       "date": "Jun 2023 - Ene 2026",
       "labels": [
@@ -120,8 +120,8 @@
     "cumorah": {
       "company": "Cumorah Center",
       "place": "Ecuador",
-      "position": "Desarrollador - Director de proyecto",
-      "description": "Como gestor de proyectos, dirijo la planificación, ejecución y seguimiento de múltiples proyectos en todas sus etapas. Trabajando en estrecha colaboración con un equipo de profesionales altamente calificados, nos enfocamos en el desarrollo, implementación y actualización continua de nuestras iniciativas. Nuestro objetivo es entregar soluciones de alta calidad que cumplan con los objetivos del negocio.",
+      "position": "Desarrollador/Líder Técnico",
+      "description": "Como líder técnico, dirijo la planificación, ejecución y seguimiento de múltiples proyectos en todas sus etapas. Trabajando en estrecha colaboración con un equipo de profesionales altamente calificados, nos enfocamos en el desarrollo, implementación y actualización continua de nuestras iniciativas. Nuestro objetivo es entregar soluciones de alta calidad que cumplan con los objetivos del negocio.",
       "date": "Ene 2023 - Presente",
       "labels": [
         "Java",
@@ -131,9 +131,9 @@
       ]
     },
     "phcodes": {
-      "company": "La Katuna - PhCodes Ec",
+      "company": "La Katuna/PhCodes Ec",
       "place": "Ambato - Ecuador",
-      "position": "Desarrollador - Lider de equipo",
+      "position": "Desarrollador/Líder de equipo",
       "description": "Lideré un equipo de desarrollo ágil, gestionando sprints y cumpliendo objetivos exigentes. Desarrollé varias API’s construidas en Java para una empresa europea, mejorando la funcionalidad de un sistema de gestión de multas. También participé activamente en la implementación de nuevas funcionalidades, corrección de errores y aseguramiento de calidad en varios sistemas.",
       "date": "Abr 2021 - Dic 2022",
       "labels": [
