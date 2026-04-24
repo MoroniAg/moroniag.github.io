@@ -17,11 +17,11 @@ export default function AboutMe() {
 
   return (
     <div className="flex flex-col gap-4 justify-center items-center ">
-      <div className="flex items-center justify-center w-full h-[50%] mt-5">
+      <div className="flex items-center justify-center w-full mt-5">
         <img
           src={`${import.meta.env.VITE_PROFILE_IMG}/aboutme.jpg`}
           alt="Profile"
-          className=" h-[50%] md:h-[10%] lg:h-75 rounded-full object-cover shadow-md shadow-black/25"
+          className="w-64 sm:w-80 md:w-96 rounded-full object-cover shadow-md shadow-black/25"
         />
       </div>
       <div className="flex-none mb-5">

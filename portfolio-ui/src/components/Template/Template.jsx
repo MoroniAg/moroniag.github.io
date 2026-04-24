@@ -105,7 +105,7 @@ export default function Template() {
         </div>
       </main>
 
-      <footer className="flex-none h-12.5 bg-footer text-white flex items-center">
+        <footer className="flex-none bg-footer text-white flex items-center py-3 sm:py-4">
         <div className="w-full max-w-5xl mx-auto px-4 text-center text-[0.75rem]">
         <span>  {translation("footer.credit")}</span>
         &nbsp; - &nbsp;<span className="font-bold">v2.0.1</span>

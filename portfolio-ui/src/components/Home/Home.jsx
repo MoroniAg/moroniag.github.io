@@ -5,8 +5,8 @@ export default function Home() {
   const { t: translate } = useTranslation();
 
   return (
-    <div className="flex flex-col lg:flex-row lg:justify-center lg:h-[calc(100vh-7.5rem)] items-center w-full h-full">
-      <div className="w-full h-1/2 flex-1 p-2 mt-12 flex items-center justify-center">
+    <div className="flex flex-col lg:flex-row lg:justify-center items-center w-full">
+      <div className="w-full h-1/2 flex-1 p-2 my-12 flex items-center justify-center">
         <img
           src={`${import.meta.env.VITE_PROFILE_IMG}/profile.png`}
           alt={translate("nav.home")}

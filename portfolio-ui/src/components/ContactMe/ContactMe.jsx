@@ -32,7 +32,7 @@ export default function ContactMe() {
   };
 
   return (
-    <div className="flex justify-center items-center h-screen">
+    <div className="flex justify-center items-center w-full py-8 mt-10">
       <div className="flex flex-col gap-4">
         <div className="flex flex-col justify-center gap-4">
           <div className="flex justify-center">
