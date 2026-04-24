@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import OutputFormats from "./OutputFormats";
-import profileImg from "../../assets/images/profile.png";
 
 export default function AboutMe() {
   const formats = ["java", "python", "html"];
@@ -22,7 +21,7 @@ export default function AboutMe() {
         <img
           src={`${import.meta.env.VITE_PROFILE_IMG}/aboutme.jpg`}
           alt="Profile"
-          className=" h-[50%] md:h-110 lg:h-full rounded-full object-cover"
+          className=" h-[50%] md:h-110 lg:h-full rounded-full object-cover shadow-md shadow-black/25"
         />
       </div>
       <div className="flex-none">
