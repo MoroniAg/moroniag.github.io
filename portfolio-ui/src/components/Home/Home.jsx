@@ -6,12 +6,14 @@ export default function Home() {
 
   return (
     <div className="flex flex-col lg:flex-row lg:justify-center items-center w-full">
-      <div className="w-full h-1/2 flex-1 p-2 my-12 flex items-center justify-center">
-        <img
-          src={`${import.meta.env.VITE_PROFILE_IMG}/profile.png`}
-          alt={translate("nav.home")}
-          className="w-64 sm:w-80 md:w-96 object-cover img-circle img-animate"
-        />
+      <div className="w-full h-1/2 flex-1 p-2 mt-12 flex items-center justify-center">
+        <div className="w-64 sm:w-80 md:w-96 aspect-square neon-wrap">
+          <img
+            src={`${import.meta.env.VITE_PROFILE_IMG}/aboutme.jpg`}
+            alt={translate("nav.home")}
+            className="w-full h-full rounded-full object-cover shadow-md shadow-black/25 "
+          />
+        </div>
       </div>
       <div className="flex flex-col w-full flex-1 justify-start items-center lg:items-start gap-2 px-5 mt-4">
         <div className="font-bold text-[3rem] md:text-[5rem] sm:text-[3rem] text-shadow-strong">
