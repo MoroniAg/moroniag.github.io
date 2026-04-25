@@ -56,8 +56,49 @@ button {
   }
 }
 
-/* small custom utilities */
+@layer components {
+  .btn-animated {
+    position: relative;
+    overflow: hidden;
+  }
+  .btn-animated::after {
+    content: "";
+    position: absolute;
+    left: -100%;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.06),
+      rgba(255, 255, 255, 0.18),
+      rgba(255, 255, 255, 0.06)
+    );
+    transform: skewX(-20deg);
+    transition: left 0.6s cubic-bezier(0.2, 0.9, 0.3, 1);
+  }
+  .btn-animated:hover::after {
+    left: 120%;
+  }
+
+  .btn-glow {
+    transition:
+      box-shadow 0.2s ease,
+      transform 0.12s ease;
+  }
+  .btn-glow:hover {
+    box-shadow:
+      0 8px 30px rgba(255, 60, 56, 0.18),
+      0 2px 8px rgba(255, 60, 56, 0.12);
+    transform: translateY(-3px) scale(1.02);
+  }
+}
+
 @layer utilities {
+  .nav-letter-shadow {
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+  }
+
   .bg-brand-dark {
     background-color: var(--brand-dark);
   }
@@ -78,5 +119,253 @@ button {
   }
   .header-bottom-accent {
     border-bottom: 1px solid var(--accent-red);
+  }
+
+  .text-shadow-strong {
+    text-shadow:
+      0 1px 0 rgba(0, 0, 0, 0.85),
+      0 2px 2px rgba(0, 0, 0, 0.6),
+      0 6px 18px rgba(2, 6, 23, 0.35);
+  }
+
+  .img-circle {
+    border-radius: 9999px;
+    border: 2px solid var(--accent-red);
+    box-shadow:
+      0 8px 20px rgba(2, 6, 23, 0.12),
+      0 30px 60px rgba(2, 6, 23, 0.28),
+      inset 0 -6px 20px rgba(0, 0, 0, 0.12);
+  }
+
+  .neon-border {
+    border: 2px solid var(--accent-red);
+    box-shadow:
+      0 0 8px rgba(255, 60, 56, 0.6),
+      0 0 20px rgba(255, 60, 56, 0.35),
+      inset 0 0 6px rgba(255, 60, 56, 0.08);
+    transition:
+      box-shadow 180ms ease,
+      transform 140ms ease;
+  }
+  .neon-border:hover {
+    box-shadow:
+      0 0 12px rgba(255, 60, 56, 0.85),
+      0 0 30px rgba(255, 60, 56, 0.45),
+      inset 0 0 8px rgba(255, 60, 56, 0.12);
+    transform: translateY(-2px);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .neon-border,
+    .neon-border:hover {
+      transition: none;
+      transform: none;
+    }
+  }
+
+  .img-animate {
+    animation: subtle-bounce 5s ease-in-out infinite;
+    transform-origin: center;
+    will-change: transform;
+  }
+
+  .main-tech-bg {
+    background-color: var(--brand-dark);
+    background-image: repeating-linear-gradient(
+      -45deg,
+      rgba(0, 0, 0, 0.06),
+      transparent 12%
+    );
+
+    background-size:
+      auto,
+      16px 16px,
+      420px 420px,
+      480px 480px;
+    background-position:
+      0 0,
+      0 0,
+      0 0,
+      0 0;
+    background-repeat: repeat-x;
+    background-attachment: scroll;
+    background-blend-mode: overlay, normal, screen, multiply;
+    position: relative;
+    overflow: visible;
+    /* animation: bgAnimate 28s linear infinite; */
+  }
+
+  .nav-link-hover {
+    display: inline-block;
+    transition: transform 0.15s ease-in-out;
+    will-change: transform;
+  }
+
+  .nav-link-hover:hover {
+    transform: scale(1.05);
+  }
+
+  @keyframes navLetterColorPulse {
+    0% {
+      color: #ffffff;
+    }
+    50% {
+      color: var(--accent-red);
+    }
+    100% {
+      color: #ffffff;
+    }
+  }
+  .nav-letter-anim:hover {
+    animation: navLetterColorPulse 1s ease-in-out infinite;
+  }
+
+  .underline-anim {
+    position: relative;
+    display: inline-block;
+    will-change: transform;
+  }
+  .underline-anim::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    height: 2px;
+    width: 100%;
+    background: currentColor;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 1s ease;
+  }
+  .group:hover .underline-anim::after {
+    transform: scaleX(1);
+  }
+
+  .link-pulse {
+    transform-origin: center;
+    will-change: transform;
+    display: inline-flex;
+  }
+  .group:hover .link-pulse {
+    animation: link-pulse 1s ease-in-out infinite;
+  }
+  @keyframes link-pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.25);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .nav-letter-shadow {
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+  }
+
+  @keyframes bgAnimate {
+    0% {
+      background-position:
+        0 0,
+        0 0,
+        0 0,
+        0 0;
+    }
+    50% {
+      background-position: -400px 0;
+    }
+    100% {
+      background-position:
+        0 0,
+        0 0,
+        0 0,
+        0 0;
+    }
+  }
+
+  @keyframes subtle-bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-6px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .hover-shadow-brand {
+    transition: box-shadow 200ms ease-in-out;
+  }
+  .hover-shadow-brand:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 10px 20px
+      color-mix(in srgb, var(--brand-light) 28%, transparent);
+  }
+
+  .neon-wrap {
+    position: relative;
+    display: inline-block;
+    border-radius: 9999px;
+    overflow: visible;
+  }
+  .neon-wrap img {
+    display: block;
+    border-radius: 9999px;
+  }
+  .neon-wrap svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+
+  .neon-wrap::after {
+    content: "";
+    position: absolute;
+    left: -6px;
+    top: -6px;
+    width: calc(100% + 12px);
+    height: calc(100% + 12px);
+    border-radius: 9999px;
+    pointer-events: none;
+    z-index: 2;
+    background: conic-gradient(
+      from 0deg,
+      rgba(255, 60, 56, 0.95) 0deg 30deg,
+      rgba(255, 60, 56, 0.45) 30deg 60deg,
+      transparent 60deg 360deg
+    );
+    -webkit-mask: radial-gradient(
+      farthest-side,
+      transparent calc(100% - 8px),
+      black calc(100% - 6px)
+    );
+    mask: radial-gradient(
+      farthest-side,
+      transparent calc(100% - 8px),
+      black calc(100% - 6px)
+    );
+    filter: drop-shadow(0 0 8px rgba(255, 60, 56, 0.6));
+    animation: neon-rotate 2s linear infinite;
+  }
+
+  @keyframes neon-rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .neon-wrap::after {
+      animation: none;
+    }
   }
 }

@@ -7,12 +7,12 @@ import linkedinIcon from "../../assets/icons/linkedin.png";
 import { sendContact } from "../../services/contactmeService";
 
 export default function ContactMe() {
-  const { t: translate, i18n: i18nInstance } = useTranslation();
+  const { t: translate } = useTranslation();
 
   const {
     register,
     handleSubmit,
-    formState: { errors, isSubmitting, isSubmitSuccessful },
+    formState: { errors, isSubmitting },
     reset,
   } = useForm();
 
@@ -32,7 +32,7 @@ export default function ContactMe() {
   };
 
   return (
-    <div className="flex justify-center items-center h-screen">
+    <div className="flex justify-center items-center w-full py-8 mt-10">
       <div className="flex flex-col gap-4">
         <div className="flex flex-col justify-center gap-4">
           <div className="flex justify-center">
@@ -107,7 +107,7 @@ export default function ContactMe() {
             <div className="flex justify-center mt-2">
               <button
                 type="submit"
-                className="border border-(--accent-red) py-2 px-4 rounded-md"
+                className={`btn-animated btn-glow border border-(--accent-red) py-2 px-4 rounded-md ${isSubmitting ? 'opacity-70 cursor-wait' : ''}`}
                 disabled={isSubmitting}
               >
                 {isSubmitting ? "Sending..." : translate("contactMe.submit")}

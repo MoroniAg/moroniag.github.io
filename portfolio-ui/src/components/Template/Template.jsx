@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { Outlet, NavLink } from "react-router-dom";
 import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
@@ -37,7 +38,9 @@ export default function Template() {
   const toggleLang = () => setLang((p) => (p === "ES" ? "EN" : "ES"));
 
   return (
-    <div className="flex flex-col min-h-screen text-base">
+    <>
+      
+      <div className="relative z-10 flex flex-col min-h-screen text-base tech-pattern-bg">
       <header className="flex-none h-17.5 bg-brand-dark text-on-brand-dark flex items-center header-bottom-accent">
         <div className="w-full max-w-5xl mx-auto px-4">
           <nav className="relative flex items-center justify-between py-3">
@@ -96,17 +99,19 @@ export default function Template() {
         </div>
       </header>
 
-      <main className="flex-1 overflow-auto bg-(--brand-dark) text-white">
+      <main className="flex-1 overflow-auto bg-brand-dark text-white main-tech-bg">
         <div className="w-full max-w-5xl mx-auto px-4 ">
           <Outlet />
         </div>
       </main>
 
-      <footer className="flex-none h-12.5 bg-footer text-white flex items-center">
+        <footer className="flex-none bg-footer text-white flex items-center py-3 sm:py-4">
         <div className="w-full max-w-5xl mx-auto px-4 text-center text-[0.75rem]">
-          {translation("footer.credit")}
+        <span>  {translation("footer.credit")}</span>
+        &nbsp; - &nbsp;<span className="font-bold">v2.0.1</span>
         </div>
       </footer>
-    </div>
+      </div>
+    </>
   );
 }
