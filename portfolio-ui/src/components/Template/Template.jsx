@@ -40,7 +40,7 @@ export default function Template() {
   return (
     <>
       
-      <div className="relative z-10 flex flex-col min-h-screen text-base tech-pattern-bg">
+      <div className="relative z-10 flex flex-col min-h-screen text-base">
       <header className="flex-none h-17.5 bg-brand-dark text-on-brand-dark flex items-center header-bottom-accent">
         <div className="w-full max-w-5xl mx-auto px-4">
           <nav className="relative flex items-center justify-between py-3">
