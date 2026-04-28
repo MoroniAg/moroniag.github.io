@@ -28,10 +28,10 @@ export default function CardExperience({
   return (
     <>
       <div className="flex flex-col md:flex-row gap-4 bg-(--brand-darker) p-4 rounded-2xl w-full tracking-[1.08px] justify-center group hover-shadow-brand">
-        <div className="sm:w-[45%]">
+        <div className="sm:w-[45%] order-3 sm:order-1">
           {mode === "work" ? (
             <>
-              <div className="flex flex-col gap-2">
+              <div className="flex flex-col gap-2 ">
                 <div className="flex flex-col md:flex-row gap-2 md:justify-between md:items-end text-white">
                   <span className="font-normal ">{data.place}</span>
                 </div>
@@ -95,7 +95,7 @@ export default function CardExperience({
             <></>
           )}
         </div>
-        <div className="hidden md:flex flex-col items-center  sm:w-[10%] ">
+        <div className="hidden md:flex flex-col items-center  sm:w-[10%] order-2 ">
           <div className="">
             <div className="w-5.5 h-5.5 bg-white rounded-full"></div>
           </div>
@@ -103,7 +103,7 @@ export default function CardExperience({
             <div className="border-l-4 border-white h-full"></div>
           </div>
         </div>
-        <div className="sm:w-[45%] ">
+        <div className="sm:w-[45%] order-1 sm:order-3">
           {mode === "work" ? (
             <>
               <div className="flex flex-col gap-2 justify-start items-start font-normal text-(--brand-dark-light)">
