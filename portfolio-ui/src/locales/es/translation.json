@@ -106,8 +106,8 @@
     },
     "dwconsulware": {
       "company": "DwConsulware",
-      "place": "Quito - Ecuador",
-      "position": "Desarrollador de Software",
+      "place": "Ecuador/Perú",
+      "position": "Desarrollador de Software/Líder Técnico",
       "description": "Estoy especializado en el desarrollo e implementación de funcionalidades para una solución de Gestión de Datos Maestros (MDM). Mi trabajo se centra en garantizar la integridad, precisión y consistencia de los datos a través de múltiples sistemas.",
       "date": "Jun 2023 - Ene 2026",
       "labels": [
@@ -120,8 +120,8 @@
     "cumorah": {
       "company": "Cumorah Center",
       "place": "Ecuador",
-      "position": "Desarrollador - Director de proyecto",
-      "description": "Como gestor de proyectos, dirijo la planificación, ejecución y seguimiento de múltiples proyectos en todas sus etapas. Trabajando en estrecha colaboración con un equipo de profesionales altamente calificados, nos enfocamos en el desarrollo, implementación y actualización continua de nuestras iniciativas. Nuestro objetivo es entregar soluciones de alta calidad que cumplan con los objetivos del negocio.",
+      "position": "Desarrollador/Líder Técnico",
+      "description": "Como líder técnico, dirijo la planificación, ejecución y seguimiento de múltiples proyectos en todas sus etapas. Trabajando en estrecha colaboración con un equipo de profesionales altamente calificados, nos enfocamos en el desarrollo, implementación y actualización continua de nuestras iniciativas. Nuestro objetivo es entregar soluciones de alta calidad que cumplan con los objetivos del negocio.",
       "date": "Ene 2023 - Presente",
       "labels": [
         "Java",
@@ -131,9 +131,9 @@
       ]
     },
     "phcodes": {
-      "company": "La Katuna - PhCodes Ec",
-      "place": "Ambato - Ecuador",
-      "position": "Desarrollador - Lider de equipo",
+      "company": "La Katuna/PhCodes Ec",
+      "place": "Ecuador/Italia",
+      "position": "Desarrollador/Líder de equipo",
       "description": "Lideré un equipo de desarrollo ágil, gestionando sprints y cumpliendo objetivos exigentes. Desarrollé varias API’s construidas en Java para una empresa europea, mejorando la funcionalidad de un sistema de gestión de multas. También participé activamente en la implementación de nuevas funcionalidades, corrección de errores y aseguramiento de calidad en varios sistemas.",
       "date": "Abr 2021 - Dic 2022",
       "labels": [
@@ -145,7 +145,7 @@
     },
     "emunay": {
       "company": "Emunay",
-      "place": "Quito - Ecuador",
+      "place": "Quito, Ecuador",
       "position": "Desarrollador Full Stack",
       "description": "Participé activamente en el desarrollo de diversos módulos de un sistema ERP, trabajando tanto en el Frontend como en el Backend. Además, diseñé un sistema de facturación electrónica altamente eficiente, logrando una efectividad del 100% en su implementación y uso.",
       "date": "Sep 2019 - Ene 2021",
@@ -158,7 +158,7 @@
     },
     "cumorahv1": {
       "company": "Cumorah Center",
-      "place": "Quito - Ecuador",
+      "place": "Quito, Ecuador",
       "position": "Desarrollador Full Stack/Soporte Técnico",
       "description": "Desarrollé e implementé una app de escritorio para el control de inventario y ventas.",
       "date": "Abr 2017 - Ago 2020",
